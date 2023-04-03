@@ -1,11 +1,12 @@
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+<?php include_once 'options.php';?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lalezar">
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+<link rel="stylesheet" href="<?php echo get_options('url');?>assets/style.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
 
 <header class="header">
-    <img src="<?php echo get_options('logo');?>" alt="<?php echo get_options('title'); ?>">
+    <img src="<?php echo get_options('url').get_options('logo');?>" alt="<?php echo get_options('title'); ?>">
     <nav>
     <div class="links">
         <a href="index.php">Home</a>
@@ -25,8 +26,8 @@
                 $user_id = $user['id'];
                 $user_menu = "
                 <div class='active_menu'>
-                <a href='user?id=$user_id'> $username </a>
-                <a> ".$user['wallet']." <i class='fa fa-money'></i></a>
+                <a href='user?id=$user_id'><i class='fa fa-user'></i> $username </a>
+                <a>  <i class='fa fa-money'></i>  ".$user['wallet']."</a>
                 <a href='add_link'> Add Link </a>
                 <a href='my_links'> Your Links </a>
                 <a href='links'> get links </a>
@@ -42,17 +43,32 @@
             }
         }
         else{
-            echo '<a href="login.php">log in</a>';
-            echo '<a href="register.php">register</a>';
+            echo '<div><a href="login.php">log in</a>';
+            echo '<a href="register.php">register</a></div>';
         }
         ?>
     
     </nav>
+    <div class="nav_menu_btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
 </header>
+<div class="sidebar"></div>
 <script>
-    if(window.screen.width < 600){
-        $('nav').hide();
-    }
+    $('.nav_menu_btn').click(()=>{
+        let nav_bar = $('.nav_menu_btn');
+        if(nav_bar.hasClass('active')){
+            nav_bar.removeClass('active');
+            nav_bar.html('<i class="fa fa-bars" aria-hidden="true"></i>');
+            $('.sidebar').html('');
+            $('.sidebar').removeClass('active');
+        }else{
+            nav_bar.addClass('active');
+            nav_bar.html('<i class="fa fa-times" aria-hidden="true"></i>');
+            $('.sidebar').addClass('active');
+            $('.sidebar').append($('nav').html());
+        }
+    });
     $('.notification').click(()=>{
         $('.notification').hide();
     });

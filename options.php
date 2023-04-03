@@ -2,6 +2,8 @@
 
 $sql = new mysqli('localhost', 'root', '', 'click-link');
 
+
+
 function get_options($key){
     global $sql;
     $options = $sql->query("SELECT * FROM options WHERE `key` = '$key'");
@@ -30,70 +32,7 @@ function users_roles(){
     global $sql;
     return explode(',',get_options('users_roles'));
 }
-function create_options_table(){
-    global $sql;
-    $options_table = $sql->query("CREATE TABLE options (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        `key` VARCHAR(255) NOT NULL,
-        value VARCHAR(255) NOT NULL
-    )");
-}
-function create_links_table(){
-    global $sql;
-    $links_table = $sql->query("CREATE TABLE links (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        link_id VARCHAR(255) NOT NULL,
-        link VARCHAR(255) NOT NULL,
-        source VARCHAR(255) NOT NULL,
-        author INT(6) NOT NULL,
-        points_per_click INT(6) NOT NULL,
-        budget INT(6) NOT NULL,
-        points INT(6) NOT NULL,
-        clicks INT(6) NOT NULL,
-        status VARCHAR(255) NOT NULL,
-        date VARCHAR(255) NOT NULL
-    )");
-}
-function create_table_wallet(){
-    global $sql;
-    $wallet_table = $sql->query("CREATE TABLE wallet (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        user_id INT(6) NOT NULL,
-        amount INT(6) NOT NULL,
-        title VARCHAR(255) NOT NULL,
-        date VARCHAR(255) NOT NULL
-    )");
-}
-function create_users_table(){
-        global $sql;
-    $users_table = $sql->query("CREATE TABLE users (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL,
-        password VARCHAR(255) NOT NULL,
-        role VARCHAR(255) NOT NULL,
-        date VARCHAR(255) NOT NULL
-    )");
-}
-function create_traffic_table(){
-    global $sql;
-    $traffic_table = $sql->query("CREATE TABLE traffic (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        user_id INT(6) NOT NULL,
-        link_id INT(6) NOT NULL,
-        ip_address VARCHAR(255) NOT NULL,
-        date VARCHAR(255) NOT NULL
-    )");
-}
-function create_table_usermeta(){
-    global $sql;
-    $usermeta_table = $sql->query("CREATE TABLE usermeta (
-        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        user_id INT(6) NOT NULL,
-        meta_key VARCHAR(255) NOT NULL,
-        meta_value VARCHAR(255) NOT NULL
-    )");
-}
+
 function user_logged_in(){
     if(isset($_COOKIE['user_id']) and get_userId($_COOKIE['user_id']) != false){
         return true;
@@ -397,7 +336,6 @@ function get_userId($session){
         }
         return false;
 }
-
 function update_link($id,$url,$budget){
     global $sql;
     $query = $sql->query("UPDATE links SET link='$url', budget='$budget', status = 'pending' WHERE id='$id'");
@@ -407,7 +345,6 @@ function update_link($id,$url,$budget){
         return 'failed to update';
     }
 }
-
 function generate_unique_link_id(){
     $id = rand(100000,999999);
     global $sql;
@@ -415,6 +352,43 @@ function generate_unique_link_id(){
         generate_unique_link_id();
     }
     return $id;
+}
+function link_reported($id){
+    global $sql;
+    $query = $sql->query("UPDATE links SET status = 'reported' WHERE id='$id'");
+    return $query;
+}
+
+function all_pages($by='content',$query=''){
+    global $sql;
+    $pages = $sql->query("SELECT * FROM pages");
+    return $pages->fetch_all(MYSQLI_ASSOC);
+}
+
+function get_page($id){
+    global $sql;
+    $page = $sql->query("SELECT * FROM pages WHERE id = '$id'");
+    return $page->fetch_object();
+}
+
+function add_page($title,$content){
+    global $sql;
+    $date = date('y/m/d h:m');
+    $query = $sql->query("INSERT INTO pages (title,content,date) VALUES ('$title','$content','$date')");
+    return $sql->insert_id;
+}
+function edit_page($id,$title,$content){
+    global $sql;
+    $query = $sql->query("UPDATE pages SET title='$title', content='$content' WHERE id='$id'");
+    return $query;
+}
+function delete_page($id,$user_id){
+    global $sql;
+    if(get_user_meta($user_id,'role') != 'admin'){
+        return false;
+    }
+    $query = $sql->query("DELETE FROM pages WHERE id='$id'");
+    return $query;
 }
 
 ?>

@@ -72,6 +72,11 @@
         });
         $('#login').html('Login');
     }
+    $('.form').on('keyup',(e)=>{
+        if(e.keyCode == 13){
+            login();
+        }
+    })
     $('#show_password').click(()=>{
             if($('#password').attr('type') == 'text'){
                 $('#password').attr('type', 'password');

@@ -1,20 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
 .header{
-    width: 97%;
+    width: 99%;
+    top:0;
+    left: 0;
     height: 100px;
     background-color: #e9e9e9;
-    top: 0;
-    left: 0;
     display: flex;
     margin:  0;
     padding: 15px;
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (max-width: 1200px){
-    nav{
-        left:-250px;
+@media screen and (max-width: 1400px){
+    .header{
+        width: 100%;
+    }
+    .nav_menu_btn{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        height: 10%;
+    }
+    header img{
+        width: 1px;
+    }
+    header nav{
+        display: none;
+    }
+    .sidebar a{
+        padding: 4px;
+        margin: 4px;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .nav_menu_btn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #e9e9e9;
+        top: 0;
+        left: 0;
+        display: flex;
+        margin:  0;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .sidebar .active div{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: max-content;
+        width: 70%;
+        background-color: #313131;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .active div{
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        margin:  0;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+    }
+    .active div a{
+        padding: 5px 15px;
+        margin: 3px 2px;
+        width: 100%;
+        color: #313131;
+    }
+    .active div a:hover{
+        color: #fff;
+        background-color: #310092;
+        scale: 1.2;
     }
 }
 nav{
@@ -28,6 +102,15 @@ nav{
     padding: 15px;
     align-items: center;
     justify-content: space-between;
+}
+.active_menu a{
+    color: #310092;
+    font-size: 15px;
+}
+.active_menu a:hover{
+    color: #fff;
+    background-color: #310092;
+    scale: 1.2;
 }
 .header img{
     width: 150px;
@@ -466,6 +549,14 @@ textarea{
     font-weight: bold;
     margin: 10px;
 }
+.welcome div{
+    width: 100%;
+}
+.welcome div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 .suggested_link{
     display: flex;
     flex-direction: row;
@@ -497,11 +588,6 @@ textarea{
     margin: 10px;
     background-color: #310092;
     border-radius: 10px;
-}
-
-.skiptranslate{
-    height: fit-content;
-    width:100%;
 }
 .user_menu{
     display: flex;
@@ -566,4 +652,68 @@ textarea{
     margin: 10px;
     background-color: #e9e9e9;
     border-radius: 10px;
+}
+.report-btn{
+    color:rgb(255, 255, 255);
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 5px 10px;
+}
+.report-btn:hover{
+    background: red;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 83%;
+    padding: 5%;
+    margin: 10px;
+    background-color: #e9e9e9;
+    border-radius: 2%;
+}
+.admin_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+}
+.admin_form textarea{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.admin_form .input{
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #310092;
+    border-radius: 10px;
+
+}
+
+.admin_form button{
+    position: static;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #310092;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.admin_form button:hover{
+    background-color: #ff4b2b;
+    scale: 1;
 }

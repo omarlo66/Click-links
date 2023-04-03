@@ -43,7 +43,7 @@
         });
         $('#pages_admin').click(function(){
             $('#form').addClass('form');
-            $('.form').load('admin/admin_pages.php');
+            $('.form').load('admin/add_page.php');
         });
     </script>
 <?php

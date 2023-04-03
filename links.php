@@ -21,21 +21,21 @@
     function shuffle_link(){
         global $times;
         global $count_links;
-        if($times == $count_links){
-            header("Location: no_links.php");
-            return ;
-        }
         $times++;
+        if($times > $count_links){
+            return false;
+        }
         $links = get_links();
-        $shuffle = random_int(1, count($links)-1);
-        $author = $links[$shuffle]['author'];
-            if($author == current_user()['id'] or get_traffic($links[$shuffle]['link_id'],current_user()['id'])){
-                shuffle_link();
-                $links = array();
-            }
-        return $links[$shuffle];
+        $link = $links[array_rand($links)];
+        if($link['author'] == current_user()['id']){
+            return shuffle_link();
+        }
+        return $link;
     }
     $link = shuffle_link();
+    if(!$link){
+        header('Location: links.php');
+    }
     $id = $link['link_id'];
     ?>
     <div class="get_link">
@@ -48,40 +48,56 @@
                 <input type="text" id="id" placeholder="ID">
             </div>
             <div style="height: 20px;"></div>
-            <button onclick="link_auth()">Done</button>
-            <div style="height: 20px;"></div>
+            <button onclick="link_auth()">Check ID</button>
+            <div style="height: 40px;"></div>
             <div>
-                <a href="report?id=<?php echo $id;?>">report</a>
-                <a href="change?id=<?php echo $id;?>">change</a>
+                <button onlcick="report('<?php echo $id;?>')" class="report-btn">report</button>
+                <div style="height: 20px;"></div>
+                <button onlcick="change()">change</button>
             </div>
         </div>
         <div class="content">
-            <h2>Remember</h2>
-                <p>Remember if link is not working or doesn't show any ID close it and report to make link exchange better. <br> <p>thanks for coraporation</p></p>
-            <h3>How it's work</h3>
-                <ul>1. Click on the button</ul>
-                <ul>2. Wait for the link to open</ul>
-                <ul>3. Copy the ID</ul>
-                <ul>4. Paste the ID in the input</ul>
-                <ul>5. Click on done</ul>
+            <?php echo get_options('links_page_content') || ''; ?>
         </div>
     </div>
     <script>
+        let cliched = false;
         function open_link(){
-            var link_src = '<?php echo $link['source'];?>';
-            window.open(link_src,'_blank');
-        }
+                var link_src = '<?php echo $link['source'];?>';
+                window.open(link_src,'_blank');
+                cliched = true;
+            }
+            function report(id){
+                if(!clicked){
+                    $('.input').append('<div class="notification"><p style="color:red;">Warning: If you tried to report a link again before open your account will be suspended.</p></div>')
+                    $('.input input[]')
+                }
+                $.post('apis/report.php',{id:id},(data)=>{
+                    console.log(data);
+                    if(data == 'success'){
+                        change();
+                    }else{
+                        change();
+                    }
+                });}
+            function change(){
+                open(window.location.href);
+            }
         function link_auth(){
             var id = document.getElementById('id').value;
             $.post('apis/link_auth.php',{id:id},(data)=>{
                 console.log(data);
                 if(data == 'success'){
-                    open(window.location.href);
+                    change();
                 }else{
-                    alert('link not added');
+                    $('.form').append('<div class="notification"><p style="color:red;">Wrong ID</p></div>')
                 }
             });
         }
+        
+        setInterval(() => {
+            $('.notification').remove();
+        }, 3000);
     </script>
 </body>
 </html>
