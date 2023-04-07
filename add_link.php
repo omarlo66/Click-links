@@ -65,7 +65,6 @@
                 return;
             }
             $.post('apis/add_link.php', {link_id: link_id, link: link, src: src, budget: budget}, function(data){
-                console.log(data)
                 $('.msg').append('<h3 class="notification success">'+data+'</h3>');
             });
             setInterval(function(){

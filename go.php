@@ -31,10 +31,35 @@ if(isset($_GET['link'])){
         align-items: center;
         justify-content: center;
     }
+    input{
+        width: 50%;
+        height: 50px;
+        color: #000;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+    button{
+        width: 50%;
+        height: 50px;
+        color: #000;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    button :hover{
+        background-color: #000;
+        color: #fff;
+    }
     </style>
-    <h1>Copy id</h1>
+    <h1>Copy ID</h1>
     <p>Copy the id of the link you want to share</p>
-        <input type="text" value="<?php echo $link->link_id;?>" id="id">
+        <input type="text" value="<?php echo $link->link_id;?>" id="id" disabled>
     <button onclick="copy()">copy</button>
     <script>
         function copy(){

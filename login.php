@@ -49,7 +49,6 @@
             });
 
             $('#show_password').click(()=>{
-                console.log('click');
                         if($('#password').attr('type') == 'text'){
                             $('#password').attr('type', 'password');
                             $('#password2').attr('type', 'password');

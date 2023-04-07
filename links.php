@@ -34,7 +34,6 @@
         
     }else{
          $link = $link;
-        echo json_encode($link);
         $id = $link['link_id'];
 //<script src="assets/script/links.js"></script>
     }
@@ -73,14 +72,12 @@
             }
             function report(){
                 $('.report-btn').remove();
-                console.log(id);
                 if(!clicked){
                     $('.input').append('<div class="notification"><p style="color:red;">Warning: If you tried to report a link again before open your account will be suspended.</p></div>')
                     $code = $('.input input[]').val();
 
                 }
                 $.post('apis/report.php',{id:id},(data)=>{
-                    console.log(data);
                     if(data == 'success'){
                         change();
                     }else{
@@ -101,7 +98,6 @@
             
             if(id == code){
                 $.post('apis/link_auth.php',{id:id},(data)=>{
-                    console.log(data);
                     if(data == 'success'){
                         change();
                     }else{

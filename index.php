@@ -38,10 +38,9 @@ if($welcome != null && $welcome_header != null){
         current_url = window.location.href;
         current_url = current_url.replace('index.php','');
         $.post('apis/settings.php',{option:'url',value:current_url},(data)=>{
-            console.log(data);
-        });
-    
 
+                });
+            
 </script>
 
 </body>

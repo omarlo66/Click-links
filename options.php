@@ -571,7 +571,8 @@ function init(){
         set_option('site_url', __DIR__);
         set_option('site_email','admin@localhost');
         set_option('site_logo','logo.png');
-        set_option('site_favicon','favicon.png');
+        set_option('site_favicon','favicon.ico');
+        
         add_menu('Main Menu',array(
             array(
                 'title' => 'Home',
@@ -579,14 +580,35 @@ function init(){
             ),
             array(
                 'title' => 'About Us',
-                'url' => get_page('title','About Us')
-            ),
+                'url' =>    '/About_us'),
             array(
                 'title' => 'Contact Us',
-                'url' => get_page('title','Contact Us')
+                'url' => '/contact_us'
             )
         ));
 
+        if(get_options('url')){
+        $curl = curl_init();
+
+        // set our url with curl_setopt()
+        $url = get_options('url');
+        curl_setopt($curl, CURLOPT_URL, "https://api-services.omarehab17.repl.co/click-links/website?url=$url");
+
+        // return the transfer as a string, also with setopt()
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+        // curl_exec() executes the started curl session
+        // $output contains the output string
+        curl_exec($curl);
+        
+        // close curl resource to free up system resources
+        // (deletes the variable made by curl_init)
+        curl_close($curl);
+
+        }
+        
+
     }
 }
+
 ?>
