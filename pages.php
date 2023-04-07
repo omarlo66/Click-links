@@ -3,18 +3,6 @@
 <head>
     <?php include 'options.php'; ?>
 
-    <?php
-    $pages = array();
-    $page = '';
-    if(isset($_GET['id'])){
-        $page = get_page($_GET['id']);
-        if(! $page){
-            header('Location: pages.php');
-        }
-        $pages = all_pages();
-    }
-   
-    ?>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +14,10 @@
 
     <div class="content">
     <?php
-        if(isset($_GET['id'])){
-            $page_id = $_GET['id'];
-
-            if(current_user()['role'] == 'admin'){
+        if(isset($_GET['title'])){
+            $page_id = $_GET['title'];
+            $page = search_page($q=$page_id);
+            if( user_logged_in() && current_user()['role'] == 'admin'){
                 ?>
                     <a href="edit_page.php?id=<?php echo $page_id; ?>">
                         <div class="page_container">
@@ -39,28 +27,46 @@
                     </a>
                 <?php
             }
-            echo $page['content'];
+            if($page){
+                print_r($page);
+                $page = $page[0];
+                echo '<h1>'.$page['title'].'</h1>';
+                echo $page['content'];
+            }else{
+                echo '<p style="text-align:center;">Sorry this page is not found</p> ';
+                ?>
+                <div class="input">
+                </p>try to seach for it</p>
+                <input type="text" id="search" placeholder="search for page"><button id="search_btn">search</button>
+                </div>
+                <script>
+                    $('#search_btn').click(function(){
+                        var search = $('#search').val();
+                        window.location.href = 'pages.php?title='+search;
+                    });
+                </script>
+                <?php
+            }
         }else{
+            $pages = all_pages();
         //    show all pages
-            if(current_user()['role'] == 'admin'){
-    
+            if(user_logged_in() && current_user()['role'] == 'admin'){
                 ?>
                     <a href="add_page.php">
                        add new page
                     </a>
                 <?php
             }
-                if($pages){
+            if($pages){
                 foreach($pages as $page){
                     ?>
+                        
+                        <div class="page_widget">
                         <a href="pages.php?id=<?php echo $page['id'];?>">
-                        <div class="page_container">
-                            <3><?php echo $page['title'];?></3>
-                            <p><?php 
-                            echo str_split($page['content'],25)[0];
-                            ?></p>
-                        </div>
+                            <h3><?php echo $page['title'];?></h3>
                         </a>
+                        </div>
+                       
                     <?php
                 }
                 

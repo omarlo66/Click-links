@@ -10,7 +10,7 @@
 <body>
     <?php include 'header.php';?>
     <?php
-    if(!user_logged_in()){
+    if(! current_user() && current_user()['id'] == 0){
         header('location: login.php');
         exit;
     }
@@ -36,10 +36,10 @@
 
         <p>Budget:</p>
         <div class="input">
-            <input type="number" name="budget" placeholder="point per click" id="budget">
+            <input type="number" name="budget" placeholder="Points budget for this link" id="budget">
         </div>
 
-        <p class="hint">suggested: 5 points minimum</p>
+        <p class="hint">suggested: 1000 points minimum</p>
         <div style="height: 20px;"></div>
         <button id="add_link">add link</button>
         <div style="height: 20px;"></div>

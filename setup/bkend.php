@@ -69,9 +69,31 @@ function create_table_pages(){
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         content TEXT NOT NULL,
+        status VARCHAR(255) NOT NULL,
         date VARCHAR(255) NOT NULL
-    )" ;
+    )";
     return  $pages_table;
+}
+function create_table_menu(){
+    $menu_table =  "CREATE TABLE menu (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+        value TEXT NOT NULL
+    )";
+    return  $menu_table;
+}
+function create_table_messages(){
+    $table = "CREATE TABLE contact (
+        id INT(6) AUTO_INCREMENT PRIMARY KEY,
+        user_id VARCHAR(255) NOT NULL,
+        send_to VARCHAR(255) NOT NULL,
+        email VARCHAR(255) NOT NULL,
+        subject VARCHAR(255) NOT NULL,
+        message TEXT NOT NULL,
+        status VARCHAR(255) NOT NULL,
+        date VARCHAR(255) NOT NULL
+    )";
+    return $table;
 }
 
 

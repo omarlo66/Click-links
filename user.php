@@ -1,13 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php require 'options.php';
-if(! isset($_COOKIE['user_id'])){
-    header('Location: login.php');
-}
+
+
+
+
+<?php 
+require 'options.php';
 $user = current_user();
+if($user['id']==0){
+    echo "<script>location.href = 'login.php'</script>";
+    return;
+}
+
+
+
 $user_name = $user['name'];
 $user_id = $user['id'];
+
 ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +26,42 @@ $user_id = $user['id'];
     <title>User | <?php echo $user_name?></title>
 </head>
 <body>
+<?php
+    if(isset($_GET['open_msg'])){
+        $msg = get_message($_GET['open_msg']);
+        echo json_encode($msg);
+        $subject = $msg->subject;
+        $message = $msg->message;
+        $send_to = $msg->send_to;
+        if(count(explode('_',$subject)) > 0){
+            $reply_id = explode('_',$subject)[0];
+            $msg = get_message($reply_id);
+            if($msg){
+                str_replace($reply_id.'_','<a href="user?open_msg='.$reply_id.'>'.$msg['subject'].'</a>','');
+            }
+        }
+        ?>
+            <div class='popup'>
+                <h2><?php echo $subject ?></h2>
+                <p><?php echo $message ?></p>
+                <p><b>From:</b> $send_to</p>
+                <button onclick=close_popup()>close</button>
+                <button onclick=reply_msg()> reply </button>
+            </div>
+
+            <script>
+                function close_popup(){
+                    $('.popup').remove();
+                }
+                function reply_msg(){
+                    id = '<?php echo $id.'_ ';?>'
+                    location.href = 'reply_msg.php?id='+id;
+                }
+            </script>
+        
+        <?php
+    }
+?>
         <link rel="stylesheet" href="assets/style.css">
         <?php require 'header.php';?>
         <h1><?php echo "Welcome ".$user_name;?></h1>
@@ -100,12 +147,53 @@ $user_id = $user['id'];
         <div style='height:10px;'></div>
     </div>
     </div>
+    <div class="messages_form">
+        <h2>Messages</h2>
+        <div id="msgs">
+
+        </div>
+    </div>
+    
+    </div>
+   
     <script>
         function add_new_link(){
             location.href = 'add_link.php';
         }
         function all_links(){
             location.href = 'links.php';
+        }
+        $.get('apis/contact.php?get=0', function(data){
+            data = JSON.parse(data);
+            if(data.length == 0){
+                $('#msgs').append('<p>No messages</p>');
+            }
+            for(var i=0; i<data.length; i++){
+                msg = data[i].message;
+                msg = msg.slice(0, 25);
+                status = data[i].status;
+                id = data[i].id;
+                $('#msgs').append('<div class="msg"><p class="msg_subject"><b>subject</b>: '+data[i].subject+'</p><p>'+data[i].send_to+'</p><p class="msg_content">'+msg+'... <a href="?open_msg='+id+'">read message</a></p><p class="msg_status_'+status+'">status: '+status+'</p><button onclick="reply_msg('+id+')">send reply</button><button onclick="delete_msg('+id+')">Delete</button></div>');
+            }
+        })
+        function reply_msg(id){
+            location.href = 'contact_us.php?subject='+id+'_reply';
+        }
+        function delete_msg(id){
+            name = prompt('please enter your username to delete this message');
+            $.post('apis/contact.php',{delete:id,name:name}, function(data){
+                if(data == 'success'){
+                    location.reload();
+                }else{
+                    $('.msg').append('<p class="notification error"> You entered a wrong name try again </p>');
+                    setInterval(function(){
+                        $('.notification').remove();
+                        $('.notification').click(function(){
+                            $('.notification').remove();
+                        });
+                    }, 5000);
+                }
+            })
         }
     </script>
 

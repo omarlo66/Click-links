@@ -12,13 +12,17 @@
 <link rel="stylesheet" href="assets/style.css">
 <?php include 'header.php';?>
 <?php 
-if(isset($_COOKIE['user_id'])){
+if(isset($_COOKIE['user_id']) && current_user()['id'] != 0){
     header('Location: user.php');
 }
 $welcome = get_options('welcome_content');
 $welcome_header = get_options('welcome_header');
 
-
+$page = get_page('title','home');
+if($page){
+    $content = $page['content'];
+    echo $content;
+}
 ?>
 
 <?php

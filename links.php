@@ -13,45 +13,48 @@
     <title>get link | <?php echo get_options('title'); ?> </title>
 </head>
 <body>
+    
     <?php
     include 'header.php';
     
-    $times = 0;
     $count_links = count(get_links());
     function shuffle_link(){
-        global $times;
         global $count_links;
-        $times++;
-        if($times > $count_links){
-            return false;
+        $link = get_links();
+        if($count_links > 0){
+            $link = $link[rand(0,$count_links-1)];
+            return $link;
         }
-        $links = get_links();
-        $link = $links[array_rand($links)];
-        if($link['author'] == current_user()['id']){
-            return shuffle_link();
-        }
-        return $link;
+        
     }
+
     $link = shuffle_link();
-    if(!$link){
-        header('Location: links.php');
+    if(! $link){
+            header('Location: no_links.php');
+        
+    }else{
+         $link = $link;
+        echo json_encode($link);
+        $id = $link['link_id'];
+//<script src="assets/script/links.js"></script>
     }
-    $id = $link['link_id'];
     ?>
+        
+
     <div class="get_link">
         <h1>get link</h1>
         <div class="form get_link">
-        <button onclick="open_link()">Click here</button>
+        <button onclick="open_link('<?php echo $link['source'];?>')">Click here</button>
 
             <div style="height: 20px;"></div>
             <div class="input">
                 <input type="text" id="id" placeholder="ID">
             </div>
             <div style="height: 20px;"></div>
-            <button onclick="link_auth()">Check ID</button>
+                <button onclick="link_auth('<?php echo $id; ?>')">Check ID</button>
             <div style="height: 40px;"></div>
             <div>
-                <button onlcick="report('<?php echo $id;?>')" class="report-btn">report</button>
+                <button onlcick="report()" class="report-btn">report</button>
                 <div style="height: 20px;"></div>
                 <button onlcick="change()">change</button>
             </div>
@@ -61,16 +64,20 @@
         </div>
     </div>
     <script>
-        let cliched = false;
-        function open_link(){
-                var link_src = '<?php echo $link['source'];?>';
+        let id = '<?php echo $id; ?>';
+        let clicked = false;
+        function open_link(src){
+                var link_src = src;
                 window.open(link_src,'_blank');
-                cliched = true;
+                clicked = true;
             }
-            function report(id){
+            function report(){
+                $('.report-btn').remove();
+                console.log(id);
                 if(!clicked){
                     $('.input').append('<div class="notification"><p style="color:red;">Warning: If you tried to report a link again before open your account will be suspended.</p></div>')
-                    $('.input input[]')
+                    $code = $('.input input[]').val();
+
                 }
                 $.post('apis/report.php',{id:id},(data)=>{
                     console.log(data);
@@ -84,20 +91,31 @@
                 open(window.location.href);
             }
         function link_auth(){
-            var id = document.getElementById('id').value;
-            $.post('apis/link_auth.php',{id:id},(data)=>{
-                console.log(data);
-                if(data == 'success'){
-                    change();
-                }else{
-                    $('.form').append('<div class="notification"><p style="color:red;">Wrong ID</p></div>')
-                }
-            });
+            code = $('#id').val();
+            if(!clicked){
+
+                $('.msg').append('<div class="notification error">Open the link first and you will get an ID put the ID here.\nWarning: If you tried to report a link again before open your account will be suspended.</p></div>')
+                
+                
+            }
+            
+            if(id == code){
+                $.post('apis/link_auth.php',{id:id},(data)=>{
+                    console.log(data);
+                    if(data == 'success'){
+                        change();
+                    }else{
+                        $('.form').append('<div class="notification"><p style="color:red;">Wrong ID</p></div>')
+                    }
+                });
+            }else{
+                $('.msg').append('<div class="notification error">Try again</p></div>');
+            }
         }
-        
+
         setInterval(() => {
             $('.notification').remove();
-        }, 3000);
-    </script>
+        }, 7000);
+</script>
 </body>
 </html>

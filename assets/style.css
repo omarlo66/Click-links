@@ -1,24 +1,21 @@
 .header{
-    width: 99%;
+    width: 100%;
     top:0;
     left: 0;
     height: 100px;
     background-color: #e9e9e9;
     display: flex;
     margin:  0;
-    padding: 15px;
+    padding: 1%;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
-@media screen and (max-width: 1400px){
-    .header{
-        width: 100%;
-    }
-    .nav_menu_btn{
-        display: none;
-    }
+.nav_menu_btn{
+    display: none;
 }
-@media (max-width: 900px){
+
+@media (max-width: 1000px){
     header{
         display: flex;
         flex-direction: row;
@@ -171,7 +168,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    margin-top: 20px;
 }
 h1{
     font-size: 50px;
@@ -253,19 +250,23 @@ button:hover{
 }
 .notification.error{
     position: fixed;
-    width: 90%;
-    height: 70px;
-    background: #ff1e1e;
+    width: 80%;
+    height: fit-content;
+    background: #ff3737;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    margin:5%;
-    padding: 10px;
+    margin: 10px 5px;
+    padding: 10px 5px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+}
+.notification p{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .notification.success{
     position: fixed;
@@ -281,6 +282,13 @@ button:hover{
     justify-content: center;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+}
+.notification p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
 }
 .wallet i{
     color: #e2bc00;
@@ -402,11 +410,15 @@ table tr td{
     border: 1px solid #000;
     margin: 5px 0;
 }
-.points p{
+.points{
     font-size: 20px;
     font-weight: bold;
     color: #000;
     margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .add_link{
     width: 80%;
@@ -589,6 +601,13 @@ textarea{
     background-color: #310092;
     border-radius: 10px;
 }
+form{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
 .user_menu{
     display: flex;
     flex-direction: column;
@@ -677,10 +696,10 @@ textarea{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin: 10px;
-    background-color: #e9e9e9;
+    background-color: #282828;
     border-radius: 10px;
 }
 .admin_form textarea{
@@ -693,11 +712,9 @@ textarea{
 .admin_form .input{
     height: fit-content;
     width: 100%;
-    padding: 10px;
     margin: 10px;
-    background-color: #310092;
     border-radius: 10px;
-
+    border: dotted 1px #310092;
 }
 
 .admin_form button{
@@ -713,7 +730,56 @@ textarea{
     margin: 10px;
     border-radius: 10px;
 }
+
 .admin_form button:hover{
     background-color: #ff4b2b;
     scale: 1;
+}
+.messages_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+.messages_form .msg{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: solid 1px #310092;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#message{
+    height: 20px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    border-bottom: 1px solid #000;
+    margin: 5px 0;
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.popup{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #310092;
+    display: none;
+    z-index: 100;
 }

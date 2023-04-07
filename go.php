@@ -1,11 +1,14 @@
 <?php
 
 include 'options.php';
-if(isset($_GET['go'])){
-    $id = $_GET['go'];
+
+if(isset($_GET['link'])){
+    $id = $_GET['link'];
+    $id=str_replace('.php','',$id);
     $link = get_link('link_id',$id);
 }else{
     echo "<h1>Error 404</h1>";
+    return;
 }
 
 ?>
@@ -18,6 +21,17 @@ if(isset($_GET['go'])){
     <title>Copy id</title>
 </head>
 <body>
+    <style>
+    body{
+        background: #000;
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
     <h1>Copy id</h1>
     <p>Copy the id of the link you want to share</p>
         <input type="text" value="<?php echo $link->link_id;?>" id="id">

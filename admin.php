@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require 'options.php';?>
+    <?php require_once 'options.php';?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,7 @@
         <div id="users_admin">users</div>
         <div id="links_admin">links</div>
         <div id="pages_admin">pages</div>
+        <div id="messages">messages</div>
     </div>
 
     <div id="form">
@@ -43,7 +44,11 @@
         });
         $('#pages_admin').click(function(){
             $('#form').addClass('form');
-            $('.form').load('admin/add_page.php');
+            $('.form').load('admin/admin_page.php');
+        });
+        $('#messages').click(function(){
+            $('#form').addClass('form');
+            $('.form').load('admin/messages.php');
         });
     </script>
 <?php

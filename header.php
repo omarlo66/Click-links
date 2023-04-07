@@ -6,22 +6,26 @@
 
 
 <header class="header">
-    <img src="<?php echo get_options('url').get_options('logo');?>" alt="<?php echo get_options('title'); ?>">
+    <a href="/">
+        <img src="<?php echo get_options('url').get_options('logo');?>" alt="<?php echo get_options('title'); ?>">
+    </a>
     <nav>
     <div class="links">
-        <a href="index.php">Home</a>
-        <a href="about.php">About us </a>
-        <a href="contact.php">Contact us</a>
+    <?php
+      show_menu();
+    ?>
     </div>
         <?php
         include_once('options.php');
-        if(user_logged_in()){
+        if(current_user() && current_user()['id'] != 0){
             $user =  current_user();
             $username = $user['name'];
             if($user['role'] == 'admin'){
-                echo '<a>'.$username.' <i class="fa fa-user-circle" aria-hidden="true"></i>'.' </a>';
+
+                echo '<a href="user.php">'.$username.' <i class="fa fa-user-circle" aria-hidden="true"></i>'.' </a>';
                 echo '<a href="admin.php">Admin_panel</a>';
                 echo '<a href="logout.php"> logout </a>';
+
             }else{
                 $user_id = $user['id'];
                 $user_menu = "
@@ -37,7 +41,7 @@
                 echo $user_menu;
             ?>
 
- 
+                
 
             <?php
             }

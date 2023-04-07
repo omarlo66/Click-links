@@ -13,7 +13,13 @@
     <title>Your links | <?php get_options('title');?></title>
 </head>
 <body>
-    <?php include_once 'header.php';?>
+    <?php include_once 'header.php';
+    if(isset($_GET['delete'])){
+        $id = $_GET['delete'];
+        $link_id = get_link('id',$id)->link_id;
+        update_link_status($link_id,'deleted');
+    }
+    ?>
 
     <h1>
         Your links
@@ -37,8 +43,11 @@
                 $clicks = $row['clicks'];
                 $budget = $row['budget'];
                 $status = $row['status'];
+                if($status == 'deleted'){
+                    continue;
+                }
                 
-                echo "<tr><td>$link</td><td>$points / $budget</td><td>$clicks</td><td>$status</td><td><a href='edit_link?id=$id'>edit</a><a href='delete_link?id=$id'>edit</a></tr>";
+                echo "<tr><td>$link</td><td>$points / $budget</td><td>$clicks</td><td>$status</td><td><a href='edit_link?id=$id'>edit</a><a href='?delete=$id'>delete</a></tr>";
             }
 
             ?>
