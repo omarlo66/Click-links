@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include_once 'options.php';?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 </head>
 <body>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <h1>Login</h1>
-
-    <div class="login_form form">
-        <div class="msg">
-
+  
+    <div class="msg">
         </div>
-        
+    <h1>Login</h1>
+    <div class="login_page">
+        <div>
+            <img src="<?php echo get_options('url');?>/assets/login.png" alt="login">
+        </div>
+    
+    <div class="login_form form">
 
         <div class="input">
             <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -33,14 +37,14 @@
             <i class="fa fa-eye" aria-hidden="true"></i>
         </div>
         <div style='height: 20px;'></div>
-        <a href="forgot_password" >forgot password</a>
+        <a href="/forgot_password" >forgot password</a>
         <div style='height: 40px;'></div>
         <button id="login" onclick="login()">Login</button>
         <div style='height: 40px;'></div>
-        <p style="color:#000;">create account <a href="register.php">Sign up</a></p>
+        <p style="color:#000;">create account <a href="<?php echo get_options('url');?>/register.php">Sign up</a></p>
                
     </div>
-
+    </div>
     <script>
             $('.form').on('keyup',(e)=>{
                     if(e.keyCode == 13){
@@ -71,12 +75,12 @@
                     send_msg('<p class="notification error">Please fill all fields</p>','error');
                     return;
                 }
-                $.post('apis/api-login.php',{username:$('#username').val(), password:$('#password').val()},(data)=>{
+                $.post('/apis/api-login.php',{username:$('#username').val(), password:$('#password').val()},(data)=>{
                     
                     if(data == 'true'){
                         send_msg('<p class="notification success">You are logged in succefully.<br> please wait..</p>','success');
                         setInterval(()=>{
-                            window.location.href = 'index.php';
+                            window.location.href = '<?php echo get_options('url');?>/index.php';
                         }, 1000);
                     }else{
                         send_msg('<p class="notification error"> Wrong email or password double check them and try again.</p>','error');
@@ -85,7 +89,13 @@
                     send_msg('<p class="notification error">Something went wrong</p>','error');
                 });
                 $('#login').html('Login');
-                }
+            }
+            $('input[type="text"]').keypress(function(e){
+            if(e.key == "'" || e.key == '"'){//Enter key pressed
+                    $('.msg').html('<h3 class="notification error">You can\'t use this character</h3>');
+                    $('input[type="text"]').val('');
+                    }
+            });
     </script>
 
    

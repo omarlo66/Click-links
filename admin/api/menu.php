@@ -1,5 +1,9 @@
 <?php
-
+include_once '../../options.php';
+if(current_user()['role'] != 'admin'){
+    header('location:../index.php');
+    exit();
+}
 if(isset($_POST['menu'])){
     $id = $_POST['menu'];
     $id = get_menu($by='title',$id) ? get_menu($by='title',$id)['id'] : 0;
@@ -10,7 +14,7 @@ if(isset($_POST['menu'])){
         $page = get_page($by='id',$page);
         array_push($data,array('id'=>$page['id'],'title'=>$page['title']));
     }
-    include '../../options.php';
+    
     if ($id == 0){
         add_menu($title,$value);
     }

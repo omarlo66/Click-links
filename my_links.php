@@ -17,7 +17,7 @@
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $link_id = get_link('id',$id)->link_id;
-        update_link_status($link_id,'deleted');
+        delete_link_status($id);
     }
     ?>
 

@@ -13,25 +13,14 @@
     <?php include 'header.php'; ?>
 
     <div class="content">
-    <?php
-        if(isset($_GET['title'])){
-            $page_id = $_GET['title'];
-            $page = search_page($q=$page_id);
-            if( user_logged_in() && current_user()['role'] == 'admin'){
-                ?>
-                    <a href="edit_page.php?id=<?php echo $page_id; ?>">
-                        <div class="page_container">
-                            <3>Add new page</3>
-                            <p>Click here to add new page</p>
-                        </div>
-                    </a>
-                <?php
-            }
+    <?php echo "<div class='ads_widget'>".get_options('ad_1')."</div>";?>
+        <?php
+        if(isset($_GET['id'])){
+            $page_id = $_GET['id'];
+            $page = get_page('id', $page_id);
             if($page){
-                print_r($page);
-                $page = $page[0];
-                echo '<h1>'.$page['title'].'</h1>';
-                echo $page['content'];
+                echo '<h1>'.$page->title.'</h1>';
+                echo "<div>".$page->content."</div>";
             }else{
                 echo '<p style="text-align:center;">Sorry this page is not found</p> ';
                 ?>
@@ -42,7 +31,7 @@
                 <script>
                     $('#search_btn').click(function(){
                         var search = $('#search').val();
-                        window.location.href = 'pages.php?title='+search;
+                        window.location.href = '/pages.php?title='+search;
                     });
                 </script>
                 <?php
@@ -50,19 +39,12 @@
         }else{
             $pages = all_pages();
         //    show all pages
-            if(user_logged_in() && current_user()['role'] == 'admin'){
-                ?>
-                    <a href="add_page.php">
-                       add new page
-                    </a>
-                <?php
-            }
             if($pages){
                 foreach($pages as $page){
                     ?>
                         
                         <div class="page_widget">
-                        <a href="pages.php?id=<?php echo $page['id'];?>">
+                        <a href="/pages.php?id=<?php echo $page['id'];?>">
                             <h3><?php echo $page['title'];?></h3>
                         </a>
                         </div>
@@ -77,7 +59,8 @@
             
             }
     ?>
-
+    <?php echo "<div class='ads_widget'>".get_options('ad_2')."</div>";?>
+    <?php echo "<div class='ads_widget'>".get_options('ad_3')."</div>";?>
     <?php include 'footer.php'; ?>
 </body>
 </html>

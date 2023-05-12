@@ -1,17 +1,16 @@
 <?php
 
 if(isset($_POST['username'])){
-    include_once('../options.php');
+    include_once '../options.php';
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     if(function_exists('register')){
         if(register($username,$email,$password)){
-            echo 'Congrats! you are now registered <a href="login.php">login</a>';
+            echo 'success';
         }
         else{
-            echo 'user is already registered <a href="login.php">login</a>';
-            
+            echo 'failed';
         }
     }
     else{

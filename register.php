@@ -9,9 +9,26 @@
 <body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
+<?php
+if(isset($_GET['ref'])){
+    require 'options.php';
+    $ref = $_GET['ref'];
+    $ref = get_user($ref);
+    if($ref && $ref->id != 0){
+        setcookie('ref', $ref->id , time() + (86400 * 30), "/");
+    }
+}
+?>
+
     <h1>Register</h1>
+    <div class="msg"></div>
+    <div class="register_page">
+    <div>
+            <img src="/assets/register.png" alt="login">
+    </div>
     <div class="register_form">
+        
         <div class='input'>
             <i class="fa fa-user-circle" aria-hidden="true"></i>
             <input type="text" name="username" id="username" placeholder="Username">
@@ -36,8 +53,9 @@
         <div style="height: 20px;"></div>
         <button id="register">Register</button>
         <div style="height: 20px;"></div>
-        <p>already have account <a href="login.php">Login</a></p>
+        <p>already have account <a href="<?php echo get_options('url');?>/login.php">Login</a></p>
     </div>
+</div>
     <script>
 
         $('#password2').keyup(()=>{
@@ -60,23 +78,39 @@
         });
 
         $('#register').click(()=>{
+            let email = $('#email').val();
+            if(email.includes('@') == false || email.includes('.') == false){
+                $('.register_form').append('<p class="notification error">Email is not valid</p>');
+                $('#email').css('border', '2px solid red');
+                setInterval(()=>{$('.notification').remove()}, 5000);
+                return;
+            }
             if($('#password').val() != $('#password2').val() ){
                 $('.register_form').append('<p class="notification error">Passwords do not match</p>');
                 $('#password2').css('border', '2px solid red');
                 setInterval(()=>{$('.notification').remove()}, 5000);
                 return;
             }
-            $.post('apis/api-register.php',{username:$('#username').val(), email:$('#email').val(), password:$('#password').val()},
+            $.post('/apis/api-register.php',{username:$('#username').val(), email:$('#email').val(), password:$('#password').val()},
             (data)=>{
-                    $('.register_form').append('<p class="notification success">'+data+'</p>');
-                    setInterval(()=>{window.location.href='login.php'}, 50000);
-                
-                
+                if(data == 'success'){
+                    $('.register_form').append('<p class="notification success"> You are registered now <a href="/login">now login</a></p>');
+                }else{
+                    $('.register_form').append('<p class="notification error">Something went wrong</p>');
+                }
+                    
+                    setInterval(()=>{window.location.href='/login.php'}, 50000);
             }).fail(()=>{
                 $('.register_form').append('<p class="notification error">Something went wrong</p>');
                 setInterval(()=>{$('.notification').remove()}, 50000);
             });
         })
+        $('input[type="text"]').keypress(function(e){
+        if(e.key == "'" || e.key == '"'){//Enter key pressed
+            $('.msg').html('<h3 class="notification error">You can\'t use this character</h3>');
+            $('input[type="text"]').val('');
+        }
+        });
     </script>
     <?php include_once 'footer.php'?>
 </body>

@@ -1,20 +1,3 @@
-.header{
-    width: 100%;
-    top:0;
-    left: 0;
-    height: 100px;
-    background-color: #e9e9e9;
-    display: flex;
-    margin:  0;
-    padding: 1%;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-}
-.nav_menu_btn{
-    display: none;
-}
-
 @media (max-width: 1000px){
     header{
         display: flex;
@@ -38,19 +21,10 @@
         font-family: 'Times New Roman', Times, serif;
     }
     .nav_menu_btn{
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #e9e9e9;
-        top: 0;
-        left: 0;
         display: flex;
-        margin:  0;
-        padding: 15px;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
-        cursor: pointer;
     }
     .sidebar .active div{
         position: fixed;
@@ -87,7 +61,126 @@
         background-color: #310092;
         scale: 1.2;
     }
+    .login_page{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .register_page{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    .register_page div{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:5px;
+    }
+    .login_page div{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login_page div img{
+        max-width: 50%;
+    }
+    .register_page div img{
+        max-width: 50%;
+    }
+    .login_form{
+        width: 90%;
+    }
+    .register_form{
+        width: 100%;
+    }
+    .login_form .input{
+        width: 80%;
+    }
+    .register_form .input{
+        width: 80%;
+    }
+    .form{
+        width: 90%;
+    }
+    .input{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 5px;
+        height: fit-content;
+        border: 1px dotted #181818;
+    }
+    .input button{
+        width: 80%;
+        margin: 5px;
+        border: 1px solid #0011c6;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #0011c6;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px;
+        box-shadow: 1px 2px 5px #0011c6;
+    }
+    .input button i{
+        color: #fff;
+        background: transparent;
+    }
+    .input input{
+        width: 100%;
+        margin: 1px;
+        border: 1px solid #0011c6;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px;
+        box-shadow: 1px 2px 5px #0011c6;
+    }
 }
+.header{
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    margin:  0;
+    padding: 1%;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav_menu_btn{
+    display: flex;
+    margin:20px;
+}
+
 nav{
     width: 100%;
     height: 100px;
@@ -115,10 +208,10 @@ nav{
     float: right;
     border-radius: 15px;
 }
-.heaedr .links{
+.heaedr .about_website{
     width: 100%;
     height: 100px;
-    background-color: #e9e9e9;
+    background: linear-gradient(to right, #0004ff21, #e9e9e9);
     top: 0;
     left: 0;
     display: flex;
@@ -128,10 +221,25 @@ nav{
     align-items: center;
     justify-content: center;
 }
+.header .about_website a, .header .user_links a{
+    padding: 10px;
+    margin: 2px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2e2e2e;
+    text-decoration: none;
+}
+.header .about_website a:hover , .header .user_links a:hover{
+    color: #fff;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    scale: 1.2;
+}
+
 .header .links a{
     width: 100px;
     height: 50px;
-    background-color: #e9e9e9;
+    background-color: #fff;
     top: 0;
     left: 0;
     margin:0;
@@ -151,7 +259,7 @@ nav{
     color: #fff;
 }
 body{
-    background-color: #e9e9e9;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -203,30 +311,7 @@ h2{
     margin: 2px;
     padding:1px;
 }
-.register_form .input{
-    height: 20px;
-    background-color: #e9e9e9;
-    border-radius: 10px;
-    border-bottom: 1px solid #000;
-    margin: 5px 0;
-    width:60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.register_form input{
-    width: 80%;
-    height: 20px;
-    border: none;
-    background-color: #e9e9e9;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 button{
     width: 200px;
@@ -248,12 +333,15 @@ button:hover{
     color: #fff;
     scale: 1.2;
 }
+.notification{
+    animation: slideInFromLeft 10s;
+}
 .notification.error{
     position: fixed;
     width: 80%;
     height: fit-content;
     background: #ff3737;
-    top: 0;
+    top: 10%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -263,6 +351,7 @@ button:hover{
     justify-content: center;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    opacity: 0.8;
 }
 .notification p{
     font-size: 1.2rem;
@@ -273,7 +362,7 @@ button:hover{
     width: 90%;
     height: 70px;
     background: #008d09;
-    top: 0;
+    top: 10%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -282,6 +371,7 @@ button:hover{
     justify-content: center;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    opacity: 0.8;
 }
 .notification p{
     font-size: 20px;
@@ -289,6 +379,20 @@ button:hover{
     text-align: center;
     line-height: 50px;
     color: #fff;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    60% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .wallet i{
     color: #e2bc00;
@@ -323,7 +427,7 @@ button:hover{
     margin: 2px;
     padding:1px;
 }
-.login_form .input, .form .input , form input, .input{
+.login_form .input, .form .input , .input{
     height: 20px;
     background-color: #e9e9e9;
     border-radius: 10px;
@@ -338,15 +442,15 @@ button:hover{
 }
 
 .login_form input , .input input{
-    width: 80%;
+    width: 100%;
     height: 20px;
     border: none;
     background-color: #e9e9e9;
     padding: 10px;
     text-decoration: none;
     color: #000;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
     text-align: center;
 }
 table{
@@ -387,10 +491,9 @@ table tr td{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 5%;
+    padding: 5%;
     border-radius: 10px;
-    background: linear-gradient(to right, #fff4f6, #d2d2d2);
     width: 100%;
 }
 .user_page div input{
@@ -410,8 +513,54 @@ table tr td{
     border: 1px solid #000;
     margin: 5px 0;
 }
-.points{
+
+.user_page .Earning{
+    background: linear-gradient(to right, #009f62, #00b4a6);
+    color: #fff;
+    font-size: 22px;
+    box-shadow: 0 0 10px #8fffd4b3;
+}
+.user_page .Earning a{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+.user_page .Earning a:hover{
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.Earning h2 , .Earning p{
+    color: #fff;
     font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.user_page .your_links{
+    background: linear-gradient(to right, #492dff, #0011c6);
+    color: #fff;
+    font-size: 22px;
+    box-shadow: 0 0 10px #8fa5ff96;
+    width: 100%;
+}
+.user_page .your_links button{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+.user_page .your_links button:hover{
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+.your_links h2 , .your_links p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.points{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
     font-weight: bold;
     color: #000;
     margin: 10px;
@@ -538,16 +687,30 @@ textarea{
     cursor: pointer;
     color:rgb(255, 255, 255);
 }
+.widget_anaytics div p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+}
+
+.widget_anaytics div p :hover{
+    scale: 1.2;
+}
+
 .welcome{
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 10px;
     background-color: #310092;
+    opacity: 0.8;
     border-radius: 10px;
+    box-shadow: 3px 2px 0 #2e2e2e;
 }
 .welcome h3{
     color: #ffffff;
@@ -567,7 +730,85 @@ textarea{
 .welcome div img{
     width: 100%;
     height: 100%;
+}
+.login_page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin: 2%;
+    padding: 2%;
+}
+.login_page div{
+    width: 100%;
+}
+.register_page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    padding: 1%;
+}
+.register_page div{
+    width: 100%;
+}
+#show_password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    padding: 1%;
+}
+.about_us{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.about_us div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+    padding: 5%;
+    margin: 5%;
+    background: linear-gradient(to right, #994ff8, #4b10fc);
     border-radius: 10px;
+}
+.about_ud div:hover{
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    scale: 1.2;
+}
+.about_us div img{
+    width: 125px;
+    height: 125px;
+}
+.about_us div h3{
+    color: #2e2e2e;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+.about_us div p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
 }
 .suggested_link{
     display: flex;
@@ -703,7 +944,7 @@ form{
     border-radius: 10px;
 }
 .admin_form textarea{
-    position: inherit;
+    position: static;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -715,6 +956,8 @@ form{
     margin: 10px;
     border-radius: 10px;
     border: dotted 1px #310092;
+    background-color: #181818;
+    color:rgb(255, 255, 255);
 }
 
 .admin_form button{
@@ -734,6 +977,18 @@ form{
 .admin_form button:hover{
     background-color: #ff4b2b;
     scale: 1;
+}
+
+.admin_form p, .admin_form h2, .admin_form h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
 }
 .messages_form{
     display: flex;
@@ -758,28 +1013,115 @@ form{
     
 }
 #message{
-    height: 20px;
+    height: 50px;
     background-color: #e9e9e9;
     border-radius: 10px;
     border-bottom: 1px solid #000;
     margin: 5px 0;
-    width:60%;
+    width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-div.popup{
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-color: #ffffff;
+.ad_widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #310092;
     border-radius: 10px;
-    border: 1px solid #310092;
-    display: none;
-    z-index: 100;
+}
+.result p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+.result h3{
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+.ref_widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to right, #01baba , #017b7b);
+    border-radius: 10px;
+}
+.ref_widget div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to left #ff416c, #ff4b2b);
+}
+.ref_widget p, .ref_widget h2{
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+.ref_widget button{
+    background-color: #fff;
+    color: #ff416c;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.ref_widget button:hover{
+    background-color: #ff4b2b;
+    color: #fff;
+}
+.share_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    height: 70px;
+    position: fixed;
+    bottom: 3%;
+    left: 47%;
+}
+.share_btn i{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.share_btn i:hover{
+    background: linear-gradient(to right, #01baba , #017b7b);
 }

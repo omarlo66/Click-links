@@ -20,7 +20,7 @@
     <p>
         There are no links availble right now!<br>
         try again later  
-        or  <a href="add_link.php">add link</a>
+        or  <a href="/add_link.php">add link</a>
     </p>
 </body>
 </html>

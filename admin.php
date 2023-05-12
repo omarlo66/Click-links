@@ -8,8 +8,8 @@
     <title>Admin</title>
 </head>
 <body>
-    <?php include_once 'header.php';?>
     <?php
+    require_once 'header.php';
     if(current_user()['role'] != 'admin'){
         header('Location: login.php');
     }
@@ -21,7 +21,7 @@
         <div id="users_admin">users</div>
         <div id="links_admin">links</div>
         <div id="pages_admin">pages</div>
-        <div id="messages">messages</div>
+        <div id="ads">ads</div>
     </div>
 
     <div id="form">
@@ -46,17 +46,20 @@
             $('#form').addClass('form');
             $('.form').load('admin/admin_page.php');
         });
-        $('#messages').click(function(){
+        $('#ads').click(function(){
             $('#form').addClass('form');
-            $('.form').load('admin/messages.php');
+            $('.form').load('admin/ads_widget.php');
         });
     </script>
 <?php
-if(isset($_GET['delete'])){
-    $id = $_GET['delete'];
+if(isset($_GET['delete_user'])){
+    $id = $_GET['delete_user'];
     $sql->query("DELETE FROM users WHERE id = $id");
     header('location: admin.php');
 }
+
+include_once 'footer.php';
 ?>
+
 </body>
 </html>

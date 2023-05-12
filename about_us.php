@@ -10,9 +10,9 @@
 <body>
     <?php
     require_once 'header.php';
-    $page_content = get_page('title', 'about us');
+    $page_content = get_page('title', 'about');
     if(!$page_content){
-        echo "<script>location.href = 'index.php'</script>";
+        echo "<script>location.href = '/index.php'</script>";
         return;
     }
     ?>

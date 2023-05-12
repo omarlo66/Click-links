@@ -10,19 +10,16 @@ if(isset($_POST['id'])){
     if($link){
         //Link data
         $p1 = link_clicked($link_id);
-
-        //Link Publisher
-        //Deduct point from user wallet
-        $p2 = insert_user_wallet($link->author,$link->points_per_click,$link->link_id);
         
-        //Link Clicker
+        //Save traffic
+        $p3 = update_link_meta($link_id,'u_click_time_'.$user_id,serialize([$user_id,time()]));
+
         //insert points to user wallet
-        $p3 = assign_click_to_user($user_id,$link_id);
+        $p4 = assign_click_to_user($user_id,$link_id);
+        
         echo 'success';
     }else{
         echo 'wrong pin code';
     }
-    
-    
-    }
+}
 ?>

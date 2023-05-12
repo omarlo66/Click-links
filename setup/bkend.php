@@ -23,6 +23,7 @@ function create_links_table(){
         status VARCHAR(255) NOT NULL,
         date VARCHAR(255) NOT NULL
     )";
+    return $links_table;
 }
 function create_table_wallet(){
     $wallet_table =  "CREATE TABLE wallet (

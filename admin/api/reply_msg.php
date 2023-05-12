@@ -2,6 +2,7 @@
 <?php
 
 if(isset($_POST['reply'])){
+    include_once __DIR__.'../../options.php';
     $id = $_POST['reply'];
     $id = get_message($by='id',$id);
     if(!$id){
@@ -12,7 +13,7 @@ if(isset($_POST['reply'])){
     $subject = "reply: ".$id['subject'];
     $msg = $_POST['message'];
     
-    include_once '../../options.php';
+    
     if(!send_message('admin',$send_to,$subject,$msg)){
         echo json_encode(array('status'=>'error'));
         return null;

@@ -47,7 +47,7 @@
         if($send){
             echo "<button id='send'>Send</button>";
         }else{
-            echo "<p>Please <a href='login.php'>log in</a> to send messages to admin</p>";
+            echo "<p>Please <a href='/login.php'>log in</a> to send messages to admin</p>";
         }
         
         ?>
@@ -58,7 +58,7 @@
             $page_content = get_page('title','contact') || get_page('title','contact_us');
             if($page_content){
                 echo "<h1>".$page_content['title']."</h1>";
-                echo "<div class='content'>".$page_content['content']."/div>";
+                echo "<div class='content'>".$page_content['content']."</div>";
             }
         ?>
     <

@@ -1,12 +1,10 @@
 <?php
 
-$sql = new mysqli('localhost', 'root', '', 'click-link');
-
+//$sql = new mysqli('localhost', 'root', '', 'click-link');
+$sql = new mysqli('localhost', 'zonehrak_click', 'Oo_01006178135', 'zonehrak_click');
 if($sql->connect_error){
-    log('Connection failed: ' . $sql->connect_error);
     die('Connection failed: ' . $sql->connect_error);
 }
-
 
 //User Functions
     function user_logged_in(){
@@ -57,7 +55,7 @@ if($sql->connect_error){
             return false;
         }
     }
-    function register($username,$email,$password){
+    function register($username,$email,$password,$role='user'){
         global $sql;
         $user = $sql->query("SELECT * FROM users WHERE name = '$username' OR email = '$email'");
         if($user->num_rows > 0){
@@ -65,7 +63,7 @@ if($sql->connect_error){
         }
         $date = date('Y-m-d H:i:s');
         $password = md5($password);
-        $user = $sql->query("INSERT INTO users (name,email,password,role,date) VALUES ('$username','$email','$password','user', '$date')");
+        $user = $sql->query("INSERT INTO users (name,email,password,role,date) VALUES ('$username','$email','$password','$role', '$date')");
         if($user){
             
             return true;
@@ -107,13 +105,33 @@ if($sql->connect_error){
     }
     function update_user($user_id,$username,$password,$email){
         global $sql;
-        $ready_update = check_duplicate($user_id,$username,$email);
-        if(! $ready_update){
-            $password = md5($password);
-                $query = $sql->query("UPDATE users SET email='$email', name='$username', password='$password' WHERE id=$user_id");
-            return $query;
+        $password = md5($password);
+        $old = get_user($user_id);
+        $ready_update = false;
+        $approve = array('name'=>true,'email'=>true);
+        if($old->name != $username){
+            $ready_update = true;
+            $query = $sql->query('SELECT * FROM users WHERE name = "'.$username.'"');
+            if($query->num_rows > 0){
+                $approve['name'] = false;
+            }
         }
-        else{
+        if($old->email != $email){
+            $ready_update = true;
+            $query = $sql->query('SELECT * FROM users WHERE email = "'.$email.'"');
+            if($query->num_rows > 0){
+                $approve['email'] = false;
+            }
+        }
+        if($old->password != $password){
+            $ready_update = true;
+        }
+        if($ready_update && $approve['name'] && $approve['email']){
+                $query = $sql->query("UPDATE users SET email='$email', name='$username', password='$password' WHERE id='$user_id'");
+            return true;
+        }elseif($old->name == $username && $old->email == $email){
+            return true;
+        }else{
             return false;
         }
     }
@@ -134,22 +152,31 @@ if($sql->connect_error){
     function get_user_meta($user_id,$meta = null){
         global $sql;
         if($meta != null){
-            $user = $sql->query("SELECT * FROM users WHERE id = '$user_id'");
+            $user = $sql->query("SELECT * FROM usermeta WHERE user_id = '$user_id' AND meta_key = '$meta'");
             $user = $user->fetch_object();
-            return $user->$meta;
+            if($user){
+            return $user->meta_value;
+            }else{
+                return false;
+            }
         }
-            $user = $sql->query("SELECT * FROM users WHERE id = '$user_id'");
-            return $user->fetch_object();
+            $user = $sql->query("SELECT * FROM usermeta WHERE user_id = '$user_id'");
+            return $user->fetch_all(MYSQLI_ASSOC);
     }
     function update_user_meta($user_id,$meta,$value){
         global $sql;
         $num_rows = $sql->query("SELECT * FROM usermeta WHERE user_id = '$user_id' AND meta_key = '$meta'")->num_rows;
-        $exist =  $num_rows > 0 ? true : false;
+        $exist =  $num_rows > 0;
         if($exist){
             $query = $sql->query("UPDATE usermeta SET meta_value='$value' WHERE user_id='$user_id' AND meta_key='$meta'");
             return $query;
         }
         $query = $sql->query("INSERT INTO usermeta (user_id , meta_key, meta_value) VALUES ('$user_id','$meta','$value')");
+        return $query;
+    }
+    function delete_user_meta($user_id,$meta){
+        global $sql;
+        $query = $sql->query("DELETE FROM usermeta WHERE user_id = '$user_id' AND meta_key = '$meta'");
         return $query;
     }
     function generate_session_token($user_id){
@@ -170,9 +197,47 @@ if($sql->connect_error){
             }
             return false;
     }
+    function get_user_by_email($email){
+        global $sql;
+        $user = $sql->query("SELECT * FROM users WHERE email = '$email'");
+        if($user->num_rows > 0){
+            return $user->fetch_object();
+        }
+        else{
+            return false;
+        }
+    }
 
 
+//Refferal program
+    function count_referrals($user_id){
+        $table = "CREATE TABLE refferals (
+            id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            user_id INT(6) NOT NULL,
+            refferal_id INT(6) NOT NULL,
+            date TIMESTAMP
+        )";
+        global $sql;
+        //$sql->query($table);
+        $user = $sql->query("SELECT * FROM refferals WHERE user_id = '$user_id'");
+        return $user->num_rows;
+    }
 
+    function get_referrals($user_id){
+        global $sql;
+        $user = $sql->query("SELECT * FROM refferals WHERE user_id = '$user_id'");
+        return $user->fetch_all(MYSQLI_ASSOC);
+    }
+
+    function add_referral($user_id,$refferal_id){
+        global $sql;
+        $user = $sql->query("SELECT * FROM refferals WHERE user_id = '$user_id' AND refferal_id = '$refferal_id'");
+        if($user->num_rows > 0){
+            return false;
+        }
+        $query = $sql->query("INSERT INTO refferals (user_id , refferal_id) VALUES ('$user_id','$refferal_id')");
+        return $query;
+    }
 
 //System Functions
     function debug($error){
@@ -184,9 +249,8 @@ if($sql->connect_error){
     function get_options($key){
         global $sql;
         $options = $sql->query("SELECT * FROM options WHERE `key` = '$key'");
-        if(! $options or $options->num_rows == 0){
-            return false;
-            
+        if(! $options || $options->num_rows == 0){
+            return '';
         }
         return $options->fetch_object()->value;
     }
@@ -239,7 +303,10 @@ if($sql->connect_error){
     function count_clicks(){
         global $sql;
         $clicks = $sql->query("SELECT * FROM traffic");
-        return $clicks->num_rows;
+        if($clicks){
+            return $clicks->num_rows;
+        }
+        return 0;
     }
     function count_points(){
         global $sql;
@@ -304,8 +371,17 @@ if($sql->connect_error){
     }
     function delete_link_status($id){
         global $sql;
-        $query = $sql->query("DELETE FROM links WHERE id='$id'");
-        return $query;
+        $link = get_link('id',$id);
+        if($link){
+            $user_id = $link->author;
+            $amount = $link->budget;
+            update_points($user_id,$amount);
+            $query = $sql->query("DELETE FROM links WHERE id='$id'");
+            return true;
+        }else{
+            return false;
+        }
+        
     }
     function update_link($id,$url,$budget){
         global $sql;
@@ -319,10 +395,19 @@ if($sql->connect_error){
     function generate_unique_link_id(){
         $id = rand(100000,999999);
         global $sql;
-        if($sql->query('SELECT * FROM links WHERE link_id = "'.$id.'"')->num_rows > 0){
-            generate_unique_link_id();
+        $try = 0;
+        if($try > 10){
+            $sql->query('DELETE FROM links WHERE status = "deleted"');
         }
-        return $id;
+        if($sql->query('SELECT * FROM links WHERE link_id = "'.$id.'"')->num_rows > 0){
+            $try += 1;
+            return generate_unique_link_id();
+        }elseif($sql->query('SELECT * FROM usermeta WHERE meta_value = "'.$id.'"')->num_rows > 0){
+            $try += 1;
+            return generate_unique_link_id();
+        }else{
+            return $id;
+        }
     }
     function link_reported($id){
         global $sql;
@@ -332,22 +417,30 @@ if($sql->connect_error){
     function add_new_link($link_id,$link,$source,$budget){
         global $sql;
         $date = date('Y-m-d H:i:s');
-        if(! user_logged_in()){
-            return false;
-        }
-        $points_per_click = get_options('points_per_click') || 1;
+        $points_per_click = get_options('points_per_click');
         $author = current_user()['id'];
         update_user_meta($author,'links_count',user_links_count($author));
         $points = 0;
         $clicks = 0;
         $query = $sql->query("INSERT INTO links (link_id,link,source,budget,author,points,points_per_click,clicks,status,date) VALUES ('$link_id','$link','$source','$budget','$author','$points','$points_per_click','$clicks','pending','$date')");
+        update_points($author,-$budget);
         return $query;
+    }
+    function check_link_exists($link){
+        global $sql;
+        $link = $sql->query("SELECT * FROM links WHERE link = '$link' OR src = '$link'");
+        if($link->num_rows > 0){
+            return true;
+        }else{
+            return false;
+        }
     }
     function get_links(){
         global $sql;
         $links = $sql->query("SELECT * FROM links WHERE status = 'active' ORDER BY budget DESC");
         return $links->fetch_all(MYSQLI_ASSOC);
     }
+
     function get_link($by='id',$id=0){
         global $sql;
         $link = $sql->query("SELECT * FROM links WHERE $by = '$id'");
@@ -369,7 +462,7 @@ if($sql->connect_error){
             $points_per_click =  $link['points_per_click'];
             $points = $link['points'] + $points_per_click ;
             $budget = $link['budget'] - $points_per_click;
-            if($budget === 0){
+            if($budget <= 0){
                 $sql->query("UPDATE links SET status = 'done' WHERE link_id = '$link_id'");
             }
             $query = $sql->query("UPDATE links SET clicks = '$clicks', points='$points' WHERE link_id = '$link_id'");
@@ -396,8 +489,28 @@ if($sql->connect_error){
         //insert into wallet    
         $query = $sql->query("INSERT INTO wallet (user_id,title,amount,date) VALUES ('$user_id','$link_id','$points','$date')");
         $insert = update_user_meta($user_id,'points',$points + $credit);
-        return array('points_added'=>$query,'credit_added'=>$insert,$points);
+        $points = $points + $credit;
+        return array('points_added'=>$query,'credit_added'=>$points);
     }
+    function remove_old_clicks_from_user_meta(){
+        global $sql;
+        $users = $sql->query("SELECT * FROM usermeta WHERE meta_key = 'used_link'");
+        $users = $users->fetch_all(MYSQLI_ASSOC);
+        foreach($users as $user){
+            $value = unserialize($user['value']);
+            $new_value = array();
+            foreach($value as $link){
+                $date = $link['date'];
+                $date = date('Y-m-d H:i:s',$date);
+                $date = strtotime($date);
+                $date = $date + 86400;
+                if($date > time()){
+                    array_push($new_value,$link);
+                }
+            }
+            update_user_meta($user['user_id'],'used_link',$new_value);
+        }
+    }   
     function get_link_by_user($user_id){
         global $sql;
         $links = $sql->query("SELECT * FROM links WHERE author = '$user_id' ORDER BY id DESC");
@@ -412,11 +525,103 @@ if($sql->connect_error){
         }
         return true;
     }
+    function suggest_link_to_user($user_id){
+        $links = get_links();
+        $final = array();
+        $last_links = unserialize(get_user_meta($user_id,'used_link'));
+    /*    if(! $last_links){
+            $last_links = array();
+        }
+        foreach($links as $link){
+            if($link->author === $user_id){
+                continue;
+            }else{
+                foreach($last_links as $last_link){
+                    if($last_link['link_id'] == $link->link_id && $last_link['date'] + 86400 < time()){
+                        continue;
+                    }else{
+                        array_push($final,$link);
+                    }
+                }
+            }
+        }
+        return $final;
+    }*/
+    return $links[rand(0,count($links)-1)];
+    }
 
+    function create_table_link_meta(){
+        global $sql;
+        $query = $sql->query("CREATE TABLE IF NOT EXISTS link_meta (
+            id INT(11) NOT NULL AUTO_INCREMENT,
+            link_id INT(11) NOT NULL,
+            meta_key VARCHAR(255) NOT NULL,
+            meta_value TEXT NOT NULL,
+            PRIMARY KEY (id)
+        )");
+        if($query){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
+    function get_link_meta($link_id = 0,$meta_key = null){
+        global $sql;
+        if($meta_key === null && $link_id !== 0){
+            $query = $sql->query("SELECT * FROM link_meta WHERE link_id = '$link_id'");
+            $query = $query->fetch_all(MYSQLI_ASSOC);
+            return $query;
+        }
+        $query = $sql->query("SELECT * FROM link_meta WHERE link_id = '$link_id' AND meta_key = '$meta_key'");
+        $query = $query->fetch_array();
+        if($query){
+            return $query['meta_value'];
+        }
+        else{
+            return false;
+        }
+    }
+
+    function update_link_meta($link_id,$key,$value){
+        global $sql;
+        $q = $sql->query("SELECT * FROM link_meta WHERE link_id = '$link_id' AND meta_key = '$key'");
+        $q = $q->num_rows;
+        $q = $q > 0 ? true : false;
+        if($q){
+            $query = $sql->query("UPDATE link_meta SET meta_value = '$value' WHERE link_id = '$link_id' AND meta_key = '$key'");
+        }
+        else{
+            $query = $sql->query("INSERT INTO link_meta (link_id,meta_key,meta_value) VALUES ('$link_id','$key','$value')");
+        }
+        if($query){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    function search_link_meta($link_id, $query_key){
+        global $sql;
+        $query = $sql->query("SELECT * FROM link_meta WHERE link_id = '$link_id' AND meta_key LIKE '$query_key%%'");
+        $query = $query->fetch_all(MYSQLI_ASSOC);
+        return $query;
+    }
+    function delete_link_meta($link_id,$key){
+        global $sql;
+        $query = $sql->query("DELETE FROM link_meta WHERE link_id = '$link_id' AND meta_key = '$key'");
+        if($query){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 //Points Function
 
-    function insert_user_wallet($user,$amount,$link_id){
+    function insert_user_wallet($user,$amount,$link_id,$type = '-'){
         global $sql;
         $date = date('Y-m-d H:i:s');
         $points = user_points($user);
@@ -428,14 +633,37 @@ if($sql->connect_error){
             $query = $sql->query("UPDATE links SET status = '$status' WHERE link_id = '$link_id'");
             send_message('admin',$link_d->author,$link_d->id.'_link is in draft','There is a link update need attention go to <a href="my_links">for more</a>');
         }
-        $query = $sql->query("INSERT INTO wallet (user_id,title,amount,date) VALUES ('$user','$link_id','-$amount','$date')");
+        $query = $sql->query("INSERT INTO wallet (user_id,title,amount,date) VALUES ('$user','$link_id','$type $amount','$date')");
         if(! $query or $points + 1  < user_points($user)){
             debug($sql->error);
             return false;
         }
         return user_points($user);
     }
+    function get_user_transactions($user_id){
+        global $sql;
+        $date = strtotime(date('Y-m-d H:i:s')) - (86400 * 7);
+        $date = date('Y-m-d H:i:s',$date);
+        $query = $sql->query("SELECT * FROM wallet WHERE user_id = '$user_id' ORDER BY id DESC LIMIT 0,15");
+        if($query->num_rows > 0){
+            return $query->fetch_all(MYSQLI_ASSOC);
+        }
+        else{
+            return array();
+        }
+    }
 
+    function update_points($user_id,$amount){
+        global $sql;
+        $date = date('Y-m-d H:i:s');
+        $query = $sql->query("INSERT INTO wallet (user_id,title,amount,date) VALUES ('$user_id','admin','$amount','$date')");
+        if($query){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 //appearance
     function get_menus(){
         global $sql;
@@ -542,30 +770,12 @@ if($sql->connect_error){
         }
     }
 
-function init(){
+//wallet
+    function change_points_to_credit($user_id,$points){
+        
+    }
+    function init(){
     global $sql;
-    if($sql->error){
-        debug($sql->error);
-        include_once 'setup/bkend.php';
-        $menu = create_table_menu();
-        $pages = create_table_pages();
-        $links = create_links_table();
-        $wallet = create_table_wallet();
-        $contact = create_table_messages();
-        $options = create_options_table();
-        $users = create_users_table();
-        $user_meta = create_table_usermeta();
-        $queue = array();
-        array_push($queue,$menu,$pages,$links,$wallet,$contact,$options,$users,$user_meta);
-        foreach($queue as $query){
-            if($sql->query($query)){
-                echo 'Table Created';
-            }
-            else{
-                echo '!!';
-            }
-
-        }
         set_option('site_name','My Site');
         set_option('site_description','My Site Description');
         set_option('site_url', __DIR__);
@@ -609,6 +819,9 @@ function init(){
         
 
     }
-}
+
+
+
+
 
 ?>

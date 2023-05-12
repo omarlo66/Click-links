@@ -4,8 +4,9 @@ include 'options.php';
 
 if(isset($_GET['link'])){
     $id = $_GET['link'];
-    $id=str_replace('.php','',$id);
-    $link = get_link('link_id',$id);
+    global $sql;
+    $link = $sql->query("SELECT * FROM links WHERE link_id = '$id'")->fetch_object();
+
 }else{
     echo "<h1>Error 404</h1>";
     return;
@@ -22,44 +23,46 @@ if(isset($_GET['link'])){
 </head>
 <body>
     <style>
-    body{
-        background: #000;
-        color: #fff;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    input{
-        width: 50%;
-        height: 50px;
-        color: #000;
-        font-size: 20px;
-        border: none;
-        border-radius: 5px;
-        margin: 10px;
-        text-align: center;
-    }
-    button{
-        width: 50%;
-        height: 50px;
-        color: #000;
-        font-size: 20px;
-        border: none;
-        border-radius: 5px;
-        margin: 10px;
-        text-align: center;
-        cursor: pointer;
-    }
-    button :hover{
-        background-color: #000;
-        color: #fff;
-    }
+        body{
+            background: #000;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            width: 50%;
+            height: 50px;
+            color: #000;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+        button{
+            width: 50%;
+            height: 50px;
+            color: #000;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        button :hover{
+            background-color: #000;
+            color: #fff;
+        }
     </style>
     <h1>Copy ID</h1>
+    <?php echo get_options('ads_1');
+    ?>
     <p>Copy the id of the link you want to share</p>
-        <input type="text" value="<?php echo $link->link_id;?>" id="id" disabled>
+        <input type="text" value="<?php echo $id?>" id="id" disabled>
     <button onclick="copy()">copy</button>
     <script>
         function copy(){
@@ -68,5 +71,6 @@ if(isset($_GET['link'])){
             alert('ID copied !');
         }
     </script>
+    <?php echo "<div class='ads_widget'>".get_options('ad_3')."</div>";?>
 </body>
 </html>

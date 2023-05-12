@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require 'options.php';
-    ?>
+    <?php require 'options.php';?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | <?php echo get_options('title');?></title>
 </head>
 <body>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="<?php echo get_options('url');?>assets/style.css">
 <?php include 'header.php';?>
 <?php 
 if(isset($_COOKIE['user_id']) && current_user()['id'] != 0){
@@ -28,19 +27,33 @@ if($page){
 <?php
 if($welcome != null && $welcome_header != null){
     echo "<div class='welcome'>
-    <div><h3>$welcome_header</h3><p>$welcome</p></div>
-    <div><img src='assets/welcome.png'></div>
+    <div class='welcome_title'><h3>$welcome_header</h3><p>$welcome</p></div>
+    <div class='welcome_img'><img src='assets/welcome.png'></div>
     </div>";
 }?>
-
+<div class="about_us">
+    <h2>Why disha.fun to earn from?</h2>
+    <p>
+        <div class="widget_1">
+            <img src="assets/1.png">
+            <h3>Easy to use</h3>
+            <p>It is very easy to use and you can earn from it.</p>
+        </div>
+        <div class="widget_1">
+            <img src="assets/2.png">
+            <h3>Fast payment</h3>
+            <p>Payment is very fast and you can withdraw your money in just 1 hour.</p>
+        </div>
+        <div class="widget_1">
+            <img src="assets/3.png">
+            <h3>Safe and secure</h3>
+            <p>It is very safe and secure to use and you can earn from it.</p>
+        </div>
+    </p>
+</div>
 <?php include_once 'footer.php'?>
 <script>
-        current_url = window.location.href;
-        current_url = current_url.replace('index.php','');
-        $.post('apis/settings.php',{option:'url',value:current_url},(data)=>{
-
-                });
-            
+    <?php set_option('url',$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);?>
 </script>
 
 </body>

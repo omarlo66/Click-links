@@ -1,11 +1,14 @@
 
-
+<?php require_once '../options.php';?>
 <div class="admin_form">
     <select id="page">
         <option value="0">new page</option>
     </select>
     <div class="input">
         <input type="text" name="title" id="title">
+    </div>
+    <div class="input">
+        <input type="text" name="slug" id="slug" disabled>
     </div>
     <div class="input">
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
@@ -39,6 +42,7 @@
             data = JSON.parse(data);
             $('#title').val(data.title);
             $('#content').val(data.content);
+            $('#slug').val('<?php echo get_options('url');?>pages/'+data.id);
         });
     });
 
@@ -70,7 +74,7 @@
     function Delete_page(){
         var id = $('#page').val();
         email = prompt('write the admin email to delete','@gmail.com');
-        if(email != <?php echo "'".current_user()['email']."'"; ?>){
+        if(email != '<?php echo current_user()['email']; ?>'){
             notification('wrong email','error');
             return;
         }
@@ -84,9 +88,3 @@
     }
 
 </script>
-<?php
-
-
-
-
-?>

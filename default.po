@@ -1,0 +1,6235 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AdLinkFly\n"
+"POT-Creation-Date: 2017-06-28 12:48+0200\n"
+"PO-Revision-Date: 2017-08-20 00:08+0200\n"
+"Last-Translator: \n"
+"Language-Team: Mighty Scripts <admin@mightyscripts.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: src\n"
+"X-Poedit-SearchPath-1: config\n"
+"X-Poedit-SearchPath-2: plugins\n"
+
+#: config/functions.php:548 src/Controller/PagesController.php:130
+#: src/Controller/PagesController.php:312
+#: src/Template/Admin/Campaigns/index.ctp:63
+#: src/Template/Admin/Campaigns/index.ctp:104
+#: src/Template/Admin/Links/index.ctp:44 src/Template/Layout/admin.ctp:206
+#: src/Template/Member/Campaigns/index.ctp:55
+#: src/Template/Member/Campaigns/index.ctp:96
+msgid "Interstitial"
+msgstr ""
+
+#: config/functions.php:552 src/Controller/PagesController.php:126
+#: src/Controller/PagesController.php:308
+#: src/Template/Admin/Campaigns/index.ctp:64
+#: src/Template/Admin/Campaigns/index.ctp:105
+#: src/Template/Admin/Links/index.ctp:45 src/Template/Layout/admin.ctp:211
+#: src/Template/Member/Campaigns/index.ctp:56
+#: src/Template/Member/Campaigns/index.ctp:97
+msgid "Banner"
+msgstr ""
+
+#: config/functions.php:556 src/Template/Admin/Links/index.ctp:46
+#: src/Template/Admin/Options/index.ctp:478
+#: src/Template/Admin/Options/index.ctp:498
+msgid "No Advert"
+msgstr ""
+
+#: config/functions.php:565
+msgid "---"
+msgstr ""
+
+#: config/functions.php:566
+msgid "Earn"
+msgstr "اربح"
+
+#: config/functions.php:567
+msgid "Disabled Cookies"
+msgstr "تعطيل الكوكيز"
+
+#: config/functions.php:568
+msgid "Anonymous User"
+msgstr "مستخدم مجهول"
+
+#: config/functions.php:569
+msgid "Adblock"
+msgstr "Adblock"
+
+#: config/functions.php:570
+msgid "Proxy"
+msgstr "بروكسي"
+
+#: config/functions.php:571
+msgid "IP Changed"
+msgstr "تم تغيير IP"
+
+#: config/functions.php:572
+msgid "Not Unique"
+msgstr "مستخدم من قبل"
+
+#: config/functions.php:573
+msgid "Full Weight"
+msgstr ""
+
+#: config/functions.php:574 src/Template/Admin/Campaigns/create_banner.ctp:48
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:47
+#: src/Template/Admin/Campaigns/create_popup.ctp:48
+#: src/Template/Admin/Campaigns/edit.ctp:23
+msgid "Default Campaign"
+msgstr "حملة إفتراضية"
+
+#: config/functions.php:575 src/Template/Admin/Plans/add.ctp:101
+#: src/Template/Admin/Plans/edit.ctp:103
+msgid "Direct"
+msgstr "مباشر"
+
+#: config/functions.php:576
+msgid "Invalid country"
+msgstr ""
+
+#: config/functions.php:585 config/functions.php:637
+msgid "My Wallet"
+msgstr "محفظتى"
+
+#: config/functions.php:589 config/functions.php:641
+msgid "PayPal"
+msgstr "البايبال"
+
+#: config/functions.php:593
+msgid "Stripe"
+msgstr "Stripe"
+
+#: config/functions.php:597 config/functions.php:645
+msgid "Payza"
+msgstr "ويسترن يوينون"
+
+#: config/functions.php:601 config/functions.php:649
+msgid "Skrill"
+msgstr "اسكريل"
+
+#: config/functions.php:606 config/functions.php:611 config/functions.php:654
+msgid "Bitcoin"
+msgstr "بتكوين"
+
+#: config/functions.php:615
+msgid "Webmoney"
+msgstr "تمكين Webmoney"
+
+#: config/functions.php:619 config/functions.php:662
+msgid "Perfect Money"
+msgstr "بيرفكت موني"
+
+#: config/functions.php:623 config/functions.php:666
+msgid "Payeer"
+msgstr "بايير"
+
+#: config/functions.php:627 config/functions.php:670
+msgid "Bank Transfer"
+msgstr "حوالة بنكية"
+
+#: config/functions.php:658
+msgid "Web Money"
+msgstr "Web Money"
+
+#: config/functions.php:736
+msgid "Afganistan"
+msgstr "أفغانستان"
+
+#: config/functions.php:737
+msgid "Albania"
+msgstr "ألبانيا"
+
+#: config/functions.php:738
+msgid "Algeria"
+msgstr "الجزائر"
+
+#: config/functions.php:739
+msgid "American Samoa"
+msgstr "ساموا الأمريكية"
+
+#: config/functions.php:740
+msgid "Andorra"
+msgstr "أندورا"
+
+#: config/functions.php:741
+msgid "Angola"
+msgstr "أنغولا"
+
+#: config/functions.php:742
+msgid "Anguilla"
+msgstr "أنغيلا"
+
+#: config/functions.php:743
+msgid "Antarctica"
+msgstr "القارة القطبية الجنوبية"
+
+#: config/functions.php:744
+msgid "Antigua and Barbuda"
+msgstr "أنتيغوا وبربودا"
+
+#: config/functions.php:745
+msgid "Argentina"
+msgstr "الأرجنتين"
+
+#: config/functions.php:746
+msgid "Armenia"
+msgstr "أرمينيا"
+
+#: config/functions.php:747
+msgid "Aruba"
+msgstr "أروبا"
+
+#: config/functions.php:748
+msgid "Australia"
+msgstr "أستراليا"
+
+#: config/functions.php:749
+msgid "Austria"
+msgstr "النمسا"
+
+#: config/functions.php:750
+msgid "Åland Islands"
+msgstr "جزر أولاند"
+
+#: config/functions.php:751
+msgid "Azerbaijan"
+msgstr "أذربيجان"
+
+#: config/functions.php:752
+msgid "Bahamas"
+msgstr "جزر البهاما"
+
+#: config/functions.php:753
+msgid "Bahrain"
+msgstr "البحرين"
+
+#: config/functions.php:754
+msgid "Bangladesh"
+msgstr "بنغلاديش"
+
+#: config/functions.php:755
+msgid "Barbados"
+msgstr "بربادوس"
+
+#: config/functions.php:756
+msgid "Belarus"
+msgstr "روسيا البيضاء"
+
+#: config/functions.php:757
+msgid "Belgium"
+msgstr "بلجيكا"
+
+#: config/functions.php:758
+msgid "Belize"
+msgstr "بيليز"
+
+#: config/functions.php:759
+msgid "Benin"
+msgstr "بنين"
+
+#: config/functions.php:760
+msgid "Bermuda"
+msgstr "برمودا"
+
+#: config/functions.php:761
+msgid "Bhutan"
+msgstr "بوتان"
+
+#: config/functions.php:762
+msgid "Bolivia"
+msgstr "بوليفيا"
+
+#: config/functions.php:763
+msgid "Bosnia and Herzegowina"
+msgstr "البوسنة والهرسك"
+
+#: config/functions.php:764
+msgid "Botswana"
+msgstr "بوتسوانا"
+
+#: config/functions.php:765
+msgid "Bouvet Island"
+msgstr "جزيرة بوفيت"
+
+#: config/functions.php:766
+msgid "Brazil"
+msgstr "البرازيل"
+
+#: config/functions.php:767
+msgid "British Indian Ocean Territory"
+msgstr "إقليم المحيط الهندي البريطاني"
+
+#: config/functions.php:768
+msgid "Brunei Darussalam"
+msgstr "بروناي دار السلام"
+
+#: config/functions.php:769
+msgid "Bulgaria"
+msgstr "بلغاريا"
+
+#: config/functions.php:770
+msgid "Burkina Faso"
+msgstr "بوركينا فاسو"
+
+#: config/functions.php:771
+msgid "Burundi"
+msgstr "بوروندي"
+
+#: config/functions.php:772
+msgid "Cambodia"
+msgstr "كامبوديا"
+
+#: config/functions.php:773
+msgid "Cameroon"
+msgstr "الكاميرون"
+
+#: config/functions.php:774
+msgid "Canada"
+msgstr "كندا"
+
+#: config/functions.php:775
+msgid "Cape Verde"
+msgstr "الرأس الأخضر"
+
+#: config/functions.php:776
+msgid "Cayman Islands"
+msgstr "جزر كايمان"
+
+#: config/functions.php:777
+msgid "Central African Republic"
+msgstr "جمهورية افريقيا الوسطى"
+
+#: config/functions.php:778
+msgid "Chad"
+msgstr "تشاد"
+
+#: config/functions.php:779
+msgid "Chile"
+msgstr "تشيلي"
+
+#: config/functions.php:780
+msgid "China"
+msgstr "الصين"
+
+#: config/functions.php:781
+msgid "Christmas Island"
+msgstr "جزيرة الكريسماس"
+
+#: config/functions.php:782
+msgid "Cocos (Keeling) Islands"
+msgstr "جزر كوكوس (كيلينغ)"
+
+#: config/functions.php:783
+msgid "Colombia"
+msgstr "كولومبيا"
+
+#: config/functions.php:784
+msgid "Comoros"
+msgstr "جزر القمر"
+
+#: config/functions.php:785
+msgid "Congo"
+msgstr "الكونغو"
+
+#: config/functions.php:786
+msgid "Congo, the Democratic Republic of the"
+msgstr "الكونغو، جمهورية الكونغو الديمقراطية"
+
+#: config/functions.php:787
+msgid "Cook Islands"
+msgstr "جزر كابتن كوك"
+
+#: config/functions.php:788
+msgid "Costa Rica"
+msgstr "كوستا ريكا"
+
+#: config/functions.php:789
+msgid "Cote d'Ivoire"
+msgstr "كوت ديفوار"
+
+#: config/functions.php:790
+msgid "Curaçao"
+msgstr "كوراساو"
+
+#: config/functions.php:791
+msgid "Croatia (Hrvatska)"
+msgstr "كرواتيا (هرفاتسكا)"
+
+#: config/functions.php:792
+msgid "Cuba"
+msgstr "كوبا"
+
+#: config/functions.php:793
+msgid "Cyprus"
+msgstr "قبرص"
+
+#: config/functions.php:794
+msgid "Czech Republic"
+msgstr "جمهورية التشيك"
+
+#: config/functions.php:795
+msgid "Denmark"
+msgstr "روسيا"
+
+#: config/functions.php:796
+msgid "Djibouti"
+msgstr "جيبوتي"
+
+#: config/functions.php:797
+msgid "Dominica"
+msgstr "الدومينكا"
+
+#: config/functions.php:798
+msgid "Dominican Republic"
+msgstr "جمهورية الدومينيكان"
+
+#: config/functions.php:799
+msgid "East Timor"
+msgstr "تيمور الشرقية"
+
+#: config/functions.php:800
+msgid "Ecuador"
+msgstr "الإكوادور"
+
+#: config/functions.php:801
+msgid "Egypt"
+msgstr "مصر"
+
+#: config/functions.php:802
+msgid "El Salvador"
+msgstr "السلفادور"
+
+#: config/functions.php:803
+msgid "Equatorial Guinea"
+msgstr "غينيا الإستوائية"
+
+#: config/functions.php:804
+msgid "Eritrea"
+msgstr "إريتريا"
+
+#: config/functions.php:805
+msgid "Estonia"
+msgstr "ستونيا"
+
+#: config/functions.php:806
+msgid "Ethiopia"
+msgstr "إثيوبيا"
+
+#: config/functions.php:807
+msgid "Falkland Islands (Malvinas)"
+msgstr "جزر فوكلاند (مالفيناس)"
+
+#: config/functions.php:808
+msgid "Faroe Islands"
+msgstr "جزر فارو"
+
+#: config/functions.php:809
+msgid "Fiji"
+msgstr "فيجي"
+
+#: config/functions.php:810
+msgid "Finland"
+msgstr "فنلندا"
+
+#: config/functions.php:811
+msgid "France"
+msgstr "فرنسا"
+
+#: config/functions.php:812
+msgid "France, Metropolitan"
+msgstr "فرنسا متروبوليتان"
+
+#: config/functions.php:813
+msgid "French Guiana"
+msgstr "جيانا الفرنسية"
+
+#: config/functions.php:814
+msgid "French Polynesia"
+msgstr "بولينيزيا الفرنسية"
+
+#: config/functions.php:815
+msgid "French Southern Territories"
+msgstr "المناطق الجنوبية لفرنسا"
+
+#: config/functions.php:816
+msgid "Gabon"
+msgstr "الغابون"
+
+#: config/functions.php:817
+msgid "Gambia"
+msgstr "غامبيا"
+
+#: config/functions.php:818
+msgid "Georgia"
+msgstr "جورجيا"
+
+#: config/functions.php:819
+msgid "Germany"
+msgstr "المانيا"
+
+#: config/functions.php:820
+msgid "Ghana"
+msgstr "غانا"
+
+#: config/functions.php:821
+msgid "Gibraltar"
+msgstr "جبل طارق"
+
+#: config/functions.php:822
+msgid "Greece"
+msgstr "اليونان"
+
+#: config/functions.php:823
+msgid "Greenland"
+msgstr "جرينلاند"
+
+#: config/functions.php:824
+msgid "Grenada"
+msgstr "غرناطة"
+
+#: config/functions.php:825
+msgid "Guadeloupe"
+msgstr "غواديلوب"
+
+#: config/functions.php:826
+msgid "Guam"
+msgstr "غوام"
+
+#: config/functions.php:827
+msgid "Guatemala"
+msgstr "غواتيمالا"
+
+#: config/functions.php:828
+msgid "Guinea"
+msgstr "غينيا"
+
+#: config/functions.php:829
+msgid "Guinea-Bissau"
+msgstr "غينيا بيساو"
+
+#: config/functions.php:830
+msgid "Guyana"
+msgstr "غيانا"
+
+#: config/functions.php:831
+msgid "Haiti"
+msgstr "هايتي"
+
+#: config/functions.php:832
+msgid "Heard and Mc Donald Islands"
+msgstr "سمعت وجزر ماكدونالد"
+
+#: config/functions.php:833
+msgid "Holy See (Vatican City State)"
+msgstr "الكرسي الرسولي (دولة الفاتيكان)"
+
+#: config/functions.php:834
+msgid "Honduras"
+msgstr "هندوراس"
+
+#: config/functions.php:835
+msgid "Hong Kong"
+msgstr "هونغ كونغ"
+
+#: config/functions.php:836
+msgid "Hungary"
+msgstr "المجر"
+
+#: config/functions.php:837
+msgid "Iceland"
+msgstr "آيسلاندا"
+
+#: config/functions.php:838
+msgid "Isle of Man"
+msgstr "جزيرة آيل أوف مان"
+
+#: config/functions.php:839
+msgid "India"
+msgstr "كندا"
+
+#: config/functions.php:840
+msgid "Indonesia"
+msgstr "أندونسيا"
+
+#: config/functions.php:841
+msgid "Iran (Islamic Republic of)"
+msgstr "إيران"
+
+#: config/functions.php:842
+msgid "Iraq"
+msgstr "العراق"
+
+#: config/functions.php:843
+msgid "Ireland"
+msgstr "ايرلاندا"
+
+#: config/functions.php:844
+msgid "Israel"
+msgstr "فلسطين"
+
+#: config/functions.php:845
+msgid "Italy"
+msgstr "إيطاليا"
+
+#: config/functions.php:846
+msgid "Jersey"
+msgstr "جيرسي"
+
+#: config/functions.php:847
+msgid "Jamaica"
+msgstr "جامايكا"
+
+#: config/functions.php:848
+msgid "Japan"
+msgstr "سويسرا"
+
+#: config/functions.php:849
+msgid "Jordan"
+msgstr "الاردن"
+
+#: config/functions.php:850
+msgid "Kazakhstan"
+msgstr "كازخستان"
+
+#: config/functions.php:851
+msgid "Kenya"
+msgstr "كينيا"
+
+#: config/functions.php:852
+msgid "Kiribati"
+msgstr "كيريباس"
+
+#: config/functions.php:853
+msgid "Korea, Democratic People's Republic of"
+msgstr "كوريا الديمقراطية الشعبية"
+
+#: config/functions.php:854
+msgid "Korea, Republic of"
+msgstr "جمهورية كوريا"
+
+#: config/functions.php:855
+msgid "Kuwait"
+msgstr "الكويت"
+
+#: config/functions.php:856
+msgid "Kyrgyzstan"
+msgstr "قيرغيزستان"
+
+#: config/functions.php:857
+msgid "Lao People's Democratic Republic"
+msgstr "جمهورية لاو الديمقراطية الشعبية"
+
+#: config/functions.php:858
+msgid "Latvia"
+msgstr "لاتفيا"
+
+#: config/functions.php:859
+msgid "Lebanon"
+msgstr "لبنان"
+
+#: config/functions.php:860
+msgid "Lesotho"
+msgstr "ليسوتو"
+
+#: config/functions.php:861
+msgid "Liberia"
+msgstr "ليبيريا"
+
+#: config/functions.php:862
+msgid "Libyan Arab Jamahiriya"
+msgstr "الجماهيرية العربية الليبية"
+
+#: config/functions.php:863
+msgid "Liechtenstein"
+msgstr "ليختنشتاين"
+
+#: config/functions.php:864
+msgid "Lithuania"
+msgstr "ليتوانيا"
+
+#: config/functions.php:865
+msgid "Luxembourg"
+msgstr "لوكسمبورج"
+
+#: config/functions.php:866
+msgid "Macau"
+msgstr "ماكاو"
+
+#: config/functions.php:867
+msgid "Macedonia, The Former Yugoslav Republic of"
+msgstr "جمهورية مقدونيا اليوغوسلافية السابقة"
+
+#: config/functions.php:868
+msgid "Madagascar"
+msgstr "مدغشقر"
+
+#: config/functions.php:869
+msgid "Malawi"
+msgstr "مالاوي"
+
+#: config/functions.php:870
+msgid "Malaysia"
+msgstr "ماليزيا"
+
+#: config/functions.php:871
+msgid "Maldives"
+msgstr "جزر المالديف"
+
+#: config/functions.php:872
+msgid "Mali"
+msgstr "مالي"
+
+#: config/functions.php:873
+msgid "Malta"
+msgstr "مالطا"
+
+#: config/functions.php:874
+msgid "Marshall Islands"
+msgstr "جزر مارشال"
+
+#: config/functions.php:875
+msgid "Martinique"
+msgstr "مارتينيك"
+
+#: config/functions.php:876
+msgid "Mauritania"
+msgstr "موريتانيا"
+
+#: config/functions.php:877
+msgid "Mauritius"
+msgstr "موريشيوس"
+
+#: config/functions.php:878
+msgid "Mayotte"
+msgstr "مايوت"
+
+#: config/functions.php:879
+msgid "Mexico"
+msgstr "المكسيك"
+
+#: config/functions.php:880
+msgid "Micronesia, Federated States of"
+msgstr "ولايات ميكرونيزيا من"
+
+#: config/functions.php:881
+msgid "Moldova, Republic of"
+msgstr "جمهورية مولدوفا"
+
+#: config/functions.php:882
+msgid "Monaco"
+msgstr "موناكو"
+
+#: config/functions.php:883
+msgid "Montenegro"
+msgstr "مونتينيغرو"
+
+#: config/functions.php:884
+msgid "Mongolia"
+msgstr "منغوليا"
+
+#: config/functions.php:885
+msgid "Montserrat"
+msgstr "مونتسيرات"
+
+#: config/functions.php:886
+msgid "Morocco"
+msgstr "المغرب"
+
+#: config/functions.php:887
+msgid "Mozambique"
+msgstr "موزمبيق"
+
+#: config/functions.php:888
+msgid "Myanmar"
+msgstr "ميانمار"
+
+#: config/functions.php:889
+msgid "Namibia"
+msgstr "ناميبيا"
+
+#: config/functions.php:890
+msgid "Nauru"
+msgstr "ناورو"
+
+#: config/functions.php:891
+msgid "Nepal"
+msgstr "نيبال"
+
+#: config/functions.php:892
+msgid "Netherlands"
+msgstr "هولندا"
+
+#: config/functions.php:893
+msgid "Netherlands Antilles"
+msgstr "جزر اﻷنتيل الهولندية"
+
+#: config/functions.php:894
+msgid "New Caledonia"
+msgstr "كاليدونيا الجديدة"
+
+#: config/functions.php:895
+msgid "New Zealand"
+msgstr "نيوزيلاندا"
+
+#: config/functions.php:896
+msgid "Nicaragua"
+msgstr "نيكاراجوا"
+
+#: config/functions.php:897
+msgid "Niger"
+msgstr "النيجر"
+
+#: config/functions.php:898
+msgid "Nigeria"
+msgstr "نيجيريا"
+
+#: config/functions.php:899
+msgid "Niue"
+msgstr "نيوي"
+
+#: config/functions.php:900
+msgid "Norfolk Island"
+msgstr "جزيرة نورفولك"
+
+#: config/functions.php:901
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: config/functions.php:902
+msgid "Norway"
+msgstr "النرويج"
+
+#: config/functions.php:903
+msgid "Oman"
+msgstr "عُمان"
+
+#: config/functions.php:904
+msgid "Pakistan"
+msgstr "باكستان"
+
+#: config/functions.php:905
+msgid "Palau"
+msgstr "بوليفيا"
+
+#: config/functions.php:906
+msgid "Panama"
+msgstr "بنما"
+
+#: config/functions.php:907
+msgid "Papua New Guinea"
+msgstr "بابوا غينيا الجديدة"
+
+#: config/functions.php:908
+msgid "Paraguay"
+msgstr "باراجواي"
+
+#: config/functions.php:909
+msgid "Peru"
+msgstr "بيرو"
+
+#: config/functions.php:910
+msgid "Philippines"
+msgstr "الفليبين"
+
+#: config/functions.php:911
+msgid "Pitcairn"
+msgstr "بيتكيرن"
+
+#: config/functions.php:912
+msgid "Poland"
+msgstr "بولندا"
+
+#: config/functions.php:913
+msgid "Portugal"
+msgstr "البرتغال"
+
+#: config/functions.php:914
+msgid "Puerto Rico"
+msgstr "بورتريكو"
+
+#: config/functions.php:915
+msgid "Palestine"
+msgstr "فلسطين"
+
+#: config/functions.php:916
+msgid "Qatar"
+msgstr "الجزائر"
+
+#: config/functions.php:917
+msgid "Reunion"
+msgstr "جزيرة ريونيون"
+
+#: config/functions.php:918
+msgid "Romania"
+msgstr "رومانيا"
+
+#: config/functions.php:919
+msgid "Republic of Serbia"
+msgstr "جمهورية صربيا"
+
+#: config/functions.php:920
+msgid "Russian Federation"
+msgstr "الاتحاد الروسي"
+
+#: config/functions.php:921
+msgid "Rwanda"
+msgstr "رواندا"
+
+#: config/functions.php:922
+msgid "Saint Kitts and Nevis"
+msgstr "سانت كيتس ونيفيس"
+
+#: config/functions.php:923
+msgid "Saint LUCIA"
+msgstr "القديسة لوسيا"
+
+#: config/functions.php:924
+msgid "Saint Vincent and the Grenadines"
+msgstr "سانت فنسنت وجزر غرينادين"
+
+#: config/functions.php:925
+msgid "Samoa"
+msgstr "ساموا"
+
+#: config/functions.php:926
+msgid "San Marino"
+msgstr "سان مارينو"
+
+#: config/functions.php:927
+msgid "Sao Tome and Principe"
+msgstr "ساوتومي"
+
+#: config/functions.php:928
+msgid "Saudi Arabia"
+msgstr "المملكة العربية السعودية"
+
+#: config/functions.php:929
+msgid "Senegal"
+msgstr "السنغال"
+
+#: config/functions.php:930
+msgid "Seychelles"
+msgstr "سيشل"
+
+#: config/functions.php:931
+msgid "Sierra Leone"
+msgstr "سيراليون"
+
+#: config/functions.php:932
+msgid "Singapore"
+msgstr "سنغافورا"
+
+#: config/functions.php:933
+msgid "Slovakia (Slovak Republic)"
+msgstr "جمهورية سلوفاكيا"
+
+#: config/functions.php:934
+msgid "Slovenia"
+msgstr "سلوفينيا"
+
+#: config/functions.php:935
+msgid "Solomon Islands"
+msgstr "جزر سليمان"
+
+#: config/functions.php:936
+msgid "Somalia"
+msgstr "الصومال"
+
+#: config/functions.php:937
+msgid "Sint Maarten"
+msgstr "سانت مارتن"
+
+#: config/functions.php:938
+msgid "South Africa"
+msgstr "جنوب افريقيا"
+
+#: config/functions.php:939
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "جورجيا الجنوبية وجزر ساندويتش الجنوبية"
+
+#: config/functions.php:940
+msgid "Spain"
+msgstr "اسبانيا"
+
+#: config/functions.php:941
+msgid "Sri Lanka"
+msgstr "سري لانكا"
+
+#: config/functions.php:942
+msgid "St. Helena"
+msgstr "سانت هيلانة"
+
+#: config/functions.php:943
+msgid "St. Pierre and Miquelon"
+msgstr "سانت بيير وميكلون"
+
+#: config/functions.php:944
+msgid "Sudan"
+msgstr "السودان"
+
+#: config/functions.php:945
+msgid "Suriname"
+msgstr "سورينام"
+
+#: config/functions.php:946
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "سفالبارد وجان ماين جزر"
+
+#: config/functions.php:947
+msgid "Swaziland"
+msgstr "سويزلاند"
+
+#: config/functions.php:948
+msgid "Sweden"
+msgstr "السويد"
+
+#: config/functions.php:949
+msgid "Switzerland"
+msgstr "سويسرا"
+
+#: config/functions.php:950
+msgid "Syrian Arab Republic"
+msgstr "سوريا"
+
+#: config/functions.php:951
+msgid "Taiwan, Province of China"
+msgstr "تايوان"
+
+#: config/functions.php:952
+msgid "Tajikistan"
+msgstr "طاجكستان"
+
+#: config/functions.php:953
+msgid "Tanzania, United Republic of"
+msgstr "جمهورية تنزانيا الاتحادية"
+
+#: config/functions.php:954
+msgid "Thailand"
+msgstr "تايلاند"
+
+#: config/functions.php:955
+msgid "Togo"
+msgstr "توجو"
+
+#: config/functions.php:956
+msgid "Tokelau"
+msgstr "توكيلاو"
+
+#: config/functions.php:957
+msgid "Tonga"
+msgstr "تونجا"
+
+#: config/functions.php:958
+msgid "Trinidad and Tobago"
+msgstr "ترينداد وتوباغو"
+
+#: config/functions.php:959
+msgid "Tunisia"
+msgstr "تونس"
+
+#: config/functions.php:960
+msgid "Turkey"
+msgstr "تركيا"
+
+#: config/functions.php:961
+msgid "Turkmenistan"
+msgstr "تركمنستان"
+
+#: config/functions.php:962
+msgid "Turks and Caicos Islands"
+msgstr "جزر تركس وكايكوس"
+
+#: config/functions.php:963
+msgid "Tuvalu"
+msgstr "توفالو"
+
+#: config/functions.php:964
+msgid "Uganda"
+msgstr "أوغاندا"
+
+#: config/functions.php:965
+msgid "Ukraine"
+msgstr "اوكرانيا"
+
+#: config/functions.php:966
+msgid "United Arab Emirates"
+msgstr "الإمارات العربية المتحدة"
+
+#: config/functions.php:967
+msgid "United Kingdom"
+msgstr "المملكة المتحدة"
+
+#: config/functions.php:968
+msgid "United States"
+msgstr "الولايات المتحدة"
+
+#: config/functions.php:969
+msgid "United States Minor Outlying Islands"
+msgstr "جزر الولايات المتحدة البعيدة الصغرى"
+
+#: config/functions.php:970
+msgid "Uruguay"
+msgstr "اورجواي"
+
+#: config/functions.php:971
+msgid "Uzbekistan"
+msgstr "أوزباكستان"
+
+#: config/functions.php:972
+msgid "Vanuatu"
+msgstr "فانواتو"
+
+#: config/functions.php:973
+msgid "Venezuela"
+msgstr "فنزويلا"
+
+#: config/functions.php:974
+msgid "Vietnam"
+msgstr "فيتنام"
+
+#: config/functions.php:975
+msgid "Virgin Islands (British)"
+msgstr "جزر فيرجن (البريطانية)"
+
+#: config/functions.php:976
+msgid "Virgin Islands (U.S.)"
+msgstr "تواصل معنا عبر النموذج التالي!"
+
+#: config/functions.php:977
+msgid "Wallis and Futuna Islands"
+msgstr "واليس وفوتونا"
+
+#: config/functions.php:978
+msgid "Western Sahara"
+msgstr "الصحراء المغربية"
+
+#: config/functions.php:979
+msgid "Yemen"
+msgstr "اليمن"
+
+#: config/functions.php:980
+msgid "Yugoslavia"
+msgstr "يوغوسلافيا"
+
+#: config/functions.php:981
+msgid "Zambia"
+msgstr "زامبيا"
+
+#: config/functions.php:982
+msgid "Zimbabwe"
+msgstr "زيبمابوي"
+
+#: config/functions.php:986
+msgid "Worldwide Deal(All Countries)"
+msgstr "جميع دول البلاد"
+
+#: src/Controller/Admin/ActivationController.php:31
+msgid "Your license has been verified."
+msgstr "تم التحقق من ترخيصك."
+
+#: src/Controller/Admin/AnnouncementsController.php:26
+msgid "Announcement has been added."
+msgstr "تمت إضافة إعلان."
+
+#: src/Controller/Admin/AnnouncementsController.php:29
+#: src/Controller/Admin/AnnouncementsController.php:57
+#: src/Controller/Admin/LinksController.php:209
+#: src/Controller/Admin/OptionsController.php:119
+#: src/Controller/Admin/OptionsController.php:170
+#: src/Controller/Admin/OptionsController.php:221
+#: src/Controller/Admin/PagesController.php:35
+#: src/Controller/Admin/PagesController.php:69
+#: src/Controller/Admin/PlansController.php:29
+#: src/Controller/Admin/PlansController.php:57
+#: src/Controller/Admin/PostsController.php:35
+#: src/Controller/Admin/PostsController.php:69
+#: src/Controller/Admin/TestimonialsController.php:29
+#: src/Controller/Admin/TestimonialsController.php:60
+#: src/Controller/InstallController.php:117
+#: src/Controller/Member/InvoicesController.php:673
+#: src/Controller/Member/LinksController.php:197
+#: src/Controller/Member/UsersController.php:261
+#: src/Controller/Member/UsersController.php:343
+#: src/Controller/Member/UsersController.php:393
+msgid "Oops! There are mistakes in the form. Please make the correction."
+msgstr "عفوا! هناك أخطاء في النموذج. يرجى إجراء التصحيح."
+
+#: src/Controller/Admin/AnnouncementsController.php:37
+#: src/Controller/Admin/AnnouncementsController.php:47
+msgid "Invalid Announcement"
+msgstr "إعلان غير صالح"
+
+#: src/Controller/Admin/AnnouncementsController.php:54
+msgid "Announcement has been updated."
+msgstr "الإعلان تم تحديثه."
+
+#: src/Controller/Admin/AnnouncementsController.php:69
+msgid "The announcement with id: {0} has been deleted."
+msgstr "تم حذف الإعلان الذي يحمل المعرف:"
+
+#: src/Controller/Admin/AppAdminController.php:80
+msgid "You must have at least one interstitial campaign marked as default."
+msgstr ""
+"يجب أن يكون لديك حملة بينية واحدة على الأقل تم وضع علامة عليها كإعداد "
+"افتراضي."
+
+#: src/Controller/Admin/AppAdminController.php:92
+msgid "You must have at least one banner campaign marked as default."
+msgstr ""
+"يجب أن يكون لديك حملة بانر واحدة على الأقل تم وضع علامة عليها كإعداد افتراضي."
+
+#: src/Controller/Admin/CampaignsController.php:79
+#: src/Controller/Admin/CampaignsController.php:291
+#: src/Controller/Admin/CampaignsController.php:300
+#: src/Controller/Member/CampaignsController.php:46
+msgid "Invalid campaign"
+msgstr "حملة غير صالحة"
+
+#: src/Controller/Admin/CampaignsController.php:87
+#: src/Controller/Member/CampaignsController.php:54
+msgid "Campaign Not Found"
+msgstr "الحملة غير موجودة"
+
+#: src/Controller/Admin/CampaignsController.php:185
+#: src/Controller/Admin/CampaignsController.php:229
+#: src/Controller/Admin/CampaignsController.php:273
+#: src/Controller/Member/CampaignsController.php:202
+#: src/Controller/Member/CampaignsController.php:250
+#: src/Controller/Member/CampaignsController.php:297
+msgid "You must purchase at least from one country."
+msgstr "يجب عليك شراء بلد واحد على الأقل."
+
+#: src/Controller/Admin/CampaignsController.php:191
+#: src/Controller/Admin/CampaignsController.php:235
+#: src/Controller/Admin/CampaignsController.php:279
+msgid "Your campaign has been created."
+msgstr "تم إنشاء حملتك بنجاح ."
+
+#: src/Controller/Admin/CampaignsController.php:194
+#: src/Controller/Admin/CampaignsController.php:238
+#: src/Controller/Admin/CampaignsController.php:282
+#: src/Controller/Member/CampaignsController.php:212
+#: src/Controller/Member/CampaignsController.php:259
+#: src/Controller/Member/CampaignsController.php:307
+msgid "Unable to create your campaign."
+msgstr "تعذر إنشاء الحملة."
+
+#: src/Controller/Admin/CampaignsController.php:320
+msgid "Campaign has been updated."
+msgstr "تم تحديث الحملة بنجاح."
+
+#: src/Controller/Admin/CampaignsController.php:323
+msgid "Unable to update campaign."
+msgstr "تعذر تحديث الحملة."
+
+#: src/Controller/Admin/CampaignsController.php:340
+#: src/Controller/Admin/CampaignsController.php:359
+#: src/Controller/Member/CampaignsController.php:325
+#: src/Controller/Member/CampaignsController.php:347
+msgid "Campaign not found"
+msgstr "الحملة غير موجودة"
+
+#: src/Controller/Admin/InvoicesController.php:22
+#: src/Controller/Admin/InvoicesController.php:27
+#: src/Controller/Member/InvoicesController.php:22
+#: src/Controller/Member/InvoicesController.php:27
+#: src/Controller/Member/InvoicesController.php:658
+#: src/Controller/Member/InvoicesController.php:663
+msgid "Invalid Invoice"
+msgstr "الفاتورة غير صالحة"
+
+#: src/Controller/Admin/InvoicesController.php:44
+msgid "The invoice with id: {0} has been marked as paid."
+msgstr "التذكرة بمعرف: {0} تم وضعها على أنها دفعت"
+
+#: src/Controller/Admin/InvoicesController.php:56
+#: src/Controller/Member/InvoicesController.php:685
+msgid "The invoice with id: {0} has been deleted."
+msgstr "تم حذف الفاتورة ذات المعرف"
+
+#: src/Controller/Admin/LinksController.php:193
+#: src/Controller/Admin/LinksController.php:198
+#: src/Controller/LinksController.php:205
+#: src/Controller/Member/LinksController.php:156
+#: src/Controller/Member/LinksController.php:184
+#: src/Controller/StatisticsController.php:23
+#: src/Controller/StatisticsController.php:28
+#: src/Controller/StatisticsController.php:32
+msgid "Invalid link"
+msgstr "الرابط غير صالح"
+
+#: src/Controller/Admin/LinksController.php:205
+msgid "The Link has been updated."
+msgstr "تم تحديث الرابط بنجاح."
+
+#: src/Controller/Admin/LinksController.php:224
+#: src/Controller/Member/LinksController.php:218
+msgid "The Link with alias: {0} has been hided."
+msgstr "تم إخفاء الارتباط مع الاسم المستعار"
+
+#: src/Controller/Admin/LinksController.php:238
+#: src/Controller/Admin/LinksController.php:252
+#: src/Controller/Member/LinksController.php:238
+msgid "The Link with alias: {0} has been unhided."
+msgstr "الارتباط مع الاسم المستعار تم إلغاء تحديده."
+
+#: src/Controller/Admin/OptionsController.php:15
+msgid "Settings have been saved."
+msgstr "تم حفظ الإعدادات."
+
+#: src/Controller/Admin/OptionsController.php:25
+msgid "Email settings have been saved."
+msgstr "تم حفظ الإعدادات."
+
+#: src/Controller/Admin/OptionsController.php:33
+msgid "Social login settings have been saved."
+msgstr "تم حفظ إعدادات تسجيل الدخول الاجتماعي."
+
+#: src/Controller/Admin/OptionsController.php:41
+msgid "Payment settings have been saved."
+msgstr "تم حفظ الإعدادات."
+
+#: src/Controller/Admin/OptionsController.php:85
+#: src/Controller/Admin/OptionsController.php:136
+#: src/Controller/Admin/OptionsController.php:187
+msgid "Invalid option"
+msgstr ""
+
+#: src/Controller/Admin/OptionsController.php:251
+msgid "Could not copy email.php file."
+msgstr "تعذر نسخ الملف email.php."
+
+#: src/Controller/Admin/OptionsController.php:261
+msgid "Could not write email.php file."
+msgstr "تعذر كتابة ملف email.php"
+
+#: src/Controller/Admin/PagesController.php:32
+msgid "Page has been added."
+msgstr "تم إضافة الصفحة."
+
+#: src/Controller/Admin/PagesController.php:43
+#: src/Controller/Admin/PagesController.php:53
+msgid "Invalid Page"
+msgstr "صفحة غير صالحة"
+
+#: src/Controller/Admin/PagesController.php:66
+msgid "Page has been updated."
+msgstr "تم تحديث الصفحة بنجاح."
+
+#: src/Controller/Admin/PagesController.php:88
+msgid "The page with id: {0} has been deleted."
+msgstr "تم حذف الصفحة التي تحتوي على المعرف"
+
+#: src/Controller/Admin/PlansController.php:26
+msgid "Plan has been added."
+msgstr "تم إضافة الخطة."
+
+#: src/Controller/Admin/PlansController.php:37
+#: src/Controller/Admin/PlansController.php:42
+#: src/Controller/Admin/PlansController.php:65
+#: src/Controller/Admin/PlansController.php:75
+msgid "Invalid Plan"
+msgstr "الخطة غير صالحة."
+
+#: src/Controller/Admin/PlansController.php:54
+msgid "Plan has been updated."
+msgstr "تم تحديث الخطة"
+
+#: src/Controller/Admin/PlansController.php:69
+msgid "Default plan can't be deleted."
+msgstr "لا يمكن حذف الخطة الافتراضية."
+
+#: src/Controller/Admin/PlansController.php:93
+msgid "The plan with id: {0} has been deleted."
+msgstr "الخطة بالمعرف:قد تم حذفه."
+
+#: src/Controller/Admin/PostsController.php:32
+msgid "Post has been added."
+msgstr "تمت إضافة المشاركة"
+
+#: src/Controller/Admin/PostsController.php:43
+#: src/Controller/Admin/PostsController.php:53
+msgid "Invalid Post"
+msgstr "مشاركة غير صالحة"
+
+#: src/Controller/Admin/PostsController.php:66
+msgid "Post has been updated."
+msgstr "تم تحديث المشاركة"
+
+#: src/Controller/Admin/PostsController.php:88
+msgid "The post with id: {0} has been deleted."
+msgstr "تم حذف المشاركة التي تحتوي على المعرف: {0}"
+
+#: src/Controller/Admin/TestimonialsController.php:26
+msgid "Testimonial has been added."
+msgstr "تمت إضافة شهادة"
+
+#: src/Controller/Admin/TestimonialsController.php:37
+#: src/Controller/Admin/TestimonialsController.php:47
+msgid "Invalid Testimonial"
+msgstr "شهادة غير صالحة"
+
+#: src/Controller/Admin/TestimonialsController.php:54
+msgid "Testimonial has been updated."
+msgstr "تم تحديث شهادة."
+
+#: src/Controller/Admin/TestimonialsController.php:72
+msgid "The testimonial with id: {0} has been deleted."
+msgstr "تم حذف الشهادة مع المعرف: {0}."
+
+#: src/Controller/Admin/UpgradeController.php:22
+msgid "Can not able to run upgrade. Error: "
+msgstr "يتعذر تشغيل الترقية. خطأ:"
+
+#: src/Controller/Admin/UpgradeController.php:41
+msgid "Database upgraded successfully."
+msgstr "تم ترقية قاعدة بيانات بنجاح."
+
+#: src/Controller/Admin/UsersController.php:273
+#: src/Controller/Admin/UsersController.php:278
+#: src/Controller/Admin/UsersController.php:304
+#: src/Controller/Admin/UsersController.php:309
+#: src/Controller/Admin/UsersController.php:329
+#: src/Controller/Admin/UsersController.php:334
+#: src/Controller/Admin/UsersController.php:354
+#: src/Controller/Admin/UsersController.php:359
+msgid "Invalid User"
+msgstr "مستخدم غير صحيح"
+
+#: src/Controller/Admin/UsersController.php:293
+msgid "The user has been added."
+msgstr "تم إضافة العضو بنجاح."
+
+#: src/Controller/Admin/UsersController.php:296
+#: src/Controller/Admin/UsersController.php:347
+#: src/Controller/Auth/UsersController.php:177
+msgid "Unable to add the user."
+msgstr "تعتذر إضافة هذا العضو."
+
+#: src/Controller/Admin/UsersController.php:342
+msgid ""
+"The activation email has been sent, Please ask your user to check email "
+"inbox or spam folder to activate his account."
+msgstr ""
+"تم إرسال البريد الإلكتروني للتفعيل، يرجى مطالبة المستخدم بالتحقق من البريد "
+"الوارد أو مجلد الرسائل غير المرغوب فيها لتنشيط حسابه."
+
+#: src/Controller/Admin/UsersController.php:374
+msgid "The user has been updated."
+msgstr "تمت تحديث هذا العضو بنجاح."
+
+#: src/Controller/Admin/UsersController.php:377
+msgid "Unable to edit user."
+msgstr "تعذر التعديل على هذا العضو."
+
+#: src/Controller/Admin/UsersController.php:391
+msgid "The Link with id: {0} has been deactivated."
+msgstr "تم إلغاء تنشيط الارتباط مع المعرف: {0}."
+
+#: src/Controller/Admin/WithdrawsController.php:88
+#: src/Controller/Admin/WithdrawsController.php:93
+msgid "Invalid Withdraw"
+msgstr "سحب غير صالح"
+
+#: src/Controller/Admin/WithdrawsController.php:250
+#: src/Controller/Admin/WithdrawsController.php:264
+msgid "The withdrawal request with id: {0} has been approved."
+msgstr "تمت الموافقة على طلب السحب بالمعرف: {0}."
+
+#: src/Controller/Admin/WithdrawsController.php:283
+msgid "The withdrawal request with id: {0} has been completed."
+msgstr "تم الانتهاء من طلب السحب بالمعرف: {0}."
+
+#: src/Controller/Auth/UsersController.php:78
+msgid "Invalid username or password, try again"
+msgstr "اسم مستخدم غير صالح أو كلمة مرور غير صالحة، أعد المحاولة"
+
+#: src/Controller/Auth/UsersController.php:133
+#: src/Controller/Auth/UsersController.php:236
+#: src/Controller/FormsController.php:46 src/Controller/LinksController.php:56
+#: src/Controller/LinksController.php:281
+msgid "The CAPTCHA was incorrect. Try again"
+msgstr "كان اختبار كابتشا غير صحيح. حاول ثانية"
+
+#: src/Controller/Auth/UsersController.php:170
+msgid ""
+"Your account has been created. Please check your email inbox or spam folder "
+"to activate your account."
+msgstr ""
+"لقد تم إنشاء حسابك. يرجى التحقق من صندوق البريد الإلكتروني أو مجلد الرسائل "
+"غير المرغوب فيها لتنشيط حسابك."
+
+#: src/Controller/Auth/UsersController.php:174
+msgid "Your account has been created."
+msgstr "لقد تم إنشاء حسابك."
+
+#: src/Controller/Auth/UsersController.php:190
+#: src/Controller/Auth/UsersController.php:203
+#: src/Controller/Member/UsersController.php:358
+msgid "Invalid Activation."
+msgstr "التفعيل غير صالح."
+
+#: src/Controller/Auth/UsersController.php:212
+msgid "Your account has been activated."
+msgstr "لقد تم تنشيط حسابك."
+
+#: src/Controller/Auth/UsersController.php:216
+msgid "Unable to activate your account."
+msgstr "تعذر تنشيط حسابك."
+
+#: src/Controller/Auth/UsersController.php:243
+msgid "Invalid User."
+msgstr "مستخدم غير صحيح"
+
+#: src/Controller/Auth/UsersController.php:255
+msgid "Kindly check your email for reset password link."
+msgstr "يرجى التحقق من بريدك الإلكتروني لإعادة تعيين رابط كلمة المرور."
+
+#: src/Controller/Auth/UsersController.php:259
+msgid "Unable to reset password."
+msgstr "يتعذر إعادة تعيين كلمة المرور."
+
+#: src/Controller/Auth/UsersController.php:273
+#: src/Controller/ToolsController.php:164
+#: src/Controller/ToolsController.php:261
+msgid "Invalid Request."
+msgstr "طلب غير صالح."
+
+#: src/Controller/Auth/UsersController.php:283
+msgid "Your password has been changed."
+msgstr "تم تغيير كلمة المرور."
+
+#: src/Controller/Auth/UsersController.php:286
+msgid "Unable to change your password."
+msgstr "تعذر تغيير كلمة المرور"
+
+#: src/Controller/Component/CaptchaComponent.php:33
+msgid "You must set your Recaptcha secret key!"
+msgstr "يجب عليك تعيين اختبار Recaptcha المفتاح السري الخاص بك!"
+
+#: src/Controller/Component/CaptchaComponent.php:64
+msgid "You must set your Invisible Recaptcha secret key!"
+msgstr "يجب تعين المتاح السرى الخاص بك على Invisible Recaptcha"
+
+#: src/Controller/FormsController.php:34 src/Controller/LinksController.php:36
+#: src/Controller/LinksController.php:67
+#: src/Controller/Member/InvoicesController.php:41
+#: src/Controller/ToolsController.php:34
+msgid "Bad Request."
+msgstr "طلب غير صحيح."
+
+#: src/Controller/FormsController.php:55
+msgid "Your message has been sent!"
+msgstr "تم إرسال رسالتك!"
+
+#: src/Controller/FormsController.php:63
+msgid "Can't send the message. Please try again later."
+msgstr "لا يمكن إرسال الرسالة. الرجاء معاودة المحاولة في وقت لاحق."
+
+#: src/Controller/InstallController.php:61
+msgid "Connection failed: "
+msgstr "فشل الاتصال:"
+
+#: src/Controller/InstallController.php:85
+msgid "Can not load initial data. "
+msgstr "لا يمكن تحميل البيانات الأولية."
+
+#: src/Controller/InstallController.php:151
+msgid "Could not copy configure.php file."
+msgstr "لا يمكن نسخ ملف ملف config.php."
+
+#: src/Controller/InstallController.php:164
+msgid "Could not write configure.php file."
+msgstr "لا يمكن إرسال ملف ملف config.php."
+
+#: src/Controller/LinksController.php:79
+msgid "Invalid user"
+msgstr "مستخدم غير صحيح"
+
+#: src/Controller/LinksController.php:173
+msgid "Invalid URL."
+msgstr "رابط غير صالح."
+
+#: src/Controller/LinksController.php:217
+#: src/Controller/StatisticsController.php:38
+#: src/Controller/StatisticsController.php:47
+msgid "404 Not Found"
+msgstr "404 غير موجود"
+
+#: src/Controller/Member/CampaignsController.php:36
+msgid "Creating campaigns is currently disabled."
+msgstr "تم تعطيل إنشاء الحملات حاليًا."
+
+#: src/Controller/Member/CampaignsController.php:134
+#: src/Controller/Member/UsersController.php:271
+#: src/Controller/Member/UsersController.php:284
+#: src/Controller/Member/UsersController.php:290
+msgid "Invalid request"
+msgstr "طلب غير صالح"
+
+#: src/Controller/Member/CampaignsController.php:142
+msgid "Not found campaign"
+msgstr "لم يتم العثور على الحملة."
+
+#: src/Controller/Member/CampaignsController.php:154
+msgid "Advertising Campaign #"
+msgstr "حملة إعلانية #"
+
+#: src/Controller/Member/CampaignsController.php:175
+msgid "Creating interstitial campaigns is currently disabled."
+msgstr "تم تعطيل إنشاء حملات بنّرية حاليا."
+
+#: src/Controller/Member/CampaignsController.php:208
+#: src/Controller/Member/CampaignsController.php:256
+#: src/Controller/Member/CampaignsController.php:303
+msgid ""
+"Your campaign has been added. After paying, we will review it and it will "
+"appear on the website."
+msgstr "تمت إضافة حملتك. بعد دفع، سنقوم بمراجعتها وسوف تظهر على الموقع."
+
+#: src/Controller/Member/CampaignsController.php:223
+msgid "Creating banner campaigns is currently disabled."
+msgstr "تم تعطيل إنشاء حملات بانر حاليًا."
+
+#: src/Controller/Member/CampaignsController.php:270
+msgid "Creating popup campaigns is currently disabled."
+msgstr "تم تعطيل إنشاء حملات منبثقة حاليًا."
+
+#: src/Controller/Member/InvoicesController.php:57
+msgid "You don't have enough money in your wallet."
+msgstr "ليس لديك ما يكفي من المال في محفظتك."
+
+#: src/Controller/Member/InvoicesController.php:96
+msgid "Not found campaign."
+msgstr "لم يتم العثور على الحملة."
+
+#: src/Controller/Member/InvoicesController.php:127
+#: src/Controller/Member/InvoicesController.php:170
+#: src/Controller/Member/InvoicesController.php:206
+#: src/Controller/Member/InvoicesController.php:337
+#: src/Controller/Member/InvoicesController.php:389
+#: src/Controller/Member/InvoicesController.php:471
+#: src/Controller/Member/InvoicesController.php:513
+#: src/Controller/Member/InvoicesController.php:539
+msgid "Invoice"
+msgstr "فاتورة"
+
+#: src/Controller/Member/InvoicesController.php:631
+msgid "Invalide payment method."
+msgstr "طريقة دفع غير صالحة."
+
+#: src/Controller/Member/InvoicesController.php:670
+msgid "Invoice has been updated."
+msgstr "تم تحديث الفاتورة بنجاح."
+
+#: src/Controller/Member/LinksController.php:164
+#: src/Controller/Member/ToolsController.php:19
+#: src/Controller/Member/ToolsController.php:35
+#: src/Controller/Member/ToolsController.php:79
+#: src/Controller/Member/ToolsController.php:95
+#: src/Controller/Member/ToolsController.php:111
+#: src/Controller/ToolsController.php:74
+#: src/Controller/ToolsController.php:192
+#: src/Controller/ToolsController.php:289
+msgid "You must upgrade your plan so you can use this tool."
+msgstr "يجب ترقية خطتك حتى تتمكن من استخدام هذه الأداة."
+
+#: src/Controller/Member/LinksController.php:193
+msgid "Your Link has been updated."
+msgstr "تم تحديث الرابط الخاص بك."
+
+#: src/Controller/Member/UsersController.php:258
+msgid "Profile has been updated"
+msgstr "تم تحديث ملفك الشخصي"
+
+#: src/Controller/Member/UsersController.php:296
+#: src/Template/Member/Users/plans.ctp:119
+msgid "Yearly"
+msgstr "سنوي"
+
+#: src/Controller/Member/UsersController.php:299
+#: src/Template/Member/Users/plans.ctp:109
+msgid "Monthly"
+msgstr "شهري"
+
+#: src/Controller/Member/UsersController.php:305
+msgid "{0} Premium Membership: {1}"
+msgstr " العضوية المميزة"
+
+#: src/Controller/Member/UsersController.php:318
+msgid "An invoice with id: {0} has been generated."
+msgstr "تم إنشاء فاتورة بها بمعرف"
+
+#: src/Controller/Member/UsersController.php:339
+msgid "Kindly check your email to confirm it."
+msgstr "يرجى التحقق من بريدك الالكتروني للتأكد من ذلك."
+
+#: src/Controller/Member/UsersController.php:373
+msgid "Your email has been confirmed."
+msgstr "تم تأكيد بريدك الإلكتروني."
+
+#: src/Controller/Member/UsersController.php:376
+msgid "Unable to confirm your email."
+msgstr "تعذر تأكيد بريدك الإلكتروني."
+
+#: src/Controller/Member/UsersController.php:390
+msgid "Password has been updated"
+msgstr "تم تحديث كلمة المرور"
+
+#: src/Controller/Member/WithdrawsController.php:58
+msgid "Withdraw amount should be equal or greater than {0}."
+msgstr "يجب أن يكون سحب المبلغ مساويا أو أكبر من {0}."
+
+#: src/Controller/Member/WithdrawsController.php:67
+msgid "You should fill your withdrawal info from your profile settings."
+msgstr "يجب ملء معلومات السحب من إعدادات ملفك الشخصي."
+
+#: src/Controller/Member/WithdrawsController.php:80
+msgid "Your withdraw has been request and under review."
+msgstr "لقد تم رفع دفعتك  للسحب وهي تحت المراجعة."
+
+#: src/Controller/Member/WithdrawsController.php:82
+msgid "Unable to request the withdraw."
+msgstr "تعذر رفع طلب الدفع الخاص بك."
+
+#: src/Controller/PagesController.php:91 src/Controller/PagesController.php:97
+msgid "Invalid Page."
+msgstr "الصفحة غير صالحة."
+
+#: src/Controller/PagesController.php:134
+#: src/Controller/PagesController.php:316
+#: src/Template/Admin/Campaigns/index.ctp:65
+#: src/Template/Admin/Campaigns/index.ctp:106
+#: src/Template/Layout/admin.ctp:216
+#: src/Template/Member/Campaigns/index.ctp:57
+#: src/Template/Member/Campaigns/index.ctp:98
+msgid "Popup"
+msgstr "منبثقة"
+
+#: src/Controller/PagesController.php:144
+#: src/Controller/PagesController.php:191
+#: src/Controller/PagesController.php:238
+#: src/Controller/PagesController.php:326
+#: src/Controller/PagesController.php:371
+#: src/Controller/PagesController.php:416
+msgid "Package Description / Country"
+msgstr "وصف الحزمة / البلد"
+
+#: src/Controller/PagesController.php:145
+#: src/Controller/PagesController.php:192
+#: src/Controller/PagesController.php:239
+msgid "Cost per 1000 Views"
+msgstr "التكلفة لكل 1000 مشاهدة"
+
+#: src/Controller/PagesController.php:149
+#: src/Controller/PagesController.php:196
+#: src/Controller/PagesController.php:243
+#: src/Controller/PagesController.php:331
+#: src/Controller/PagesController.php:376
+#: src/Controller/PagesController.php:421
+#: src/Template/Admin/Campaigns/edit.ctp:167
+msgid "Desktop"
+msgstr "سطح مكتب"
+
+#: src/Controller/PagesController.php:152
+#: src/Controller/PagesController.php:199
+#: src/Controller/PagesController.php:246
+#: src/Controller/PagesController.php:334
+#: src/Controller/PagesController.php:379
+#: src/Controller/PagesController.php:424
+msgid "Mobile / Tablet"
+msgstr "جوال / جهاز لوحي"
+
+#: src/Controller/PagesController.php:155
+#: src/Controller/PagesController.php:202
+#: src/Controller/PagesController.php:249
+msgid "Both"
+msgstr "كلاهما"
+
+#: src/Controller/PagesController.php:327
+#: src/Controller/PagesController.php:372
+#: src/Controller/PagesController.php:417
+msgid "Earnings per 1000 Views"
+msgstr "الأرباح لكل 1000 مشاهدة"
+
+#: src/Controller/PostsController.php:34 src/Controller/PostsController.php:40
+msgid "Invalid Post."
+msgstr "تدوينة غير صالحة"
+
+#: src/Controller/ToolsController.php:46
+#: src/Controller/ToolsController.php:185
+#: src/Controller/ToolsController.php:282
+msgid "Invalid API token."
+msgstr "رمز API غير صالح."
+
+#: src/Controller/ToolsController.php:146
+msgid "Check the below errors."
+msgstr "تحقق من الأخطاء أدناه."
+
+#: src/Controller/ToolsController.php:244
+#: src/Controller/ToolsController.php:343
+msgid "Error."
+msgstr "خطأ."
+
+#: src/Form/ContactForm.php:26
+msgid "A name is required"
+msgstr "مطلوب الأسم الكامل"
+
+#: src/Form/ContactForm.php:29 src/Form/MessageUserForm.php:27
+msgid "A valid email address is required"
+msgstr "مطلوب بريد إلكتروني صحيح"
+
+#: src/Form/ContactForm.php:31 src/Form/MessageUserForm.php:29
+msgid "A subject is required"
+msgstr "مطلوب عنوان الرسالة"
+
+#: src/Form/ContactForm.php:32 src/Form/MessageUserForm.php:30
+msgid "Message body is required"
+msgstr "مطلوب نص الرسالة"
+
+#: src/Mailer/UserMailer.php:15
+msgid "{0}: New Account"
+msgstr "{0}: حساب جديد"
+
+#: src/Mailer/UserMailer.php:31
+msgid "{0}: Change Email"
+msgstr "{0}: تغيير البريد الإلكتروني"
+
+#: src/Mailer/UserMailer.php:47
+msgid "{0}: Password Reset"
+msgstr "{0}: إعادة تعيين كلمة المرور"
+
+#: src/Model/Table/AnnouncementsTable.php:22
+#: src/Model/Table/CampaignsTable.php:30 src/Model/Table/CampaignsTable.php:65
+#: src/Model/Table/CampaignsTable.php:71 src/Model/Table/CampaignsTable.php:96
+#: src/Model/Table/LinksTable.php:200 src/Model/Table/PagesTable.php:31
+#: src/Model/Table/PlansTable.php:21 src/Model/Table/PlansTable.php:22
+#: src/Model/Table/PlansTable.php:23 src/Model/Table/PlansTable.php:24
+#: src/Model/Table/PlansTable.php:25 src/Model/Table/PlansTable.php:26
+#: src/Model/Table/PlansTable.php:27 src/Model/Table/PlansTable.php:28
+#: src/Model/Table/PlansTable.php:29 src/Model/Table/PlansTable.php:30
+#: src/Model/Table/PlansTable.php:31 src/Model/Table/PlansTable.php:32
+#: src/Model/Table/PlansTable.php:33 src/Model/Table/PlansTable.php:34
+#: src/Model/Table/PlansTable.php:35 src/Model/Table/PostsTable.php:31
+#: src/Model/Table/TestimonialsTable.php:24 src/Model/Table/UsersTable.php:160
+msgid "Choose a valid value."
+msgstr "اختر قيمة صالحة."
+
+#: src/Model/Table/CampaignItemsTable.php:21
+msgid "Write a valid natural number."
+msgstr "اكتب رقما طبيعيا صحيحا."
+
+#: src/Model/Table/CampaignsTable.php:27 src/Model/Table/CampaignsTable.php:32
+#: src/Model/Table/CampaignsTable.php:33 src/Model/Table/CampaignsTable.php:34
+#: src/Model/Table/CampaignsTable.php:62 src/Model/Table/CampaignsTable.php:67
+msgid "This value should not be blank."
+msgstr "يجب ألا تكون هذه القيمة فارغة."
+
+#: src/Model/Table/CampaignsTable.php:37
+msgid "URL must be valid."
+msgstr "يجب أن يكون URL صالح."
+
+#: src/Model/Table/CampaignsTable.php:48
+msgid "http and https urls only allowed."
+msgstr "HTTP و HTTPS عناوين المواقع يسمح فقط."
+
+#: src/Model/Table/CampaignsTable.php:68
+msgid "You must have a purchase."
+msgstr "يجب أن يكون لديك عملية شراء."
+
+#: src/Model/Table/CampaignsTable.php:80
+msgid "You must accept our terms and conditions."
+msgstr "يجب عليك قبول الشروط والأحكام."
+
+#: src/Model/Table/LinksTable.php:36
+msgid "URL is invalid."
+msgstr "URL غير صالح."
+
+#: src/Model/Table/LinksTable.php:48
+msgid "http, https and magnet urls only allowed."
+msgstr "يسمح فقط لعناوين http - https - magnet"
+
+#: src/Model/Table/LinksTable.php:93
+msgid "This domain is not allowed on our system."
+msgstr "هذا النطاق غير مسموح به في نظامنا."
+
+#: src/Model/Table/LinksTable.php:132
+msgid ""
+"Google currently report this URL as an active phishing, malware, or unwanted "
+"website."
+msgstr ""
+"جوجل يقدم تقريرا في هذا الـ URL حاليا باعتباره التصيد نشط، والبرمجيات "
+"الخبيثة، أو موقع غير مرغوب فيه."
+
+#: src/Model/Table/LinksTable.php:161
+msgid "PhishTank currently report this URL as an active phishing website."
+msgstr "PhishTank تقريرا في هذا URL بوصفه موقعا التصيد النشط."
+
+#: src/Model/Table/LinksTable.php:164
+msgid "Please add an alias."
+msgstr "الرجاء إضافة اسم مستعار."
+
+#: src/Model/Table/LinksTable.php:168
+msgid "Maximum alias length is 30 characters."
+msgstr "الحد الأقصى لطول الاسم المستعار هو 30 حرفا."
+
+#: src/Model/Table/LinksTable.php:175
+msgid "Alias should be a alpha numeric value"
+msgstr "يجب أن يكون الاسم المستعار قيمة أبجدية رقمية"
+
+#: src/Model/Table/LinksTable.php:189
+msgid "This alias is a reserved word."
+msgstr "هذا الاسم المستعار هو كلمة ممنوعه ."
+
+#: src/Model/Table/LinksTable.php:195
+msgid "Alias already exists."
+msgstr "الاسم المستعار موجود بالفعل."
+
+#: src/Model/Table/LinksTable.php:210
+msgid "Please select a reason to report."
+msgstr "الرجاء تحديد سبب للإبلاغ عنه."
+
+#: src/Model/Table/LinksTable.php:216
+msgid "Please enter a valid reason"
+msgstr "الرجاء إدخال سبب وجيه"
+
+#: src/Model/Table/PagesTable.php:26 src/Model/Table/PostsTable.php:26
+msgid "Slug must be unique."
+msgstr "يجب أن تكون سبيكة Slug  فريدة من نوعها."
+
+#: src/Model/Table/UsersTable.php:64
+msgid "alphaNumeric Only"
+msgstr "أبجدي رقمي فقط"
+
+#: src/Model/Table/UsersTable.php:68 src/Model/Table/UsersTable.php:105
+#: src/Model/Table/UsersTable.php:213 src/Model/Table/UsersTable.php:241
+msgid "Minimum Length 5"
+msgstr "الحد الأدنى لطول 5"
+
+#: src/Model/Table/UsersTable.php:72
+msgid "Maximum Length 255"
+msgstr "الحد الأقصى للطول 255"
+
+#: src/Model/Table/UsersTable.php:86
+msgid "This username is a reserved word."
+msgstr "اسم المستخدم هذا هو كلمة محجوزة."
+
+#: src/Model/Table/UsersTable.php:92
+msgid "Username already exists"
+msgstr "اسم المستخدم موجود بالفعل"
+
+#: src/Model/Table/UsersTable.php:98 src/Model/Table/UsersTable.php:115
+#: src/Model/Table/UsersTable.php:133 src/Model/Table/UsersTable.php:192
+#: src/Model/Table/UsersTable.php:223 src/Model/Table/UsersTable.php:251
+msgid "Not the same"
+msgstr "ليست هي نفسها"
+
+#: src/Model/Table/UsersTable.php:109 src/Model/Table/UsersTable.php:217
+#: src/Model/Table/UsersTable.php:245
+msgid "Maximum Length 25"
+msgstr "الحد الأقصى للطول 25"
+
+#: src/Model/Table/UsersTable.php:121 src/Model/Table/UsersTable.php:174
+#: src/Model/Table/UsersTable.php:235
+msgid "E-mail must be valid"
+msgstr "يجب ان يكون البريد الاكتروني صحيح"
+
+#: src/Model/Table/UsersTable.php:127 src/Model/Table/UsersTable.php:187
+msgid "E-mail must be unique"
+msgstr "يجب أن يكون البريد الإلكتروني فريدا"
+
+#: src/Model/Table/UsersTable.php:136 src/Model/Table/UsersTable.php:137
+#: src/Model/Table/UsersTable.php:138 src/Model/Table/UsersTable.php:139
+#: src/Model/Table/UsersTable.php:140 src/Model/Table/UsersTable.php:141
+#: src/Model/Table/UsersTable.php:142 src/Model/Table/UsersTable.php:143
+#: src/Model/Table/UsersTable.php:144 src/Model/Table/UsersTable.php:162
+msgid "This field should not be blank."
+msgstr "يجب ألا يكون هذا الحقل فارغا."
+
+#: src/Model/Table/UsersTable.php:207
+msgid "Please enter current password."
+msgstr "الرجاء إدخال كلمة المرور الحالية."
+
+#: src/Model/Table/WithdrawsTable.php:22
+msgid "You must have a balance."
+msgstr "يجب أن يكون لديك رصيد."
+
+#: src/Model/Table/WithdrawsTable.php:24
+msgid "Withdraw amount should be greater or equal to {0}."
+msgstr "يجب أن يكون سحب المبلغ أكبر أو يساوي {0}."
+
+#: plugins/CloudTheme/src/Template/Cell/Testimonial/display.ctp:5
+#: plugins/ModernTheme/src/Template/Cell/Testimonial/display.ctp:5
+msgid "Client's Testimonials"
+msgstr "أراء العملاء"
+
+#: plugins/CloudTheme/src/Template/Cell/Testimonial/display.ctp:6
+msgid "What People Say?"
+msgstr "ماذا يقول الناس؟"
+
+#: plugins/CloudTheme/src/Template/Element/contact.ctp:21
+#: plugins/ModernTheme/src/Template/Element/contact.ctp:22
+#: src/Template/Element/contact.ctp:23
+msgid "Your Name *"
+msgstr "اسمك *"
+
+#: plugins/CloudTheme/src/Template/Element/contact.ctp:32
+#: plugins/ModernTheme/src/Template/Element/contact.ctp:33
+#: src/Template/Element/contact.ctp:35
+msgid "Your Email *"
+msgstr "البريد الالكتروني الخاص بك *"
+
+#: plugins/CloudTheme/src/Template/Element/contact.ctp:43
+#: plugins/ModernTheme/src/Template/Element/contact.ctp:44
+#: src/Template/Element/contact.ctp:47
+msgid "Your Subject *"
+msgstr "الموضوع *"
+
+#: plugins/CloudTheme/src/Template/Element/contact.ctp:56
+#: plugins/ModernTheme/src/Template/Element/contact.ctp:55
+#: src/Template/Element/contact.ctp:61
+msgid "Your Message *"
+msgstr "رسالتك *"
+
+#: plugins/CloudTheme/src/Template/Element/contact.ctp:83
+#: plugins/ModernTheme/src/Template/Element/contact.ctp:79
+#: src/Template/Element/contact.ctp:87
+msgid "Send Message"
+msgstr "ارسال رسالة"
+
+#: plugins/CloudTheme/src/Template/Element/front_footer.ctp:18
+#: plugins/ModernTheme/src/Template/Element/front_footer.ctp:14
+#: src/Template/Auth/Users/signup.ctp:62 src/Template/Layout/captcha.ctp:105
+#: src/Template/Layout/front.ctp:119 src/Template/Layout/go_banner.ctp:106
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+#: plugins/CloudTheme/src/Template/Element/front_footer.ctp:20
+#: plugins/ModernTheme/src/Template/Element/front_footer.ctp:16
+#: src/Template/Layout/captcha.ctp:106 src/Template/Layout/front.ctp:121
+#: src/Template/Layout/go_banner.ctp:107
+msgid "Terms of Use"
+msgstr "شروط الاستخدام"
+
+#: plugins/CloudTheme/src/Template/Element/front_footer.ctp:39
+#: plugins/ModernTheme/src/Template/Element/front_footer.ctp:35
+#: src/Template/Layout/admin.ctp:382 src/Template/Layout/captcha.ctp:109
+#: src/Template/Layout/front.ctp:102 src/Template/Layout/go_banner.ctp:110
+#: src/Template/Layout/install.ctp:50 src/Template/Layout/member.ctp:362
+msgid "Copyright &copy;"
+msgstr "جميع الحقوق محفوظة"
+
+#: plugins/CloudTheme/src/Template/Element/shorten.ctp:23
+#: plugins/ModernTheme/src/Template/Element/shorten.ctp:22
+#: src/Template/Cell/Link/shorten_member.ctp:20
+#: src/Template/Element/shorten.ctp:22
+msgid "Your URL Here"
+msgstr "URL الخاص بك هنا"
+
+#: plugins/CloudTheme/src/Template/Layout/captcha.ctp:20
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:16
+#: plugins/CloudTheme/src/Template/Layout/go_banner.ctp:20
+#: plugins/ModernTheme/src/Template/Layout/captcha.ctp:20
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:16
+#: plugins/ModernTheme/src/Template/Layout/go_banner.ctp:20
+#: src/Template/Layout/admin.ctp:60 src/Template/Layout/front.ctp:52
+#: src/Template/Layout/member.ctp:61
+msgid "Toggle navigation"
+msgstr "القائمة المنسدلة"
+
+#: plugins/CloudTheme/src/Template/Layout/captcha.ctp:42
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:40
+#: plugins/CloudTheme/src/Template/Layout/go_banner.ctp:42
+#: plugins/ModernTheme/src/Template/Layout/captcha.ctp:42
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:40
+#: plugins/ModernTheme/src/Template/Layout/go_banner.ctp:42
+#: src/Template/Layout/captcha.ctp:73 src/Template/Layout/front.ctp:79
+#: src/Template/Layout/go_banner.ctp:73
+msgid "Advertising"
+msgstr "اثبات الدفع"
+
+#: plugins/CloudTheme/src/Template/Layout/captcha.ctp:46
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:44
+#: plugins/CloudTheme/src/Template/Layout/go_banner.ctp:46
+#: plugins/ModernTheme/src/Template/Layout/captcha.ctp:46
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:44
+#: plugins/ModernTheme/src/Template/Layout/go_banner.ctp:46
+#: src/Template/Layout/captcha.ctp:77 src/Template/Layout/front.ctp:83
+#: src/Template/Layout/go_banner.ctp:77
+msgid "Payout Rates"
+msgstr "معدلات الارباح"
+
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:36
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:36
+#: src/Template/Layout/front.ctp:75
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:48
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:48
+#: src/Template/Admin/Options/index.ctp:36 src/Template/Layout/admin.ctp:261
+#: src/Template/Posts/index.ctp:2 src/Template/Posts/index.ctp:4
+#: src/Template/Posts/index.ctp:13
+msgid "Blog"
+msgstr "المدونة"
+
+#: plugins/CloudTheme/src/Template/Layout/front.ctp:52
+#: plugins/ModernTheme/src/Template/Layout/front.ctp:52
+#: src/Template/Layout/front.ctp:86
+msgid "My Account"
+msgstr "حسابي"
+
+#: plugins/CloudTheme/src/Template/Layout/go_interstitial.ctp:44
+#: plugins/ModernTheme/src/Template/Layout/go_interstitial.ctp:44
+#: src/Template/Layout/go_interstitial.ctp:81
+msgid "Please Wait"
+msgstr "يرجى الانتظار"
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:65
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:65
+#: src/Template/Links/captcha.ctp:36
+msgid "Please check the captcha box to proceed to the destination page."
+msgstr "يرجى التحقق من المربع كابتشا للانتقال إلى الصفحة المقصودة."
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:74
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:74
+#: src/Template/Links/captcha.ctp:48
+msgid "Click here to continue"
+msgstr "اضغط هنا للأستمرار"
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:87
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:69
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:87
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:73
+#: src/Template/Links/captcha.ctp:59 src/Template/Pages/home.ctp:41
+msgid "What is {0}?"
+msgstr ""
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:89
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:89
+#: src/Template/Links/captcha.ctp:61
+msgid ""
+"{0} is a completely free tool where you can create short links, which apart "
+"from being free, you get paid! So, now you can make money from home, when "
+"managing and protecting your links. Register now!"
+msgstr ""
+"{0}  هو موقع مجاني تماما يمكنك من ربح الأموال عن طريق اختصار الروابط "
+"ومشاركتها بأسعار مرتفعة .. سجل الآن ."
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:95
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:95
+#: src/Template/Links/captcha.ctp:67
+msgid "Shorten URLs and earn money"
+msgstr "اختصر الروابط واربح المال !"
+
+#: plugins/CloudTheme/src/Template/Links/captcha.ctp:96
+msgid ""
+"Signup for an account in just 2 minutes. Once you've completed your "
+"registration just start creating short URLs and sharing the links with your "
+"family and friends."
+msgstr ""
+
+#: plugins/CloudTheme/src/Template/Links/view_banner.ctp:27
+#: plugins/ModernTheme/src/Template/Links/view_banner.ctp:27
+#: src/Template/Links/view_banner.ctp:30
+msgid "Your link is almost ready."
+msgstr "رابطك جاهز تقريبا."
+
+#: plugins/CloudTheme/src/Template/Links/view_banner.ctp:32
+#: plugins/ModernTheme/src/Template/Links/view_banner.ctp:32
+#: src/Template/Links/view_banner.ctp:33
+msgid "Seconds"
+msgstr "ثواني"
+
+#: plugins/CloudTheme/src/Template/Links/view_banner.ctp:57
+#: plugins/ModernTheme/src/Template/Links/view_banner.ctp:57
+#: src/Template/Links/view_banner.ctp:46
+msgid "Please wait..."
+msgstr "يرجى الانتظار..."
+
+#: plugins/CloudTheme/src/Template/Links/view_banner.ctp:88
+#: plugins/ModernTheme/src/Template/Links/view_banner.ctp:90
+#: src/Template/Admin/Activation/index.ctp:41
+#: src/Template/Admin/Announcements/add.ctp:42
+#: src/Template/Admin/Announcements/edit.ctp:44
+#: src/Template/Admin/Campaigns/create_banner.ctp:201
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:183
+#: src/Template/Admin/Campaigns/create_popup.ctp:185
+#: src/Template/Admin/Links/edit.ctp:63
+#: src/Template/Admin/Options/banner.ctp:87
+#: src/Template/Admin/Options/interstitial.ctp:87
+#: src/Template/Admin/Options/popup.ctp:87 src/Template/Admin/Pages/add.ctp:51
+#: src/Template/Admin/Pages/edit.ctp:53 src/Template/Admin/Plans/add.ctp:157
+#: src/Template/Admin/Plans/edit.ctp:159 src/Template/Admin/Posts/add.ctp:60
+#: src/Template/Admin/Posts/edit.ctp:62
+#: src/Template/Admin/Testimonials/add.ctp:60
+#: src/Template/Admin/Testimonials/edit.ctp:62
+#: src/Template/Admin/Users/add.ctp:65
+#: src/Template/Admin/Users/dashboard.ctp:38
+#: src/Template/Admin/Users/edit.ctp:72
+#: src/Template/Admin/Withdraws/edit.ctp:54
+#: src/Template/Auth/Users/forgot_password.ctp:34
+#: src/Template/Auth/Users/forgot_password.ctp:67
+#: src/Template/Auth/Users/signup.ctp:66 src/Template/Install/adminuser.ctp:58
+#: src/Template/Install/database.ctp:62 src/Template/Links/view_banner.ctp:83
+#: src/Template/Member/Campaigns/create_banner.ctp:156
+#: src/Template/Member/Campaigns/create_interstitial.ctp:137
+#: src/Template/Member/Campaigns/create_popup.ctp:141
+#: src/Template/Member/Forms/support.ctp:49
+#: src/Template/Member/Links/edit.ctp:55
+#: src/Template/Member/Users/change_email.ctp:42
+#: src/Template/Member/Users/change_password.ctp:42
+#: src/Template/Member/Users/dashboard.ctp:38
+#: src/Template/Member/Users/profile.ctp:144
+msgid "Submit"
+msgstr "إرسال"
+
+#: plugins/CloudTheme/src/Template/Links/view_interstitial.ctp:37
+#: plugins/ModernTheme/src/Template/Links/view_interstitial.ctp:37
+#: src/Template/Links/view_interstitial.ctp:42
+msgid "Please Wait 10s"
+msgstr "يرجى الانتظار 10 ثوان"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:14
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:12
+#: src/Template/Pages/home.ctp:12
+msgid "Shorten URLs and"
+msgstr "اختصار الروابط و"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:15
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:13
+#: src/Template/Pages/home.ctp:13
+msgid "earn money"
+msgstr "اربح الاموال"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:34
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:36
+msgid "Create an account"
+msgstr "إنشاء حساب"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:40
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:44
+msgid "Shorten your link"
+msgstr "اختصار الرابط"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:46
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:52
+msgid "Earn Money"
+msgstr "اربح المال"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:61
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:65
+msgid "Earn extra money"
+msgstr "كسب المزيد من المال"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:62
+msgid "Why join us?"
+msgstr "لماذا تنضم إلينا؟"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:70
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:74
+#: src/Template/Pages/home.ctp:42
+msgid ""
+"{0} is a completely free tool where you can create short links, which apart "
+"from being free, you get paid! So, now you can make money from home, when "
+"managing and protecting your links."
+msgstr ""
+"{0} هو أداة مجانية تماما حيث يمكنك إنشاء روابط قصيرة، والتي بغض النظر عن "
+"كونها مجانية، تحصل من خلالها على أموال! لذلك، الآن يمكنك كسب المال من "
+"المنزل، عند إدارة وحماية الروابط الخاصة بك."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:77
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:81
+#: src/Template/Pages/home.ctp:50
+msgid "How and how much do I earn?"
+msgstr "كيف وكم يمكنني أن أ كسب?"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:78
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:82
+msgid ""
+"How can you start making money with {0}? It's just 3 steps: create an "
+"account, create a link and post it - for every visit, you earn money. It's "
+"just that easy!"
+msgstr "كيف وكم يمكنني أن أ كسب ؟"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:85
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:89
+#: src/Template/Pages/home.ctp:59
+msgid "{0}% Referral Bonus"
+msgstr "{0}٪ مكافأة الإحالة"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:87
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:91
+#: src/Template/Member/Users/referrals.ctp:10 src/Template/Pages/home.ctp:60
+#, php-format
+msgid ""
+"The {0} referral program is a great way to spread the word of this great "
+"service and to earn even more money with your short links! Refer friends and "
+"receive {1}% of their earnings for life!"
+msgstr ""
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:97
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:101
+#: src/Template/Pages/home.ctp:71
+msgid "Featured Administration Panel"
+msgstr "لوحة الإدارة المميزة"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:98
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:102
+#: src/Template/Pages/home.ctp:72
+msgid ""
+"Control all of the features from the administration panel with a click of a "
+"button."
+msgstr "السيطرة على كافة الميزات من لوحة الإدارة بنقرة زر واحدة."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:104
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:108
+#: src/Template/Pages/home.ctp:79
+msgid "Detailed Stats"
+msgstr "إحصائيات مفصلة"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:105
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:109
+#: src/Template/Pages/home.ctp:80
+msgid ""
+"Know your audience. Analyse in detail what brings you the most income and "
+"what strategies you should adapt."
+msgstr ""
+"تعرف على جمهورك. تحليل بالتفصيل ما يجلب لك معظم الدخل وما الاستراتيجيات التي "
+"يجب أن تتكيف."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:111
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:115
+#: src/Template/Pages/home.ctp:87
+msgid "Low Minimum Payout"
+msgstr "انخفاض الحد الأدنى للمدفوعات"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:112
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:116
+#: src/Template/Pages/home.ctp:88
+msgid ""
+"You are required to earn only {0} before you will be paid. We can pay all "
+"users via their PayPal."
+msgstr ""
+"يطلب منك أن تكسب فقط {0} قبل أن يتم دفع لك. يمكننا أن ندفع لجميع المستخدمين "
+"عبر حسابهم على باي بال."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:122
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:126
+#: src/Template/Pages/home.ctp:99
+msgid "Highest Rates"
+msgstr "أعلى الأسعار"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:123
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:127
+#: src/Template/Pages/home.ctp:100
+msgid "Make the most out of your traffic with our always increasing rates."
+msgstr ""
+"الاستفادة الى اقصى حد من حركة المرور الخاصة بك مع تزايد معدلات المعلنين "
+"لدينا دائما."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:129
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:133
+#: src/Template/Pages/home.ctp:107
+msgid "API"
+msgstr "API"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:130
+#: src/Template/Pages/home.ctp:108
+msgid ""
+"Shorten links more quickly with easy to use API and bring your creative and "
+"advanced ideas to life."
+msgstr ""
+"تقصير الروابط بسرعة أكبر مع واجهة برمجة التطبيقات سهلة الاستخدام وتجلب "
+"أفكارك الإبداعية والمتقدمة في الحياة."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:136
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:140
+#: src/Template/Layout/member.ctp:274 src/Template/Member/Forms/support.ctp:2
+#: src/Template/Member/Forms/support.ctp:4 src/Template/Pages/home.ctp:115
+msgid "Support"
+msgstr "الدعم"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:137
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:141
+#: src/Template/Pages/home.ctp:116
+msgid ""
+"A dedicated support team is ready to help with any questions you may have."
+msgstr "فريق الدعم المخصص مستعد للمساعدة في أي أسئلة قد تكون لديكم."
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:156
+#: src/Template/Pages/home.ctp:127
+msgid "Numbers speak for themselves"
+msgstr "أرقام تتحدث عن نفسها"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:157
+#: src/Template/Pages/home.ctp:126
+msgid "Fast Growing"
+msgstr "سريع النمو"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:169
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:158
+#: src/Template/Pages/home.ctp:134
+msgid "Total Clicks"
+msgstr "إجمالي النقرات"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:182
+msgid "Total Links"
+msgstr "إجمالي الروابط المختصره"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:195
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:180
+#: src/Template/Pages/home.ctp:142
+msgid "Registered users"
+msgstr "الأعضاء المسجلين"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:211
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:201
+#: src/Template/Pages/contact.ctp:2 src/Template/Pages/contact.ctp:4
+#: src/Template/Pages/contact.ctp:13 src/Template/Pages/home.ctp:154
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: plugins/CloudTheme/src/Template/Pages/home.ctp:212
+msgid "Get in touch!"
+msgstr "ابقى على تواصل"
+
+#: plugins/ModernTheme/src/Template/Cell/Testimonial/display.ctp:6
+msgid "What <b>People Say</b>?"
+msgstr "ماذا يقول  الأشخاص يقولون"
+
+#: plugins/ModernTheme/src/Template/Links/captcha.ctp:96
+msgid ""
+"Signup for an account in just 2 minutes. Once you've completed your "
+"registration just start '.\n"
+"    'creating short URLs and sharing the links with your family and friends."
+msgstr ""
+"الاشتراك للحصول على حساب في دقيقتين فقط. بمجرد الانتهاء من تسجيل الحساب "
+"الخاص بك يمكنك البدء فى اختصار الروابط ومشاركتها مع الاصدقاء والعائلة لربح "
+"المال ."
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:28
+msgid "It's just three steps"
+msgstr "فى ثلاث خطوات فقط"
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:29
+msgid "How You <b>Start</b>?"
+msgstr "كيف تبدأ الحديث عادةً ..."
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:66
+msgid "Why <b>join us?</b>"
+msgstr "لماذا <b> تنضم إلينا؟ </ b>"
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:134
+msgid ""
+"Shorten <a>links</a> more quickly with easy to use API and bring your "
+"creative and advanced ideas to life."
+msgstr ""
+"يمكنك اختصار <a> الروابط </a> بسرعة أكبر باستخدام واجهة برمجة التطبيقات سهلة "
+"الاستخدام وإضفاء الحيوية على أفكارك الإبداعية والمتقدمة."
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:169
+#: src/Template/Pages/home.ctp:138
+msgid "Total URLs"
+msgstr "إجمالي الروابط"
+
+#: plugins/ModernTheme/src/Template/Pages/home.ctp:202
+msgid "Let's <b>Make it Happen</b>?"
+msgstr "دعونا <b> نجعل الحلم يتحقق </ b>؟"
+
+#: src/Template/Admin/Activation/index.ctp:2
+#: src/Template/Admin/Activation/index.ctp:4
+msgid "License Activation"
+msgstr "تنشيط الترخيص"
+
+#: src/Template/Admin/Activation/index.ctp:17
+msgid "Personal Token"
+msgstr "الرمز المميز"
+
+#: src/Template/Admin/Activation/index.ctp:25
+msgid "Click on this URL {0} to learn how to generate a personal token."
+msgstr "انقر على هذا الرابط {0} لمعرفة كيفية إنشاء رمز شخصي."
+
+#: src/Template/Admin/Activation/index.ctp:30
+msgid "Purchase Code"
+msgstr "رمز الشراء"
+
+#: src/Template/Admin/Activation/index.ctp:38
+msgid "Click on this URL {0} to learn how to get your purchase code."
+msgstr "انقر على هذا الرابط {0} لمعرفة كيفية الحصول على رمز الشراء."
+
+#: src/Template/Admin/Announcements/add.ctp:2
+#: src/Template/Admin/Announcements/add.ctp:4
+msgid "Add Announcement"
+msgstr "إضافة إعلان عام"
+
+#: src/Template/Admin/Announcements/add.ctp:14
+#: src/Template/Admin/Announcements/edit.ctp:16
+#: src/Template/Admin/Announcements/index.ctp:13
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:97
+#: src/Template/Admin/Campaigns/create_popup.ctp:98
+#: src/Template/Admin/Links/edit.ctp:36 src/Template/Admin/Pages/add.ctp:14
+#: src/Template/Admin/Pages/edit.ctp:16 src/Template/Admin/Pages/index.ctp:13
+#: src/Template/Admin/Plans/add.ctp:29 src/Template/Admin/Plans/edit.ctp:31
+#: src/Template/Admin/Plans/index.ctp:13 src/Template/Admin/Posts/add.ctp:14
+#: src/Template/Admin/Posts/edit.ctp:16 src/Template/Admin/Posts/index.ctp:13
+#: src/Template/Admin/Testimonials/index.ctp:14
+#: src/Template/Member/Campaigns/create_interstitial.ctp:51
+#: src/Template/Member/Campaigns/create_popup.ctp:52
+#: src/Template/Member/Links/edit.ctp:25
+msgid "Title"
+msgstr "العنوان"
+
+#: src/Template/Admin/Announcements/add.ctp:23
+#: src/Template/Admin/Announcements/edit.ctp:25
+#: src/Template/Admin/Announcements/index.ctp:14
+#: src/Template/Admin/Pages/add.ctp:32 src/Template/Admin/Pages/edit.ctp:34
+#: src/Template/Admin/Pages/index.ctp:15 src/Template/Admin/Plans/index.ctp:14
+#: src/Template/Admin/Posts/add.ctp:32 src/Template/Admin/Posts/edit.ctp:34
+#: src/Template/Admin/Posts/index.ctp:15
+#: src/Template/Admin/Testimonials/add.ctp:41
+#: src/Template/Admin/Testimonials/edit.ctp:43
+#: src/Template/Admin/Testimonials/index.ctp:15
+msgid "Published"
+msgstr "منشور"
+
+#: src/Template/Admin/Announcements/add.ctp:25
+#: src/Template/Admin/Announcements/edit.ctp:27
+#: src/Template/Admin/Announcements/index.ctp:41
+#: src/Template/Admin/Options/email.ctp:135
+#: src/Template/Admin/Options/index.ctp:267
+#: src/Template/Admin/Options/index.ctp:365
+#: src/Template/Admin/Options/index.ctp:402
+#: src/Template/Admin/Options/index.ctp:420
+#: src/Template/Admin/Options/index.ctp:438
+#: src/Template/Admin/Options/index.ctp:456
+#: src/Template/Admin/Options/index.ctp:521
+#: src/Template/Admin/Options/index.ctp:539
+#: src/Template/Admin/Options/index.ctp:557
+#: src/Template/Admin/Options/index.ctp:577
+#: src/Template/Admin/Options/index.ctp:598
+#: src/Template/Admin/Options/index.ctp:616
+#: src/Template/Admin/Options/index.ctp:634
+#: src/Template/Admin/Options/index.ctp:652
+#: src/Template/Admin/Options/index.ctp:769
+#: src/Template/Admin/Options/index.ctp:825
+#: src/Template/Admin/Options/index.ctp:892
+#: src/Template/Admin/Options/index.ctp:909
+#: src/Template/Admin/Options/index.ctp:928
+#: src/Template/Admin/Options/index.ctp:1165
+#: src/Template/Admin/Options/index.ctp:1314
+#: src/Template/Admin/Options/index.ctp:1332
+#: src/Template/Admin/Options/index.ctp:1349
+#: src/Template/Admin/Options/index.ctp:1366
+#: src/Template/Admin/Options/index.ctp:1383
+#: src/Template/Admin/Options/index.ctp:1405
+#: src/Template/Admin/Options/index.ctp:1460
+#: src/Template/Admin/Options/index.ctp:1477
+#: src/Template/Admin/Options/payment.ctp:71
+#: src/Template/Admin/Options/payment.ctp:93
+#: src/Template/Admin/Options/payment.ctp:125
+#: src/Template/Admin/Options/payment.ctp:146
+#: src/Template/Admin/Options/payment.ctp:198
+#: src/Template/Admin/Options/payment.ctp:242
+#: src/Template/Admin/Options/payment.ctp:309
+#: src/Template/Admin/Options/payment.ctp:394
+#: src/Template/Admin/Options/payment.ctp:447
+#: src/Template/Admin/Options/payment.ctp:484
+#: src/Template/Admin/Options/payment.ctp:536
+#: src/Template/Admin/Options/payment.ctp:600
+#: src/Template/Admin/Options/social_login.ctp:26
+#: src/Template/Admin/Options/social_login.ctp:76
+#: src/Template/Admin/Options/social_login.ctp:126
+#: src/Template/Admin/Pages/add.ctp:34 src/Template/Admin/Pages/edit.ctp:36
+#: src/Template/Admin/Pages/index.ctp:42 src/Template/Admin/Plans/add.ctp:188
+#: src/Template/Admin/Plans/edit.ctp:191 src/Template/Admin/Plans/index.ctp:24
+#: src/Template/Admin/Posts/add.ctp:34 src/Template/Admin/Posts/edit.ctp:36
+#: src/Template/Admin/Posts/index.ctp:42
+#: src/Template/Admin/Testimonials/add.ctp:43
+#: src/Template/Admin/Testimonials/edit.ctp:45
+#: src/Template/Admin/Testimonials/index.ctp:42
+msgid "Yes"
+msgstr "نعم"
+
+#: src/Template/Admin/Announcements/add.ctp:26
+#: src/Template/Admin/Announcements/edit.ctp:28
+#: src/Template/Admin/Announcements/index.ctp:41
+#: src/Template/Admin/Options/email.ctp:134
+#: src/Template/Admin/Options/index.ctp:268
+#: src/Template/Admin/Options/index.ctp:364
+#: src/Template/Admin/Options/index.ctp:403
+#: src/Template/Admin/Options/index.ctp:421
+#: src/Template/Admin/Options/index.ctp:439
+#: src/Template/Admin/Options/index.ctp:457
+#: src/Template/Admin/Options/index.ctp:522
+#: src/Template/Admin/Options/index.ctp:540
+#: src/Template/Admin/Options/index.ctp:558
+#: src/Template/Admin/Options/index.ctp:578
+#: src/Template/Admin/Options/index.ctp:599
+#: src/Template/Admin/Options/index.ctp:617
+#: src/Template/Admin/Options/index.ctp:635
+#: src/Template/Admin/Options/index.ctp:653
+#: src/Template/Admin/Options/index.ctp:770
+#: src/Template/Admin/Options/index.ctp:826
+#: src/Template/Admin/Options/index.ctp:893
+#: src/Template/Admin/Options/index.ctp:910
+#: src/Template/Admin/Options/index.ctp:929
+#: src/Template/Admin/Options/index.ctp:1166
+#: src/Template/Admin/Options/index.ctp:1315
+#: src/Template/Admin/Options/index.ctp:1333
+#: src/Template/Admin/Options/index.ctp:1350
+#: src/Template/Admin/Options/index.ctp:1367
+#: src/Template/Admin/Options/index.ctp:1384
+#: src/Template/Admin/Options/index.ctp:1406
+#: src/Template/Admin/Options/index.ctp:1461
+#: src/Template/Admin/Options/index.ctp:1478
+#: src/Template/Admin/Options/payment.ctp:70
+#: src/Template/Admin/Options/payment.ctp:92
+#: src/Template/Admin/Options/payment.ctp:124
+#: src/Template/Admin/Options/payment.ctp:145
+#: src/Template/Admin/Options/payment.ctp:197
+#: src/Template/Admin/Options/payment.ctp:241
+#: src/Template/Admin/Options/payment.ctp:308
+#: src/Template/Admin/Options/payment.ctp:393
+#: src/Template/Admin/Options/payment.ctp:446
+#: src/Template/Admin/Options/payment.ctp:483
+#: src/Template/Admin/Options/payment.ctp:535
+#: src/Template/Admin/Options/payment.ctp:599
+#: src/Template/Admin/Options/social_login.ctp:27
+#: src/Template/Admin/Options/social_login.ctp:77
+#: src/Template/Admin/Options/social_login.ctp:127
+#: src/Template/Admin/Pages/add.ctp:35 src/Template/Admin/Pages/edit.ctp:37
+#: src/Template/Admin/Pages/index.ctp:42 src/Template/Admin/Plans/add.ctp:189
+#: src/Template/Admin/Plans/edit.ctp:192 src/Template/Admin/Plans/index.ctp:24
+#: src/Template/Admin/Posts/add.ctp:35 src/Template/Admin/Posts/edit.ctp:37
+#: src/Template/Admin/Posts/index.ctp:42
+#: src/Template/Admin/Testimonials/add.ctp:44
+#: src/Template/Admin/Testimonials/edit.ctp:46
+#: src/Template/Admin/Testimonials/index.ctp:42
+msgid "No"
+msgstr "لا"
+
+#: src/Template/Admin/Announcements/add.ctp:35
+#: src/Template/Admin/Announcements/edit.ctp:37
+#: src/Template/Admin/Pages/add.ctp:44 src/Template/Admin/Pages/edit.ctp:46
+#: src/Template/Admin/Testimonials/add.ctp:53
+#: src/Template/Admin/Testimonials/edit.ctp:55
+msgid "Content"
+msgstr "تحتوي"
+
+#: src/Template/Admin/Announcements/edit.ctp:2
+#: src/Template/Admin/Announcements/edit.ctp:4
+msgid "Edit Announcement"
+msgstr "تعديل الإعلان"
+
+#: src/Template/Admin/Announcements/index.ctp:2
+#: src/Template/Admin/Announcements/index.ctp:4
+msgid "Manage Announcements"
+msgstr "إدارة الإعلانات"
+
+#: src/Template/Admin/Announcements/index.ctp:12
+#: src/Template/Admin/Campaigns/index.ctp:37
+#: src/Template/Admin/Pages/index.ctp:12 src/Template/Admin/Plans/index.ctp:12
+#: src/Template/Admin/Posts/index.ctp:12
+#: src/Template/Admin/Testimonials/index.ctp:13
+#: src/Template/Admin/Users/index.ctp:35
+#: src/Template/Admin/Users/index.ctp:120 src/Template/Admin/Users/view.ctp:24
+#: src/Template/Admin/Withdraws/edit.ctp:13
+#: src/Template/Admin/Withdraws/index.ctp:109
+#: src/Template/Member/Campaigns/index.ctp:38
+#: src/Template/Member/Withdraws/index.ctp:64
+msgid "Id"
+msgstr "المعرف"
+
+#: src/Template/Admin/Announcements/index.ctp:15
+#: src/Template/Admin/Pages/index.ctp:16 src/Template/Admin/Posts/index.ctp:16
+#: src/Template/Admin/Testimonials/index.ctp:16
+#: src/Template/Admin/Users/index.ctp:126
+msgid "modified"
+msgstr "تم التعديل"
+
+#: src/Template/Admin/Announcements/index.ctp:16
+#: src/Template/Admin/Campaigns/index.ctp:120
+#: src/Template/Admin/Campaigns/view.ctp:86
+#: src/Template/Admin/Invoices/index.ctp:29
+#: src/Template/Admin/Invoices/view.ctp:55
+#: src/Template/Admin/Pages/index.ctp:17 src/Template/Admin/Plans/index.ctp:16
+#: src/Template/Admin/Posts/index.ctp:17
+#: src/Template/Admin/Testimonials/index.ctp:17
+#: src/Template/Admin/Users/index.ctp:127 src/Template/Admin/Users/view.ctp:64
+#: src/Template/Member/Campaigns/index.ctp:111
+#: src/Template/Member/Campaigns/view.ctp:90
+#: src/Template/Member/Invoices/index.ctp:28
+#: src/Template/Member/Invoices/view.ctp:50
+msgid "Created"
+msgstr "انشأت فى"
+
+#: src/Template/Admin/Announcements/index.ctp:17
+#: src/Template/Admin/Campaigns/index.ctp:121
+#: src/Template/Admin/Invoices/index.ctp:30
+#: src/Template/Admin/Pages/index.ctp:18 src/Template/Admin/Plans/index.ctp:17
+#: src/Template/Admin/Posts/index.ctp:18
+#: src/Template/Admin/Testimonials/index.ctp:18
+#: src/Template/Admin/Users/index.ctp:128
+#: src/Template/Member/Campaigns/index.ctp:112
+#: src/Template/Member/Invoices/index.ctp:29
+msgid "Actions"
+msgstr "إجراءات"
+
+#: src/Template/Admin/Announcements/index.ctp:45
+#: src/Template/Admin/Invoices/index.ctp:65
+#: src/Template/Admin/Pages/index.ctp:49
+#: src/Template/Admin/Plans/delete.ctp:24
+#: src/Template/Admin/Plans/index.ctp:35 src/Template/Admin/Posts/index.ctp:50
+#: src/Template/Admin/Testimonials/index.ctp:45
+msgid "Delete"
+msgstr "حذف"
+
+#: src/Template/Admin/Announcements/index.ctp:46
+#: src/Template/Admin/Campaigns/index.ctp:158
+#: src/Template/Admin/Campaigns/index.ctp:162
+#: src/Template/Admin/Campaigns/view.ctp:119
+#: src/Template/Admin/Campaigns/view.ctp:124
+#: src/Template/Admin/Campaigns/view.ctp:128
+#: src/Template/Admin/Invoices/index.ctp:59
+#: src/Template/Admin/Invoices/index.ctp:67
+#: src/Template/Admin/Links/hidden.ctp:120
+#: src/Template/Admin/Links/hidden.ctp:122
+#: src/Template/Admin/Links/index.ctp:129
+#: src/Template/Admin/Links/index.ctp:134
+#: src/Template/Admin/Pages/index.ctp:50
+#: src/Template/Admin/Plans/delete.ctp:25
+#: src/Template/Admin/Posts/index.ctp:51
+#: src/Template/Admin/Testimonials/index.ctp:46
+#: src/Template/Admin/Users/index.ctp:155
+#: src/Template/Admin/Users/index.ctp:166
+#: src/Template/Admin/Users/view.ctp:129
+#: src/Template/Admin/Withdraws/index.ctp:154
+#: src/Template/Admin/Withdraws/index.ctp:162
+#: src/Template/Admin/Withdraws/index.ctp:170
+#: src/Template/Admin/Withdraws/view.ctp:21
+#: src/Template/Admin/Withdraws/view.ctp:29
+#: src/Template/Member/Campaigns/index.ctp:144
+#: src/Template/Member/Campaigns/index.ctp:148
+#: src/Template/Member/Campaigns/view.ctp:134
+#: src/Template/Member/Campaigns/view.ctp:141
+#: src/Template/Member/Links/hidden.ctp:103
+#: src/Template/Member/Links/index.ctp:113
+#: src/Template/Member/Withdraws/index.ctp:50
+msgid "Are you sure?"
+msgstr "هل أنت متأكد ؟"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:2
+#: src/Template/Admin/Campaigns/create_banner.ctp:4
+#: src/Template/Layout/admin.ctp:190 src/Template/Layout/member.ctp:238
+#: src/Template/Member/Campaigns/create_banner.ctp:2
+#: src/Template/Member/Campaigns/create_banner.ctp:4
+msgid "Create Banner Campaign"
+msgstr "إنشاء حملة بانر"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:24
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:23
+#: src/Template/Admin/Campaigns/create_popup.ctp:24
+msgid "Why views/earnings/Statistics/analytics are not counting?"
+msgstr "لماذا لا يتم احتساب المشاهدات / الأرباح / الإحصاءات / التحليلات؟"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:27
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:26
+#: src/Template/Admin/Campaigns/create_popup.ctp:27
+msgid ""
+"Important: <b>Default</b> campaigns will not count earnings so you need to "
+"create a non-default campaigns and earnings will start count."
+msgstr ""
+"هام: لن تحسب الحملات <b> الافتراضية </ b> الأرباح؛ لذا يلزمك إنشاء حملات غير "
+"افتراضية وستبدأ الأرباح في حسابها."
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:28
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:27
+#: src/Template/Admin/Campaigns/create_popup.ctp:28
+msgid ""
+"Anonymous(not registered users) short links will not earn, only registered "
+"can earn."
+msgstr ""
+"مجهول (المستخدمين غير المسجلين) الروابط القصيرة لن تحتسب ارباحها، فقط "
+"الاعضاء المسجلين هم من يمكنهم تحقيق الارباح."
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:29
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:28
+#: src/Template/Admin/Campaigns/create_popup.ctp:29
+msgid "Visitors must be unique within a 24 hours."
+msgstr "يجب أن يكون الزائر فريدا خلال 24 ساعة."
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:30
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:29
+#: src/Template/Admin/Campaigns/create_popup.ctp:30
+msgid "Visitors must have JavaScript enabled"
+msgstr "يجب ان يمكين الزائرين جافا سكريبت"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:31
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:30
+#: src/Template/Admin/Campaigns/create_popup.ctp:31
+msgid "Visitors must have Cookies enabled"
+msgstr "يجب تمكين ملفات تعريف الارتباط Cookies فى متصفحات الزائرين"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:32
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:31
+#: src/Template/Admin/Campaigns/create_popup.ctp:32
+#: src/Template/Member/Campaigns/create_banner.ctp:27
+#: src/Template/Member/Campaigns/create_interstitial.ctp:28
+#: src/Template/Member/Campaigns/create_popup.ctp:28
+msgid "Must view your website for at least {0} seconds"
+msgstr "يجب عرض موقعك على الويب لمدة {0} ثوان على الأقل"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:45
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:44
+#: src/Template/Admin/Campaigns/create_popup.ctp:45
+#: src/Template/Admin/Campaigns/edit.ctp:20
+#: src/Template/Admin/Campaigns/index.ctp:67
+#: src/Template/Admin/Campaigns/index.ctp:114
+#: src/Template/Member/Campaigns/index.ctp:59
+#: src/Template/Member/Campaigns/index.ctp:106
+msgid "Campaign Type"
+msgstr "نوع الحملة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:47
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:46
+#: src/Template/Admin/Campaigns/create_popup.ctp:47
+#: src/Template/Admin/Campaigns/edit.ctp:22
+msgid "Non-default Campaign"
+msgstr "الحملة غير الافتراضية"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:54
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:53
+#: src/Template/Admin/Campaigns/create_popup.ctp:54
+#: src/Template/Admin/Campaigns/edit.ctp:29
+msgid "Default means that campaign will not count earning for publisher."
+msgstr "يعني الإعداد الافتراضي أن الحملة لن تحسب أرباحا للناشر."
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:59
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:58
+#: src/Template/Admin/Campaigns/create_popup.ctp:59
+#: src/Template/Admin/Campaigns/edit.ctp:34
+#: src/Template/Admin/Withdraws/edit.ctp:45
+#: src/Template/Admin/Withdraws/index.ctp:110
+msgid "User"
+msgstr "مستخدم"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:61
+#: src/Template/Admin/Campaigns/create_banner.ctp:88
+#: src/Template/Admin/Campaigns/create_banner.ctp:113
+#: src/Template/Admin/Campaigns/create_banner.ctp:196
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:60
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:87
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:178
+#: src/Template/Admin/Campaigns/create_popup.ctp:61
+#: src/Template/Admin/Campaigns/create_popup.ctp:88
+#: src/Template/Admin/Campaigns/create_popup.ctp:180
+#: src/Template/Admin/Campaigns/edit.ctp:36
+#: src/Template/Admin/Campaigns/edit.ctp:61
+#: src/Template/Admin/Campaigns/edit.ctp:105
+#: src/Template/Admin/Campaigns/edit.ctp:170
+#: src/Template/Admin/Options/banner.ctp:82
+#: src/Template/Admin/Options/interstitial.ctp:82
+#: src/Template/Admin/Options/popup.ctp:82
+#: src/Template/Admin/Withdraws/edit.ctp:32
+#: src/Template/Member/Campaigns/create_banner.ctp:66
+#: src/Template/Member/Campaigns/create_banner.ctp:151
+#: src/Template/Member/Campaigns/create_interstitial.ctp:132
+#: src/Template/Member/Campaigns/create_popup.ctp:136
+#: src/Template/Member/Users/profile.ctp:95
+#: src/Template/Member/Users/profile.ctp:121
+msgid "Choose"
+msgstr "أختار"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:69
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:68
+#: src/Template/Admin/Campaigns/create_popup.ctp:69
+#: src/Template/Admin/Campaigns/edit.ctp:43
+#: src/Template/Admin/Campaigns/view.ctp:38
+#: src/Template/Member/Campaigns/create_banner.ctp:41
+#: src/Template/Member/Campaigns/create_interstitial.ctp:42
+#: src/Template/Member/Campaigns/create_popup.ctp:42
+#: src/Template/Member/Campaigns/view.ctp:47
+msgid "Campaign Name"
+msgstr "اسم الحملة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:77
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:76
+#: src/Template/Admin/Campaigns/create_popup.ctp:77
+#: src/Template/Admin/Campaigns/edit.ctp:50
+#: src/Template/Admin/Campaigns/index.ctp:54
+#: src/Template/Admin/Campaigns/index.ctp:119
+#: src/Template/Admin/Campaigns/view.ctp:33
+#: src/Template/Admin/Invoices/index.ctp:23
+#: src/Template/Admin/Invoices/view.ctp:35
+#: src/Template/Admin/Links/edit.ctp:16 src/Template/Admin/Users/add.ctp:27
+#: src/Template/Admin/Users/edit.ctp:28 src/Template/Admin/Users/index.ctp:43
+#: src/Template/Admin/Users/index.ctp:122 src/Template/Admin/Users/view.ctp:28
+#: src/Template/Admin/Withdraws/edit.ctp:17
+#: src/Template/Admin/Withdraws/index.ctp:81
+#: src/Template/Admin/Withdraws/index.ctp:112
+#: src/Template/Admin/Withdraws/view.ctp:39
+#: src/Template/Member/Campaigns/index.ctp:46
+#: src/Template/Member/Campaigns/index.ctp:110
+#: src/Template/Member/Campaigns/view.ctp:43
+#: src/Template/Member/Invoices/index.ctp:23
+#: src/Template/Member/Invoices/view.ctp:28
+#: src/Template/Member/Withdraws/index.ctp:66
+msgid "Status"
+msgstr "الحالة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:79
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:78
+#: src/Template/Admin/Campaigns/create_popup.ctp:79
+#: src/Template/Admin/Campaigns/edit.ctp:52
+#: src/Template/Admin/Campaigns/index.ctp:9
+#: src/Template/Admin/Campaigns/view.ctp:15
+#: src/Template/Admin/Links/edit.ctp:18 src/Template/Admin/Users/add.ctp:29
+#: src/Template/Admin/Users/edit.ctp:30 src/Template/Admin/Users/index.ctp:11
+#: src/Template/Admin/Users/view.ctp:11
+#: src/Template/Member/Campaigns/index.ctp:10
+#: src/Template/Member/Campaigns/view.ctp:15
+msgid "Active"
+msgstr "نشيط"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:80
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:79
+#: src/Template/Admin/Campaigns/create_popup.ctp:80
+#: src/Template/Admin/Campaigns/edit.ctp:53
+#: src/Template/Admin/Campaigns/index.ctp:10
+#: src/Template/Admin/Campaigns/view.ctp:16
+#: src/Template/Member/Campaigns/index.ctp:11
+#: src/Template/Member/Campaigns/view.ctp:16
+msgid "Paused"
+msgstr "متوقف"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:81
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:80
+#: src/Template/Admin/Campaigns/create_popup.ctp:81
+#: src/Template/Admin/Campaigns/edit.ctp:54
+#: src/Template/Admin/Campaigns/index.ctp:11
+#: src/Template/Admin/Campaigns/view.ctp:17
+#: src/Template/Admin/Invoices/index.ctp:11
+#: src/Template/Admin/Invoices/view.ctp:11
+#: src/Template/Member/Campaigns/index.ctp:12
+#: src/Template/Member/Campaigns/view.ctp:17
+#: src/Template/Member/Invoices/index.ctp:11
+#: src/Template/Member/Invoices/view.ctp:11
+msgid "Canceled"
+msgstr "تم الالغاء"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:82
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:81
+#: src/Template/Admin/Campaigns/create_popup.ctp:82
+#: src/Template/Admin/Campaigns/edit.ctp:55
+#: src/Template/Admin/Campaigns/index.ctp:12
+#: src/Template/Admin/Campaigns/view.ctp:18
+#: src/Template/Member/Campaigns/index.ctp:13
+#: src/Template/Member/Campaigns/view.ctp:18
+msgid "Finished"
+msgstr "منتهيه"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:83
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:82
+#: src/Template/Admin/Campaigns/create_popup.ctp:83
+#: src/Template/Admin/Campaigns/edit.ctp:56
+#: src/Template/Admin/Campaigns/index.ctp:13
+#: src/Template/Admin/Campaigns/view.ctp:19
+#: src/Template/Member/Campaigns/index.ctp:14
+#: src/Template/Member/Campaigns/view.ctp:19
+msgid "Under Review"
+msgstr "تحت المراجعة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:84
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:83
+#: src/Template/Admin/Campaigns/create_popup.ctp:84
+#: src/Template/Admin/Campaigns/edit.ctp:57
+#: src/Template/Admin/Campaigns/index.ctp:14
+#: src/Template/Admin/Campaigns/view.ctp:20
+#: src/Template/Member/Campaigns/index.ctp:15
+#: src/Template/Member/Campaigns/view.ctp:20
+msgid "Pending Payment"
+msgstr "في انتظار الدفع"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:85
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:84
+#: src/Template/Admin/Campaigns/create_popup.ctp:85
+#: src/Template/Admin/Campaigns/edit.ctp:58
+#: src/Template/Admin/Campaigns/index.ctp:15
+#: src/Template/Admin/Campaigns/view.ctp:21
+#: src/Template/Admin/Invoices/index.ctp:12
+#: src/Template/Admin/Invoices/view.ctp:12
+#: src/Template/Member/Campaigns/index.ctp:16
+#: src/Template/Member/Campaigns/view.ctp:21
+#: src/Template/Member/Invoices/index.ctp:12
+#: src/Template/Member/Invoices/view.ctp:12
+msgid "Invalid Payment"
+msgstr "دفعة غير صالحة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:86
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:85
+#: src/Template/Admin/Campaigns/create_popup.ctp:86
+#: src/Template/Admin/Campaigns/edit.ctp:59
+#: src/Template/Admin/Campaigns/index.ctp:16
+#: src/Template/Admin/Campaigns/view.ctp:22
+#: src/Template/Admin/Invoices/index.ctp:13
+#: src/Template/Admin/Invoices/view.ctp:13
+#: src/Template/Member/Campaigns/index.ctp:17
+#: src/Template/Member/Campaigns/view.ctp:22
+#: src/Template/Member/Invoices/index.ctp:13
+#: src/Template/Member/Invoices/view.ctp:13
+msgid "Refunded"
+msgstr "تم رد الأموال"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:94
+#: src/Template/Admin/Campaigns/edit.ctp:87
+#: src/Template/Member/Campaigns/create_banner.ctp:47
+msgid "Banner Details"
+msgstr "تفاصيل بانر"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:98
+#: src/Template/Admin/Campaigns/edit.ctp:91
+#: src/Template/Admin/Campaigns/view.ctp:58
+#: src/Template/Member/Campaigns/create_banner.ctp:51
+#: src/Template/Member/Campaigns/view.ctp:67
+msgid "Banner Name"
+msgstr "اسم البانر"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:103
+#: src/Template/Admin/Campaigns/edit.ctp:95
+#: src/Template/Member/Campaigns/create_banner.ctp:56
+msgid "(only for internal use)"
+msgstr "(فقط للاستخدام الداخلي)"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:107
+#: src/Template/Admin/Campaigns/edit.ctp:99
+#: src/Template/Admin/Campaigns/view.ctp:63
+#: src/Template/Member/Campaigns/create_banner.ctp:60
+#: src/Template/Member/Campaigns/view.ctp:72
+msgid "Banner Size"
+msgstr "حجم البانر"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:109
+#: src/Template/Admin/Campaigns/edit.ctp:101
+#: src/Template/Member/Campaigns/create_banner.ctp:62
+msgid "Leaderboard - 728x90"
+msgstr "Leaderboard - 728x90"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:110
+#: src/Template/Admin/Campaigns/edit.ctp:102
+#: src/Template/Member/Campaigns/create_banner.ctp:63
+msgid "Full banner - 468x60"
+msgstr "Full banner - 468x60"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:111
+#: src/Template/Admin/Campaigns/edit.ctp:103
+#: src/Template/Member/Campaigns/create_banner.ctp:64
+msgid "Large rectangle - 336x280"
+msgstr "Large rectangle - 336x280"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:121
+#: src/Template/Admin/Campaigns/edit.ctp:112
+#: src/Template/Admin/Campaigns/view.ctp:68
+#: src/Template/Member/Campaigns/create_banner.ctp:74
+#: src/Template/Member/Campaigns/view.ctp:77
+msgid "Banner Code"
+msgstr "كود البانر"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:127
+#: src/Template/Admin/Campaigns/edit.ctp:118
+#: src/Template/Member/Campaigns/create_banner.ctp:80
+msgid "(can be either HTML or JavaScript and must comply with our rules)"
+msgstr ""
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:129
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:112
+#: src/Template/Admin/Campaigns/create_popup.ctp:113
+#: src/Template/Admin/Campaigns/edit.ctp:123
+#: src/Template/Admin/Campaigns/view.ctp:91
+#: src/Template/Member/Campaigns/create_banner.ctp:82
+#: src/Template/Member/Campaigns/create_interstitial.ctp:64
+#: src/Template/Member/Campaigns/create_popup.ctp:67
+#: src/Template/Member/Campaigns/view.ctp:95
+msgid "Advertising Rates"
+msgstr "اثباتات الدفع للموقع"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:134
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:117
+#: src/Template/Admin/Campaigns/create_popup.ctp:118
+#: src/Template/Admin/Campaigns/edit.ctp:128
+#: src/Template/Admin/Campaigns/view.ctp:99
+#: src/Template/Admin/Campaigns/view.ctp:184
+#: src/Template/Admin/Reports/campaigns.ctp:154
+#: src/Template/Admin/Users/index.ctp:72 src/Template/Admin/Users/view.ctp:116
+#: src/Template/Admin/Withdraws/view.ctp:99
+#: src/Template/Member/Campaigns/create_banner.ctp:87
+#: src/Template/Member/Campaigns/create_interstitial.ctp:69
+#: src/Template/Member/Campaigns/create_popup.ctp:72
+#: src/Template/Member/Campaigns/view.ctp:104
+#: src/Template/Member/Users/profile.ctp:93
+#: src/Template/Statistics/view_info.ctp:61
+msgid "Country"
+msgstr "البلد"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:135
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:118
+#: src/Template/Admin/Campaigns/create_popup.ctp:119
+#: src/Template/Admin/Campaigns/view.ctp:100
+#: src/Template/Member/Campaigns/create_banner.ctp:88
+#: src/Template/Member/Campaigns/create_interstitial.ctp:70
+#: src/Template/Member/Campaigns/create_popup.ctp:73
+#: src/Template/Member/Campaigns/view.ctp:105
+msgid "Price / 1,000"
+msgstr "السعر / 1000"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:136
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:119
+#: src/Template/Admin/Campaigns/create_popup.ctp:120
+#: src/Template/Admin/Campaigns/edit.ctp:131
+#: src/Template/Admin/Campaigns/view.ctp:101
+#: src/Template/Member/Campaigns/create_banner.ctp:89
+#: src/Template/Member/Campaigns/create_interstitial.ctp:71
+#: src/Template/Member/Campaigns/create_popup.ctp:74
+#: src/Template/Member/Campaigns/view.ctp:106
+msgid "Purchase"
+msgstr "شراء"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:176
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:158
+#: src/Template/Admin/Campaigns/create_popup.ctp:160
+#: src/Template/Member/Campaigns/create_banner.ctp:131
+#: src/Template/Member/Campaigns/create_interstitial.ctp:112
+#: src/Template/Member/Campaigns/create_popup.ctp:116
+msgid "You have ordered {0} visitors for a total of {1}"
+msgstr "لقد طلبت {0} زائرين ما مجموعه {1}"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:179
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:161
+#: src/Template/Admin/Campaigns/create_popup.ctp:163
+#: src/Template/Admin/Campaigns/view.ctp:118
+#: src/Template/Member/Campaigns/create_banner.ctp:134
+#: src/Template/Member/Campaigns/create_interstitial.ctp:115
+#: src/Template/Member/Campaigns/create_popup.ctp:119
+#: src/Template/Member/Campaigns/view.ctp:33
+#: src/Template/Member/Campaigns/view.ctp:124
+msgid "Pay Campaign"
+msgstr "حملة الدفع"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:190
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:172
+#: src/Template/Admin/Campaigns/create_popup.ctp:174
+#: src/Template/Member/Campaigns/create_banner.ctp:145
+#: src/Template/Member/Campaigns/create_interstitial.ctp:126
+#: src/Template/Member/Campaigns/create_popup.ctp:130
+msgid "Traffic Sources/Devices"
+msgstr "مصادر الزيارات / الأجهزة"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:192
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:174
+#: src/Template/Admin/Campaigns/create_popup.ctp:176
+#: src/Template/Admin/Options/banner.ctp:9
+#: src/Template/Admin/Options/interstitial.ctp:9
+#: src/Template/Admin/Options/popup.ctp:9
+#: src/Template/Member/Campaigns/create_banner.ctp:147
+#: src/Template/Member/Campaigns/create_interstitial.ctp:128
+#: src/Template/Member/Campaigns/create_popup.ctp:132
+msgid "Desktop, Mobile and Tablet"
+msgstr "سطح مكتب، جوال وجهاز لوحي"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:193
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:175
+#: src/Template/Admin/Campaigns/create_popup.ctp:177
+#: src/Template/Admin/Options/banner.ctp:10
+#: src/Template/Admin/Options/interstitial.ctp:10
+#: src/Template/Admin/Options/popup.ctp:10
+#: src/Template/Member/Campaigns/create_banner.ctp:148
+#: src/Template/Member/Campaigns/create_interstitial.ctp:129
+#: src/Template/Member/Campaigns/create_popup.ctp:133
+msgid "Desktop Only"
+msgstr "سطح مكتب فقط"
+
+#: src/Template/Admin/Campaigns/create_banner.ctp:194
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:176
+#: src/Template/Admin/Campaigns/create_popup.ctp:178
+#: src/Template/Admin/Options/banner.ctp:11
+#: src/Template/Admin/Options/interstitial.ctp:11
+#: src/Template/Admin/Options/popup.ctp:11
+#: src/Template/Member/Campaigns/create_banner.ctp:149
+#: src/Template/Member/Campaigns/create_interstitial.ctp:130
+#: src/Template/Member/Campaigns/create_popup.ctp:134
+msgid "Mobile / Tablet Only"
+msgstr "الجوال / اللوحي فقط"
+
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:2
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:4
+#: src/Template/Layout/admin.ctp:186 src/Template/Layout/member.ctp:232
+#: src/Template/Member/Campaigns/create_interstitial.ctp:2
+#: src/Template/Member/Campaigns/create_interstitial.ctp:4
+msgid "Create Interstitial Campaign"
+msgstr "إنشاء حملة Interstitial"
+
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:93
+#: src/Template/Admin/Campaigns/create_popup.ctp:94
+#: src/Template/Admin/Campaigns/edit.ctp:67
+#: src/Template/Member/Campaigns/create_interstitial.ctp:47
+#: src/Template/Member/Campaigns/create_popup.ctp:48
+msgid "Website Details"
+msgstr "تفاصيل الموقع الإلكتروني"
+
+#: src/Template/Admin/Campaigns/create_interstitial.ctp:105
+#: src/Template/Admin/Campaigns/create_popup.ctp:106
+#: src/Template/Member/Campaigns/create_interstitial.ctp:58
+#: src/Template/Member/Campaigns/create_popup.ctp:60
+#: src/Template/Tools/bookmarklet.ctp:71
+msgid "URL"
+msgstr "الرابط URL"
+
+#: src/Template/Admin/Campaigns/create_popup.ctp:2
+#: src/Template/Admin/Campaigns/create_popup.ctp:4
+#: src/Template/Layout/admin.ctp:194 src/Template/Layout/member.ctp:245
+#: src/Template/Member/Campaigns/create_popup.ctp:2
+#: src/Template/Member/Campaigns/create_popup.ctp:4
+msgid "Create Popup Campaign"
+msgstr "إنشاء حملة منبثقة Popup"
+
+#: src/Template/Admin/Campaigns/edit.ctp:2
+#: src/Template/Admin/Campaigns/edit.ctp:4
+msgid "Edit Campaign"
+msgstr "تعديل الحملة"
+
+#: src/Template/Admin/Campaigns/edit.ctp:71
+#: src/Template/Admin/Campaigns/view.ctp:45
+#: src/Template/Member/Campaigns/view.ctp:54
+msgid "Website Title"
+msgstr "عنوان الموقع"
+
+#: src/Template/Admin/Campaigns/edit.ctp:78
+#: src/Template/Admin/Campaigns/view.ctp:49
+#: src/Template/Member/Campaigns/view.ctp:58
+msgid "Website URL"
+msgstr "رابط الموقع"
+
+#: src/Template/Admin/Campaigns/edit.ctp:129
+msgid "Advertiser Price / 1,000"
+msgstr "سعر المعلن / 1،000"
+
+#: src/Template/Admin/Campaigns/edit.ctp:130
+msgid "Publisher Price / 1,000"
+msgstr "سعر الناشر / 1،000"
+
+#: src/Template/Admin/Campaigns/edit.ctp:164
+msgid "Traffic Sources"
+msgstr "مصادر الزيارات"
+
+#: src/Template/Admin/Campaigns/edit.ctp:166
+msgid "Desktop and Mobile"
+msgstr "سطح مكتب و جوال"
+
+#: src/Template/Admin/Campaigns/edit.ctp:168
+msgid "Mobile"
+msgstr "جوال"
+
+#: src/Template/Admin/Campaigns/edit.ctp:175
+msgid "Update Campaign"
+msgstr "تحديث الحملة"
+
+#: src/Template/Admin/Campaigns/index.ctp:2
+#: src/Template/Admin/Campaigns/index.ctp:4
+#: src/Template/Member/Campaigns/index.ctp:2
+#: src/Template/Member/Campaigns/index.ctp:4
+msgid "Manage Campaigns"
+msgstr "إدارة الحملات"
+
+#: src/Template/Admin/Campaigns/index.ctp:46
+#: src/Template/Admin/Links/hidden.ctp:36
+#: src/Template/Admin/Links/inactive.ctp:36
+#: src/Template/Admin/Links/index.ctp:26
+#: src/Template/Admin/Withdraws/index.ctp:73
+msgid "User Id"
+msgstr "معرف المستخدم"
+
+#: src/Template/Admin/Campaigns/index.ctp:77
+#: src/Template/Admin/Campaigns/index.ctp:115
+#: src/Template/Admin/Testimonials/add.ctp:14
+#: src/Template/Admin/Testimonials/edit.ctp:16
+#: src/Template/Email/html/contact.ctp:1
+#: src/Template/Member/Campaigns/index.ctp:69
+#: src/Template/Member/Campaigns/index.ctp:107
+#: src/Template/Member/Forms/support.ctp:15
+msgid "Name"
+msgstr "الاسم:"
+
+#: src/Template/Admin/Campaigns/index.ctp:86
+#: src/Template/Member/Campaigns/index.ctp:78
+msgid "website title, url, banner name,.."
+msgstr "عنوان الموقع، والرابط، واسم البانر، .."
+
+#: src/Template/Admin/Campaigns/index.ctp:90
+#: src/Template/Admin/Links/hidden.ctp:59
+#: src/Template/Admin/Links/inactive.ctp:59
+#: src/Template/Admin/Links/index.ctp:63
+#: src/Template/Admin/Reports/campaigns.ctp:96
+#: src/Template/Admin/Users/index.ctp:103
+#: src/Template/Admin/Withdraws/index.ctp:95
+#: src/Template/Member/Campaigns/index.ctp:82
+#: src/Template/Member/Links/hidden.ctp:49
+#: src/Template/Member/Links/index.ctp:49
+msgid "Filter"
+msgstr "تصفية"
+
+#: src/Template/Admin/Campaigns/index.ctp:92
+#: src/Template/Admin/Links/hidden.ctp:61
+#: src/Template/Admin/Links/inactive.ctp:61
+#: src/Template/Admin/Links/index.ctp:65
+#: src/Template/Admin/Reports/campaigns.ctp:98
+#: src/Template/Admin/Users/index.ctp:105
+#: src/Template/Admin/Withdraws/index.ctp:97
+#: src/Template/Member/Campaigns/index.ctp:84
+#: src/Template/Member/Links/hidden.ctp:51
+#: src/Template/Member/Links/index.ctp:51
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: src/Template/Admin/Campaigns/index.ctp:112
+#: src/Template/Member/Campaigns/index.ctp:105
+msgid "Reference"
+msgstr "مرجع"
+
+#: src/Template/Admin/Campaigns/index.ctp:113
+#: src/Template/Admin/Invoices/index.ctp:25
+#: src/Template/Admin/Invoices/view.ctp:26 src/Template/Admin/Users/add.ctp:40
+#: src/Template/Admin/Users/edit.ctp:59 src/Template/Admin/Users/index.ctp:54
+#: src/Template/Admin/Users/index.ctp:121
+#: src/Template/Admin/Users/referrals.ctp:16
+#: src/Template/Admin/Users/view.ctp:32
+#: src/Template/Admin/Withdraws/view.ctp:51
+#: src/Template/Auth/Users/signup.ctp:17 src/Template/Install/adminuser.ctp:29
+#: src/Template/Member/Users/referrals.ctp:30
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: src/Template/Admin/Campaigns/index.ctp:116
+#: src/Template/Admin/Campaigns/view.ctp:74
+#: src/Template/Admin/Campaigns/view.ctp:102
+#: src/Template/Member/Campaigns/index.ctp:108
+#: src/Template/Member/Campaigns/view.ctp:82
+#: src/Template/Member/Campaigns/view.ctp:107
+msgid "Price"
+msgstr "السعر"
+
+#: src/Template/Admin/Campaigns/index.ctp:117
+#: src/Template/Admin/Campaigns/view.ctp:82
+#: src/Template/Admin/Campaigns/view.ctp:103
+#: src/Template/Member/Campaigns/index.ctp:109
+#: src/Template/Member/Campaigns/view.ctp:86
+#: src/Template/Member/Campaigns/view.ctp:108
+msgid "Visitors/Total"
+msgstr "الزوار / إجمالي"
+
+#: src/Template/Admin/Campaigns/index.ctp:118
+#: src/Template/Admin/Campaigns/view.ctp:78
+#: src/Template/Admin/Invoices/index.ctp:27
+#: src/Template/Admin/Invoices/view.ctp:47
+#: src/Template/Member/Invoices/index.ctp:26
+#: src/Template/Member/Invoices/view.ctp:41
+#: src/Template/Member/Invoices/view.ctp:71
+msgid "Payment Method"
+msgstr "طريقة الدفع او السداد"
+
+#: src/Template/Admin/Campaigns/index.ctp:152
+#: src/Template/Admin/Invoices/index.ctp:50
+#: src/Template/Admin/Pages/index.ctp:46 src/Template/Admin/Posts/index.ctp:46
+#: src/Template/Admin/Users/index.ctp:159
+#: src/Template/Admin/Withdraws/index.ctp:142
+#: src/Template/Member/Campaigns/index.ctp:136
+#: src/Template/Member/Invoices/index.ctp:43
+msgid "View"
+msgstr "مشاهده"
+
+#: src/Template/Admin/Campaigns/index.ctp:154
+#: src/Template/Admin/Links/hidden.ctp:117
+#: src/Template/Admin/Links/inactive.ctp:115
+#: src/Template/Admin/Links/index.ctp:122
+#: src/Template/Admin/Plans/index.ctp:29
+#: src/Template/Admin/Users/index.ctp:162
+#: src/Template/Admin/Users/view.ctp:126
+#: src/Template/Member/Links/hidden.ctp:97
+#: src/Template/Member/Links/index.ctp:106
+msgid "Edit"
+msgstr "تحرير"
+
+#: src/Template/Admin/Campaigns/index.ctp:157
+#: src/Template/Admin/Campaigns/view.ctp:123
+#: src/Template/Member/Campaigns/index.ctp:143
+#: src/Template/Member/Campaigns/view.ctp:132
+msgid "Pause"
+msgstr "ايقاف"
+
+#: src/Template/Admin/Campaigns/index.ctp:161
+#: src/Template/Admin/Campaigns/view.ctp:127
+#: src/Template/Member/Campaigns/index.ctp:147
+#: src/Template/Member/Campaigns/view.ctp:139
+msgid "Resume"
+msgstr "استئناف"
+
+#: src/Template/Admin/Campaigns/view.ctp:2
+#: src/Template/Admin/Campaigns/view.ctp:4
+#: src/Template/Member/Campaigns/view.ctp:2
+#: src/Template/Member/Campaigns/view.ctp:4
+msgid "Campaign #{0}"
+msgstr "الحملة رقم #{0}"
+
+#: src/Template/Admin/Campaigns/view.ctp:29
+#: src/Template/Member/Campaigns/view.ctp:39
+msgid "Campaign Details"
+msgstr "تفاصيل الحملة"
+
+#: src/Template/Admin/Campaigns/view.ctp:83
+#: src/Template/Member/Campaigns/view.ctp:87
+msgid "/"
+msgstr "/"
+
+#: src/Template/Admin/Campaigns/view.ctp:143
+#: src/Template/Admin/Reports/campaigns.ctp:112
+msgid "Campaign Clicks Details"
+msgstr "تفاصيل النقرات على الحملة"
+
+#: src/Template/Admin/Campaigns/view.ctp:150
+#: src/Template/Admin/Reports/campaigns.ctp:119
+msgid "Click Type"
+msgstr "نوع النقره"
+
+#: src/Template/Admin/Campaigns/view.ctp:151
+#: src/Template/Admin/Campaigns/view.ctp:185
+#: src/Template/Admin/Campaigns/view.ctp:217
+#: src/Template/Admin/Reports/campaigns.ctp:120
+#: src/Template/Admin/Reports/campaigns.ctp:155
+#: src/Template/Admin/Reports/campaigns.ctp:187
+#: src/Template/Admin/Withdraws/view.ctp:77
+#: src/Template/Admin/Withdraws/view.ctp:100
+#: src/Template/Admin/Withdraws/view.ctp:125
+#: src/Template/Admin/Withdraws/view.ctp:150
+#: src/Template/Admin/Withdraws/view.ctp:175
+msgid "Count"
+msgstr "عدد"
+
+#: src/Template/Admin/Campaigns/view.ctp:152
+#: src/Template/Admin/Campaigns/view.ctp:186
+#: src/Template/Admin/Campaigns/view.ctp:218
+#: src/Template/Admin/Reports/campaigns.ctp:121
+#: src/Template/Admin/Reports/campaigns.ctp:156
+#: src/Template/Admin/Reports/campaigns.ctp:188
+#: src/Template/Admin/Users/dashboard.ctp:65
+#: src/Template/Admin/Withdraws/index.ctp:113
+#: src/Template/Admin/Withdraws/view.ctp:101
+#: src/Template/Admin/Withdraws/view.ctp:126
+#: src/Template/Admin/Withdraws/view.ctp:151
+#: src/Template/Member/Withdraws/index.ctp:67
+msgid "Publisher Earnings"
+msgstr "أرباح الناشر"
+
+#: src/Template/Admin/Campaigns/view.ctp:164
+#: src/Template/Admin/Campaigns/view.ctp:200
+#: src/Template/Admin/Campaigns/view.ctp:232
+#: src/Template/Admin/Reports/campaigns.ctp:133
+#: src/Template/Admin/Reports/campaigns.ctp:170
+#: src/Template/Admin/Reports/campaigns.ctp:202
+msgid "No available data."
+msgstr "لا تتوفر بيانات."
+
+#: src/Template/Admin/Campaigns/view.ctp:177
+#: src/Template/Admin/Reports/campaigns.ctp:147
+#: src/Template/Admin/Withdraws/view.ctp:93
+#: src/Template/Statistics/view_info.ctp:50
+msgid "Countries"
+msgstr "بلدان"
+
+#: src/Template/Admin/Campaigns/view.ctp:209
+#: src/Template/Admin/Reports/campaigns.ctp:179
+msgid "Referers"
+msgstr "الدعوات"
+
+#: src/Template/Admin/Campaigns/view.ctp:216
+#: src/Template/Admin/Reports/campaigns.ctp:186
+msgid "Referer"
+msgstr "الإحالة"
+
+#: src/Template/Admin/Invoices/index.ctp:2
+#: src/Template/Admin/Invoices/index.ctp:4
+#: src/Template/Member/Invoices/index.ctp:2
+#: src/Template/Member/Invoices/index.ctp:4
+msgid "Manage Invoices"
+msgstr "إدارة الفواتير"
+
+#: src/Template/Admin/Invoices/index.ctp:9
+#: src/Template/Admin/Invoices/view.ctp:9
+#: src/Template/Member/Invoices/index.ctp:9
+#: src/Template/Member/Invoices/view.ctp:9
+msgid "Paid"
+msgstr "دفع"
+
+#: src/Template/Admin/Invoices/index.ctp:10
+#: src/Template/Admin/Invoices/view.ctp:10
+#: src/Template/Member/Invoices/index.ctp:10
+#: src/Template/Member/Invoices/view.ctp:10
+msgid "Unpaid"
+msgstr "غير مدفوع"
+
+#: src/Template/Admin/Invoices/index.ctp:22
+#: src/Template/Admin/Withdraws/view.ctp:35
+#: src/Template/Member/Invoices/index.ctp:22
+msgid "ID"
+msgstr "المعرف"
+
+#: src/Template/Admin/Invoices/index.ctp:24
+#: src/Template/Admin/Invoices/view.ctp:39
+#: src/Template/Admin/Links/edit.ctp:44 src/Template/Admin/Plans/add.ctp:58
+#: src/Template/Admin/Plans/edit.ctp:60 src/Template/Admin/Posts/add.ctp:53
+#: src/Template/Admin/Posts/edit.ctp:55
+#: src/Template/Member/Invoices/index.ctp:24
+#: src/Template/Member/Invoices/view.ctp:32
+#: src/Template/Member/Links/edit.ctp:33
+msgid "Description"
+msgstr "الوصف"
+
+#: src/Template/Admin/Invoices/index.ctp:26
+#: src/Template/Admin/Invoices/view.ctp:43
+#: src/Template/Admin/Withdraws/edit.ctp:41
+#: src/Template/Admin/Withdraws/view.ctp:43
+#: src/Template/Member/Invoices/index.ctp:25
+#: src/Template/Member/Invoices/view.ctp:36
+msgid "Amount"
+msgstr "مقدار"
+
+#: src/Template/Admin/Invoices/index.ctp:28
+#: src/Template/Member/Invoices/index.ctp:27
+msgid "Paid date"
+msgstr "تاريخ الدفع"
+
+#: src/Template/Admin/Invoices/index.ctp:57
+msgid "Mark as paid"
+msgstr "وضع علامة على أنها مدفوعة"
+
+#: src/Template/Admin/Invoices/view.ctp:2
+#: src/Template/Admin/Invoices/view.ctp:4
+#: src/Template/Admin/Invoices/view.ctp:20
+#: src/Template/Member/Invoices/view.ctp:2
+#: src/Template/Member/Invoices/view.ctp:4
+#: src/Template/Member/Invoices/view.ctp:20
+msgid "Invoice #{0}"
+msgstr "الفاتورة #{0}"
+
+#: src/Template/Admin/Invoices/view.ctp:51
+#: src/Template/Member/Invoices/view.ctp:46
+msgid "Paid Date"
+msgstr "تاريخ الدفع"
+
+#: src/Template/Admin/Links/edit.ctp:2 src/Template/Admin/Links/edit.ctp:4
+#: src/Template/Member/Links/edit.ctp:2 src/Template/Member/Links/edit.ctp:4
+msgid "Edit Link: {0}"
+msgstr "تعديل الرابط: {0}"
+
+#: src/Template/Admin/Links/edit.ctp:19
+msgid "Hidden"
+msgstr "مخفي"
+
+#: src/Template/Admin/Links/edit.ctp:20 src/Template/Admin/Users/add.ctp:31
+#: src/Template/Admin/Users/edit.ctp:32 src/Template/Admin/Users/index.ctp:13
+#: src/Template/Admin/Users/view.ctp:13
+msgid "Inactive"
+msgstr "غير نشط"
+
+#: src/Template/Admin/Links/edit.ctp:28 src/Template/Member/Links/edit.ctp:16
+msgid "Long URL"
+msgstr "عنوان URL طويل"
+
+#: src/Template/Admin/Links/edit.ctp:55 src/Template/Admin/Links/index.ctp:48
+#: src/Template/Cell/Link/shorten_member.ctp:53
+#: src/Template/Member/Links/edit.ctp:44
+#: src/Template/Member/Links/index.ctp:34
+#: src/Template/Member/Tools/mass_shrinker.ctp:61
+#: src/Template/Tools/bookmarklet.ctp:95
+msgid "Advertising Type"
+msgstr "نوع الإعلان"
+
+#: src/Template/Admin/Links/hidden.ctp:2 src/Template/Admin/Links/hidden.ctp:4
+#: src/Template/Admin/Links/inactive.ctp:2
+#: src/Template/Admin/Links/inactive.ctp:4
+#: src/Template/Admin/Links/index.ctp:2 src/Template/Admin/Links/index.ctp:4
+#: src/Template/Layout/admin.ctp:157 src/Template/Layout/member.ctp:172
+#: src/Template/Member/Links/hidden.ctp:2
+#: src/Template/Member/Links/hidden.ctp:4
+#: src/Template/Member/Links/index.ctp:2 src/Template/Member/Links/index.ctp:4
+msgid "Manage Links"
+msgstr "إدارة الروابط"
+
+#: src/Template/Admin/Links/hidden.ctp:26
+#: src/Template/Admin/Links/inactive.ctp:26
+#: src/Template/Member/Links/hidden.ctp:26
+msgid "Link Id"
+msgstr "معرف الرابط"
+
+#: src/Template/Admin/Links/hidden.ctp:46
+#: src/Template/Admin/Links/inactive.ctp:46
+#: src/Template/Admin/Links/index.ctp:36
+#: src/Template/Cell/Link/shorten_member.ctp:36
+#: src/Template/Cell/Link/shorten_member.ctp:38
+#: src/Template/Member/Links/hidden.ctp:36
+#: src/Template/Member/Links/index.ctp:26
+#: src/Template/Tools/bookmarklet.ctp:81 src/Template/Tools/bookmarklet.ctp:84
+msgid "Alias"
+msgstr "مرادف"
+
+#: src/Template/Admin/Links/hidden.ctp:55
+#: src/Template/Admin/Links/inactive.ctp:55
+#: src/Template/Admin/Links/index.ctp:59
+#: src/Template/Member/Links/hidden.ctp:45
+#: src/Template/Member/Links/index.ctp:45
+msgid "Title, Desc. or URL"
+msgstr "العنوان، الوصف. أو URL"
+
+#: src/Template/Admin/Links/hidden.ctp:89
+#: src/Template/Admin/Links/inactive.ctp:87
+#: src/Template/Admin/Links/index.ctp:93
+#: src/Template/Member/Links/index.ctp:72
+msgid "Stats"
+msgstr "احصائيات"
+
+#: src/Template/Admin/Links/hidden.ctp:119
+#: src/Template/Member/Links/hidden.ctp:102
+msgid "Unhide"
+msgstr "إظهار"
+
+#: src/Template/Admin/Links/hidden.ctp:121
+#: src/Template/Admin/Links/index.ctp:132
+#: src/Template/Admin/Users/index.ctp:165
+#: src/Template/Admin/Users/view.ctp:128
+msgid "Deactivate"
+msgstr "عطل"
+
+#: src/Template/Admin/Links/index.ctp:115 src/Template/Element/js_vars.ctp:6
+#: src/Template/Member/Links/index.ctp:98
+msgid "Copy"
+msgstr "نسخ"
+
+#: src/Template/Admin/Links/index.ctp:127
+#: src/Template/Member/Links/index.ctp:112
+msgid "Hide"
+msgstr "إخفاء"
+
+#: src/Template/Admin/Options/banner.ctp:2
+#: src/Template/Admin/Options/banner.ctp:4
+msgid "Banner Advertisement Price"
+msgstr "سعر اعلان البانر"
+
+#: src/Template/Admin/Options/banner.ctp:26
+msgid "Set Prices For Traffic Source {0}"
+msgstr "تعيين الأسعار لمصدر الزيارات {0}"
+
+#: src/Template/Admin/Options/banner.ctp:70
+#: src/Template/Admin/Options/email.ctp:145
+#: src/Template/Admin/Options/index.ctp:1559
+#: src/Template/Admin/Options/interstitial.ctp:70
+#: src/Template/Admin/Options/payment.ctp:626
+#: src/Template/Admin/Options/popup.ctp:70
+#: src/Template/Admin/Options/social_login.ctp:164
+msgid "Save"
+msgstr "حفظ"
+
+#: src/Template/Admin/Options/banner.ctp:80
+msgid "Select traffic source to set price For"
+msgstr "حدد مصدر الزيارات لتحديد السعر ل"
+
+#: src/Template/Admin/Options/email.ctp:2
+#: src/Template/Admin/Options/email.ctp:4
+msgid "Email Settings"
+msgstr "إعدادات البريد الإلكتروني"
+
+#: src/Template/Admin/Options/email.ctp:11
+#: src/Template/Admin/Options/index.ctp:9
+#: src/Template/Admin/Options/payment.ctp:11
+#: src/Template/Admin/Options/social_login.ctp:11
+msgid "Saving ..."
+msgstr "جار الحفظ ..."
+
+#: src/Template/Admin/Options/email.ctp:15
+msgid "Admin Email"
+msgstr "البريد الإلكتروني للمشرف"
+
+#: src/Template/Admin/Options/email.ctp:26
+msgid "The recipient email for the contact form and support requests."
+msgstr "البريد الإلكتروني للمستلم للحصول على نموذج الاتصال وطلبات الدعم."
+
+#: src/Template/Admin/Options/email.ctp:30
+msgid "Sending Email Settings"
+msgstr "جار إرسال إعدادات البريد الإلكتروني"
+
+#: src/Template/Admin/Options/email.ctp:33
+msgid "From Email"
+msgstr "من البريد الإلكترونى"
+
+#: src/Template/Admin/Options/email.ctp:48
+msgid "Email Method"
+msgstr "طريقة البريد الإلكتروني"
+
+#: src/Template/Admin/Options/email.ctp:54
+msgid "PHP Mail Function"
+msgstr "وظيفة PHP البريد"
+
+#: src/Template/Admin/Options/email.ctp:55
+msgid "SMTP"
+msgstr "SMTP"
+
+#: src/Template/Admin/Options/email.ctp:66
+msgid "SMTP Outgoing Host"
+msgstr "المضيف المنتهية ولايته SMTP"
+
+#: src/Template/Admin/Options/email.ctp:81
+msgid "SMTP Outgoing Port"
+msgstr "SMTP Outgoing Port"
+
+#: src/Template/Admin/Options/email.ctp:96
+msgid "SMTP Username"
+msgstr "أسم المستخدم SMTP"
+
+#: src/Template/Admin/Options/email.ctp:112
+msgid "SMTP Password"
+msgstr "كلمة مرور SMTP"
+
+#: src/Template/Admin/Options/email.ctp:128
+msgid "SMTP TLS"
+msgstr "SMTP TLS"
+
+#: src/Template/Admin/Options/index.ctp:2
+#: src/Template/Admin/Options/index.ctp:4 src/Template/Layout/admin.ctp:321
+#: src/Template/Layout/admin.ctp:327 src/Template/Layout/member.ctp:255
+msgid "Settings"
+msgstr "إعدادات"
+
+#: src/Template/Admin/Options/index.ctp:17
+msgid "General"
+msgstr "عام"
+
+#: src/Template/Admin/Options/index.ctp:19 src/Template/Layout/member.ctp:82
+msgid "Language"
+msgstr "لغة"
+
+#: src/Template/Admin/Options/index.ctp:21
+msgid "Design"
+msgstr "التصميم"
+
+#: src/Template/Admin/Options/index.ctp:23
+#: src/Template/Admin/Withdraws/view.ctp:168
+msgid "Links"
+msgstr "الروابط"
+
+#: src/Template/Admin/Options/index.ctp:25
+msgid "Earnings"
+msgstr "الأرباح"
+
+#: src/Template/Admin/Options/index.ctp:27 src/Template/Layout/admin.ctp:224
+msgid "Users"
+msgstr "المستخدمين"
+
+#: src/Template/Admin/Options/index.ctp:29
+msgid "Integration"
+msgstr "التكامل"
+
+#: src/Template/Admin/Options/index.ctp:31
+msgid "Admin Ads"
+msgstr "إعلانات المشرف"
+
+#: src/Template/Admin/Options/index.ctp:33
+msgid "Captcha"
+msgstr "كلمة التحقق"
+
+#: src/Template/Admin/Options/index.ctp:35
+msgid "Security"
+msgstr "الأمان"
+
+#: src/Template/Admin/Options/index.ctp:39
+msgid "Social Media"
+msgstr "وسائل التواصل الاجتماعية"
+
+#: src/Template/Admin/Options/index.ctp:47
+msgid "Site Name"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:57
+msgid "This is your site name as well as the site meta title."
+msgstr "هذا هو اسم الموقع الخاص بك وكذلك عنوان ميتا الموقع."
+
+#: src/Template/Admin/Options/index.ctp:62
+msgid "Site Description"
+msgstr "وصف الموقع"
+
+#: src/Template/Admin/Options/index.ctp:76
+msgid "Main Domain"
+msgstr "النطاق الرئيسي"
+
+#: src/Template/Admin/Options/index.ctp:89
+msgid ""
+"Main domain used for all pages expect the short link page. Make sure to "
+"remove the \"http\" or \"https\" and the trailing slash (/)!. Example: "
+"<b>domain.com</b>"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:96
+msgid "Default Short URL Domain"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:101
+msgid "Ex. domian.com"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:108
+msgid ""
+"Add the default domain used for the short links. If it is empty, the main "
+"domain will be used. Make sure to remove the \"http\" or \"https\" and the "
+"trailing slash (/)!. Example: <b>domain.com</b>"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:116
+msgid "Multi Domains"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:128
+msgid ""
+"Add the other domains(don't add the default short URL domain or the main "
+"domain) you want users to select between when short links. ex. <b>domain1."
+"com,domain2.com</b> These domains should be parked/aliased to the main "
+"domain. Separate by comma, no spaces. Make sure to remove the 'http' or "
+"'https' and the trailing slash (/)!"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:138
+msgid "Language Direction"
+msgstr "اتجاه اللغة"
+
+#: src/Template/Admin/Options/index.ctp:144
+msgid "LTR"
+msgstr "من اليسار إلى اليمين"
+
+#: src/Template/Admin/Options/index.ctp:145
+msgid "RTL"
+msgstr "من اليمين إلى اليسار"
+
+#: src/Template/Admin/Options/index.ctp:157
+msgid "Time Zone"
+msgstr "المنطقة الزمنية"
+
+#: src/Template/Admin/Options/index.ctp:174
+msgid "Fake Users Base"
+msgstr "قاعدة المستخدمين الوهمية"
+
+#: src/Template/Admin/Options/index.ctp:189
+msgid "Fake Links Base"
+msgstr "قاعدة روابط وهمية"
+
+#: src/Template/Admin/Options/index.ctp:204
+msgid "Fake Clicks base"
+msgstr "قاعدة النقرات الوهمية"
+
+#: src/Template/Admin/Options/index.ctp:229
+msgid "Default Language"
+msgstr "اللغة الافتراضية"
+
+#: src/Template/Admin/Options/index.ctp:244
+msgid "Site Languages"
+msgstr "لغات الموقع"
+
+#: src/Template/Admin/Options/index.ctp:261
+msgid "Language Automatic Redirect"
+msgstr "إعادة التوجيه التلقائي حسب اللغة"
+
+#: src/Template/Admin/Options/index.ctp:275
+msgid ""
+"Automatically redirect the website visitors to browse the website based on  "
+"their browser language if it is already available."
+msgstr ""
+"إعادة توجيه زوار الموقع تلقائيا لتصفح الموقع استنادا إلى لغة المتصفح الخاصة "
+"بهم إذا كان متوفرا بالفعل."
+
+#: src/Template/Admin/Options/index.ctp:297
+msgid "Select Theme"
+msgstr "اختر القالب"
+
+#: src/Template/Admin/Options/index.ctp:312
+msgid "Logo URL"
+msgstr "عنوان URL الشعار"
+
+#: src/Template/Admin/Options/index.ctp:327
+msgid "Logo URL - Alternative"
+msgstr "عنوان URL الشعار - بديل"
+
+#: src/Template/Admin/Options/index.ctp:338
+msgid "Alternative logo used on the login page"
+msgstr "شعار بديل يستخدم في صفحة تسجيل الدخول"
+
+#: src/Template/Admin/Options/index.ctp:343
+msgid "Favicon URL"
+msgstr "رابط Favicon"
+
+#: src/Template/Admin/Options/index.ctp:358
+msgid "Combine & Minify CSS & JS files"
+msgstr "الجمع بين وتصغر ملفات CSS و JS"
+
+#: src/Template/Admin/Options/index.ctp:375
+msgid "Assets CDN URL"
+msgstr "عنوان ورل ل كدن للأصول"
+
+#: src/Template/Admin/Options/index.ctp:393
+msgid "Advertisement Types"
+msgstr "أنواع الإعلانات"
+
+#: src/Template/Admin/Options/index.ctp:396
+msgid "Enable Interstitial Advertisement"
+msgstr "تمكين الإعلان Interstitial"
+
+#: src/Template/Admin/Options/index.ctp:414
+msgid "Enable Banner Advertisement"
+msgstr "تمكين الإعلان Banner"
+
+#: src/Template/Admin/Options/index.ctp:432
+msgid "Enable Popup Advertisement"
+msgstr "تمكين الإعلان المنبثق Popup"
+
+#: src/Template/Admin/Options/index.ctp:450
+msgid "Enable No Advert"
+msgstr "تمكين لا معلنين"
+
+#: src/Template/Admin/Options/index.ctp:467
+msgid "Default Advertisement Types"
+msgstr "أنواع الإعلانات الافتراضية"
+
+#: src/Template/Admin/Options/index.ctp:470
+msgid "Anonymous Default Advert"
+msgstr "الاعلان الافتراضى للاعضاء"
+
+#: src/Template/Admin/Options/index.ctp:476
+#: src/Template/Admin/Options/index.ctp:496
+msgid "Interstitial Advertisement"
+msgstr "فراغي إعلان"
+
+#: src/Template/Admin/Options/index.ctp:477
+#: src/Template/Admin/Options/index.ctp:497
+msgid "Ad Banner"
+msgstr "إعلان بانر"
+
+#: src/Template/Admin/Options/index.ctp:490
+msgid "Member Default Advert"
+msgstr "الاعلان الافتراضى للاعضاء"
+
+#: src/Template/Admin/Options/index.ctp:509
+msgid "Metadata Fetching"
+msgstr "جلب البيانات الوصفية"
+
+#: src/Template/Admin/Options/index.ctp:510
+msgid ""
+"When shortening a URL, the URL page is downloaded and title, description & "
+"image are fetched from this page. If you have performance issues you can "
+"disable this behaviour from the below options."
+msgstr ""
+"عند اختصار عنوان ورل، يتم تنزيل صفحة عنوان ورل ويتم جلب العنوان والوصف "
+"والصورة من هذه الصفحة. إذا كان لديك مشاكل في الأداء يمكنك تعطيل هذا السلوك "
+"من الخيارات أدناه."
+
+#: src/Template/Admin/Options/index.ctp:515
+msgid "Disable Metadata Fetching on Homepage"
+msgstr "تعطيل جلب البيانات الوصفية على الصفحة الرئيسية"
+
+#: src/Template/Admin/Options/index.ctp:533
+msgid "Disable Metadata Fetching on Member Area"
+msgstr "تعطيل جلب البيانات الوصفية في منطقة الأعضاء"
+
+#: src/Template/Admin/Options/index.ctp:551
+msgid "Disable Metadata Fetching on API"
+msgstr "تعطيل جلب البيانات الوصفية على واجهة برمجة التطبيقات API"
+
+#: src/Template/Admin/Options/index.ctp:565
+msgid ""
+"This is applicable for Quick Tool, Mass Shrinker, Full Page Script & "
+"Developers API."
+msgstr ""
+"هذا ينطبق على Quick Tool, Mass Shrinker, Full Page Script & Developers API."
+
+#: src/Template/Admin/Options/index.ctp:571
+msgid "Display Short link content(title, description and image)"
+msgstr "عرض محتوى الرابط القصير (العنوان والوصف والصورة)"
+
+#: src/Template/Admin/Options/index.ctp:585
+msgid "Useful if your ads are displayed based on page content."
+msgstr "مفيدة إذا تم عرض إعلاناتك استنادا إلى محتوى الصفحة."
+
+#: src/Template/Admin/Options/index.ctp:592
+msgid "Make Link Info Available for Public"
+msgstr "جعل معلومات الارتباط متاحة للجمهور"
+
+#: src/Template/Admin/Options/index.ctp:610
+msgid "Display Home URL Shortening Box"
+msgstr "عرض صندوق اختصار الروابط فى الصفحة الرئيسية"
+
+#: src/Template/Admin/Options/index.ctp:628
+msgid "Redirect Anonymous Users to Register"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:646
+msgid "Make Link Info Available for Members"
+msgstr "جعل معلومات الارتباط متاح للأعضاء"
+
+#: src/Template/Admin/Options/index.ctp:664
+msgid "Counter Value"
+msgstr "قيمة العداد"
+
+#: src/Template/Admin/Options/index.ctp:679
+msgid "Mass Shrinker Limit"
+msgstr "كتلة المتراجع الحد"
+
+#: src/Template/Admin/Options/index.ctp:694
+msgid "Disallowed Domains"
+msgstr "النطاقات غير المسموح بها"
+
+#: src/Template/Admin/Options/index.ctp:705
+msgid ""
+"Disallow links with certain domains from being shortened. Separate by comma, "
+"no spaces."
+msgstr "عدم السماح بتقصير الروابط مع بعض النطاقات. فصل بفاصلات، بدون مسافات."
+
+#: src/Template/Admin/Options/index.ctp:711
+msgid "Reserved Aliases"
+msgstr "الأسماء المستعارة المحجوزة"
+
+#: src/Template/Admin/Options/index.ctp:722
+msgid ""
+"Disallow aliases from being used for short links. Separate by comma, no "
+"spaces."
+msgstr ""
+"عدم السماح بالأسماء المستعارة من استخدامها في الروابط القصيرة. فصل بفاصلات، "
+"بدون مسافات."
+
+#: src/Template/Admin/Options/index.ctp:728
+msgid "Alias Min. Length"
+msgstr "Alias Min. Length"
+
+#: src/Template/Admin/Options/index.ctp:743
+msgid "Alias Max. Length"
+msgstr "Alias Max. Length"
+
+#: src/Template/Admin/Options/index.ctp:763
+msgid "Enable Advertising"
+msgstr "تمكين الإعلان للمعلنين"
+
+#: src/Template/Admin/Options/index.ctp:781
+msgid "Unique Visitor Per"
+msgstr "زائر فريد لكل"
+
+#: src/Template/Admin/Options/index.ctp:787
+msgid "Campaign"
+msgstr "حملة"
+
+#: src/Template/Admin/Options/index.ctp:788
+msgid "All Campaigns"
+msgstr "جميع الحملات"
+
+#: src/Template/Admin/Options/index.ctp:795
+msgid "Campaign: Publishers will earn more based on number of Campaigns."
+msgstr "الحملة: سيكتسب الناشرون المزيد استنادا إلى عدد الحملات."
+
+#: src/Template/Admin/Options/index.ctp:796
+msgid "All Campaigns: Publishers will earn less."
+msgstr "جميع الحملات: سيحصل الناشرون على أرباح أقل."
+
+#: src/Template/Admin/Options/index.ctp:802
+msgid "Paid Views Per Day"
+msgstr "المشاهدات المدفوعة لكل يوم"
+
+#: src/Template/Admin/Options/index.ctp:819
+msgid "Force Disable Adblock"
+msgstr "فرض تعطيل أدبلوك Adblock"
+
+#: src/Template/Admin/Options/index.ctp:836
+msgid "Referral Percentage"
+msgstr "نسبة الإحالة"
+
+#: src/Template/Admin/Options/index.ctp:846
+msgid "Enter the referral earning percentage. Ex. 20"
+msgstr "أدخل نسبة كسب الإحالة. كمثال. 20"
+
+#: src/Template/Admin/Options/index.ctp:851
+msgid "Minimum Withdrawal Amount"
+msgstr "الحد الأدنى لسحب المبلغ"
+
+#: src/Template/Admin/Options/index.ctp:865
+msgid "Referral Banners Code"
+msgstr "شفرة لافتات الإحالة"
+
+#: src/Template/Admin/Options/index.ctp:876
+msgid ""
+"Here you can add your referral banners html code. You can use "
+"[referral_link] as a placeholder for member referral link."
+msgstr ""
+"هنا يمكنك إضافة لافتات الإحالة رمز هتمل الخاص بك. يمكنك استخدام "
+"[referral_link] كعنصر نائب لرابط الإحالة للعضو."
+
+#: src/Template/Admin/Options/index.ctp:886
+msgid "Close Registration"
+msgstr "أغلق التسجيل"
+
+#: src/Template/Admin/Options/index.ctp:903
+msgid "Enable Premium Membership"
+msgstr "تمكين العضوية المميزة"
+
+#: src/Template/Admin/Options/index.ctp:922
+msgid "Enable Account Activation by Email"
+msgstr "تمكين تنشيط الحساب عن طريق البريد الإلكتروني"
+
+#: src/Template/Admin/Options/index.ctp:940
+msgid "Reserved Usernames"
+msgstr "أسماء المستخدمين المحجوزة"
+
+#: src/Template/Admin/Options/index.ctp:951
+msgid "Separate by comma, no spaces."
+msgstr "فصل بفاصلات، بدون مسافات."
+
+#: src/Template/Admin/Options/index.ctp:960
+msgid "Front Head Code"
+msgstr "كود منطقة HEAD"
+
+#: src/Template/Admin/Options/index.ctp:975
+msgid "Auth Head Code"
+msgstr "كود Head المصادقة"
+
+#: src/Template/Admin/Options/index.ctp:990
+msgid "Member Head Code"
+msgstr "كود Head العضو"
+
+#: src/Template/Admin/Options/index.ctp:1005
+msgid "Admin Head Code"
+msgstr "كود Head المشرف"
+
+#: src/Template/Admin/Options/index.ctp:1020
+msgid "Footer Code"
+msgstr "كود الفوتر"
+
+#: src/Template/Admin/Options/index.ctp:1035
+msgid "After Body Tag Code"
+msgstr "بعد قانون العلامات الجسم"
+
+#: src/Template/Admin/Options/index.ctp:1055
+msgid "Member Area Ad"
+msgstr "اعلانات منطقة الأعضاء"
+
+#: src/Template/Admin/Options/index.ctp:1070
+msgid "Captcha Ad"
+msgstr "إعلان كابتشا"
+
+#: src/Template/Admin/Options/index.ctp:1084
+msgid "Interstitial Ads"
+msgstr "الإعلانات البينية Interstitial"
+
+#: src/Template/Admin/Options/index.ctp:1086
+msgid "This ad will be displayed between logo and counter."
+msgstr "سيتم عرض هذا الإعلان بين الشعار والعداد."
+
+#: src/Template/Admin/Options/index.ctp:1089
+msgid "Interstitial Page Ad Code"
+msgstr "شفرة إعلان الصفحة البينية Interstitial"
+
+#: src/Template/Admin/Options/index.ctp:1103
+msgid "Banner Ads"
+msgstr "إعلانات البانر"
+
+#: src/Template/Admin/Options/index.ctp:1105
+msgid ""
+"Let say you have a campaign for 728×90 space then the other places 468×60 "
+"and 336×280 will be populated with the below banner ads."
+msgstr ""
+"لنفترض أنك تمتلك حملة مساحة 728 × 90، فسيتم ملء الأماكن الأخرى 468 × 60 و "
+"336 × 280 مع إعلانات البانر أدناه."
+
+#: src/Template/Admin/Options/index.ctp:1109
+msgid "Banner 728x90"
+msgstr "بانر 728x90"
+
+#: src/Template/Admin/Options/index.ctp:1124
+msgid "Banner 468x60"
+msgstr "بانر 468x60"
+
+#: src/Template/Admin/Options/index.ctp:1139
+msgid "Banner 336x280"
+msgstr "بانر 336x280"
+
+#: src/Template/Admin/Options/index.ctp:1159
+msgid "Enable Captcha"
+msgstr "تمكين كابتشا"
+
+#: src/Template/Admin/Options/index.ctp:1177
+msgid "Captcha Type"
+msgstr "نوع كابتشا"
+
+#: src/Template/Admin/Options/index.ctp:1183
+msgid "reCAPTCHA"
+msgstr "اختبار reCAPTCHA"
+
+#: src/Template/Admin/Options/index.ctp:1184
+msgid "Invisible reCAPTCHA"
+msgstr "ريكابتشا غير مرئية"
+
+#: src/Template/Admin/Options/index.ctp:1185
+msgid "Solve Media"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:1196
+msgid "reCAPTCHA Settings"
+msgstr "إعدادات ريكابتشا"
+
+#: src/Template/Admin/Options/index.ctp:1199
+msgid "reCAPTCHA Site key"
+msgstr "ريكابتشا مفتاح الموقع"
+
+#: src/Template/Admin/Options/index.ctp:1213
+msgid "reCAPTCHA Secret key"
+msgstr "ريكابتشا مفتاح سري"
+
+#: src/Template/Admin/Options/index.ctp:1228
+msgid "Invisible reCAPTCHA Settings"
+msgstr "إعدادات ريكابتشا غير مرئية"
+
+#: src/Template/Admin/Options/index.ctp:1231
+msgid "Invisible reCAPTCHA Site key"
+msgstr "مفتاح ريكابتشا غير مرئي Site key"
+
+#: src/Template/Admin/Options/index.ctp:1245
+msgid "Invisible reCAPTCHA Secret key"
+msgstr "المفتاح السري غير مرئي ريكابتشا Secret key"
+
+#: src/Template/Admin/Options/index.ctp:1260
+msgid "Solve Media Settings"
+msgstr "حل إعدادات الوسائط"
+
+#: src/Template/Admin/Options/index.ctp:1263
+msgid "Solve Media Challenge Key"
+msgstr "حل مفتاح تحدي الوسائط"
+
+#: src/Template/Admin/Options/index.ctp:1277
+msgid "Solve Media Verification Key"
+msgstr "حل مفتاح التحقق من الوسائط"
+
+#: src/Template/Admin/Options/index.ctp:1291
+msgid "Solve Media Authentication Hash Key"
+msgstr "حل مفتاح تجزئة مصادقة الوسائط"
+
+#: src/Template/Admin/Options/index.ctp:1308
+msgid "Enable on Home Anonymous Short Link Box"
+msgstr "تمكين على الصفحة الرئيسية الزوار غير المسجلين مربع الارتباط القصير"
+
+#: src/Template/Admin/Options/index.ctp:1326
+msgid "Enable on Short Links Page"
+msgstr "تمكين في صفحة الروابط القصيرة"
+
+#: src/Template/Admin/Options/index.ctp:1343
+msgid "Enable on Signup Form"
+msgstr "مكن الناس الجدد الاستراك في موقعك"
+
+#: src/Template/Admin/Options/index.ctp:1360
+msgid "Enable on Forgot Password Form"
+msgstr "تمكين على نموذج نسيت كلمة المرور"
+
+#: src/Template/Admin/Options/index.ctp:1377
+msgid "Enable on Contact Form"
+msgstr "نموذج الاتصال"
+
+#: src/Template/Admin/Options/index.ctp:1399
+msgid "Enable SSL Integration"
+msgstr "تمكين التكامل SSL"
+
+#: src/Template/Admin/Options/index.ctp:1412
+msgid ""
+"You should install SSL into your website before enable SSL integration. For "
+"more information about SSL, please ask your hosting company."
+msgstr ""
+"يجب تثبيت SSL إلى موقع الويب الخاص بك قبل تمكين التكامل SSL. لمزيد من "
+"المعلومات حول SSL، رجاء راسل شركة الاستضافة."
+
+#: src/Template/Admin/Options/index.ctp:1418
+msgid "Google Safe Browsing API Key"
+msgstr "مفتاح جوجل API"
+
+#: src/Template/Admin/Options/index.ctp:1428
+#: src/Template/Admin/Options/index.ctp:1444
+msgid "You can get your key from <a href=\"{0}\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:1434
+msgid "PhishTank API key"
+msgstr "مفتاح API"
+
+#: src/Template/Admin/Options/index.ctp:1454
+msgid "Enable Blog"
+msgstr "تمكين المدونة"
+
+#: src/Template/Admin/Options/index.ctp:1471
+msgid "Enable Comments"
+msgstr "تمكين التعليقات"
+
+#: src/Template/Admin/Options/index.ctp:1488
+msgid "Disqus Shortname"
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:1498
+msgid ""
+"To display comment box, you must create an account at Disqus website by "
+"signing up from <a href='https://disqus.com/profile/signup/' "
+"target='_blank'>here</a> then add your website their from <a href='https://"
+"disqus.com/admin/create/' target='_blank'>here</a> and get your shortname."
+msgstr ""
+
+#: src/Template/Admin/Options/index.ctp:1511
+msgid "Facebook Page URL"
+msgstr "URL صفحة الفيسبوك"
+
+#: src/Template/Admin/Options/index.ctp:1525
+msgid "Twitter Profile URL"
+msgstr "تويتر الملف URL"
+
+#: src/Template/Admin/Options/index.ctp:1539
+msgid "Google Plus URL"
+msgstr "URL جوجل بلس"
+
+#: src/Template/Admin/Options/interstitial.ctp:2
+#: src/Template/Admin/Options/interstitial.ctp:4
+msgid "Interstitial Advertisement Price"
+msgstr "سعر الإعلان الـ Interstitial"
+
+#: src/Template/Admin/Options/interstitial.ctp:26
+#: src/Template/Admin/Options/popup.ctp:26
+msgid "Set Prices For {0}"
+msgstr "تعيين الأسعار ل {0}"
+
+#: src/Template/Admin/Options/interstitial.ctp:80
+#: src/Template/Admin/Options/popup.ctp:80
+msgid "Set Price For"
+msgstr "تعيين سعر ل"
+
+#: src/Template/Admin/Options/payment.ctp:2
+#: src/Template/Admin/Options/payment.ctp:4
+msgid "Payment Settings"
+msgstr "إعدادات الدفع"
+
+#: src/Template/Admin/Options/payment.ctp:15
+msgid "Currency Code"
+msgstr "رمز العملة"
+
+#: src/Template/Admin/Options/payment.ctp:29
+msgid "Currency Symbol"
+msgstr "شعار العملة"
+
+#: src/Template/Admin/Options/payment.ctp:43
+msgid "Currency Position"
+msgstr "السعر"
+
+#: src/Template/Admin/Options/payment.ctp:49
+msgid "Before Price"
+msgstr "قبل السعر"
+
+#: src/Template/Admin/Options/payment.ctp:50
+msgid "After Price"
+msgstr "بعد السعر"
+
+#: src/Template/Admin/Options/payment.ctp:59
+msgid "Wallet Settings"
+msgstr "إعدادات المحفظة"
+
+#: src/Template/Admin/Options/payment.ctp:61
+msgid ""
+"Your users will be able to withdraw money to their wallet then use it to pay "
+"campaigns."
+msgstr ""
+"سيتمكن المستخدمون من سحب الأموال إلى محفظتهم ثم استخدامها لدفع الحملات."
+
+#: src/Template/Admin/Options/payment.ctp:64
+msgid "Enable Wallet"
+msgstr "تمكين المحفظة"
+
+#: src/Template/Admin/Options/payment.ctp:80
+msgid "PayPal Settings"
+msgstr "إعدادات بايبال PayPal"
+
+#: src/Template/Admin/Options/payment.ctp:82
+#: src/Template/Admin/Options/payment.ctp:136
+#: src/Template/Admin/Options/payment.ctp:187
+#: src/Template/Admin/Options/payment.ctp:231
+#: src/Template/Admin/Options/payment.ctp:298
+#: src/Template/Admin/Options/payment.ctp:383
+#: src/Template/Admin/Options/payment.ctp:436
+#: src/Template/Admin/Options/payment.ctp:473
+#: src/Template/Admin/Options/payment.ctp:525
+msgid ""
+"For setup instructions click <a href=\"{0}\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: src/Template/Admin/Options/payment.ctp:86
+msgid "Enable PayPal"
+msgstr "تمكين بايبال PayPal"
+
+#: src/Template/Admin/Options/payment.ctp:103
+msgid "Payment Business Email"
+msgstr "البريد الكتروني للأعمال"
+
+#: src/Template/Admin/Options/payment.ctp:118
+msgid "Enable PayPal Sandbox"
+msgstr "تمكين باي بال الاختباري"
+
+#: src/Template/Admin/Options/payment.ctp:134
+msgid "Stripe Settings"
+msgstr "Stripe Settings"
+
+#: src/Template/Admin/Options/payment.ctp:139
+msgid "Enable Stripe"
+msgstr "تمكين الشريط"
+
+#: src/Template/Admin/Options/payment.ctp:156
+msgid "Stripe Secret Key"
+msgstr "Stripe Secret Key"
+
+#: src/Template/Admin/Options/payment.ctp:171
+msgid "Stripe Publishable Key"
+msgstr "Stripe Publishable Key"
+
+#: src/Template/Admin/Options/payment.ctp:185
+msgid "Payza Settings"
+msgstr "اعدادات ويسترن يوينون"
+
+#: src/Template/Admin/Options/payment.ctp:191
+msgid "Enable Payza"
+msgstr "تمكين ارسال الاموال عبر ويسترن يونيون"
+
+#: src/Template/Admin/Options/payment.ctp:208
+msgid "Payza Merchant Email"
+msgstr "بيانات الارسال"
+
+#: src/Template/Admin/Options/payment.ctp:223
+msgid "Enable Payza Test Mode"
+msgstr "تمكين  ارسال الاموال عبر ويسترن يونيون"
+
+#: src/Template/Admin/Options/payment.ctp:225
+msgid "You can enable Payza sandbox from your Payza account settings."
+msgstr "ملي بيانات تحويل ويسترن يونيون"
+
+#: src/Template/Admin/Options/payment.ctp:229
+msgid "Skrill Settings"
+msgstr "إعدادات سكريل"
+
+#: src/Template/Admin/Options/payment.ctp:235
+msgid "Enable Skrill"
+msgstr "تمكين Skrill"
+
+#: src/Template/Admin/Options/payment.ctp:252
+msgid "Skrill Merchant Email"
+msgstr "Skrill Merchant البريد الالكتروني"
+
+#: src/Template/Admin/Options/payment.ctp:267
+msgid "Skrill Secret Word"
+msgstr "سكريل سر كلمة"
+
+#: src/Template/Admin/Options/payment.ctp:281
+msgid "Bitcoin Processor"
+msgstr "بيتكوين المعالج"
+
+#: src/Template/Admin/Options/payment.ctp:286
+msgid "Coinbase"
+msgstr "Coinbase"
+
+#: src/Template/Admin/Options/payment.ctp:287
+msgid "CoinPayments"
+msgstr "CoinPayments"
+
+#: src/Template/Admin/Options/payment.ctp:296
+msgid "CoinPayments Settings"
+msgstr "إعدادات سوينبايمنتس"
+
+#: src/Template/Admin/Options/payment.ctp:302
+msgid "Enable CoinPayments"
+msgstr "تمكين سوينبايمنتس"
+
+#: src/Template/Admin/Options/payment.ctp:319
+msgid "CoinPayments Public Key"
+msgstr "سوينبايمنتس، المفتاح العام"
+
+#: src/Template/Admin/Options/payment.ctp:334
+msgid "CoinPayments Private Key"
+msgstr "سوينبايمنتس مفتاح خاص"
+
+#: src/Template/Admin/Options/payment.ctp:349
+msgid "CoinPayments Merchant Id"
+msgstr "معرف التاجر سوينبايمنتس"
+
+#: src/Template/Admin/Options/payment.ctp:364
+msgid "CoinPayments IPN Secret"
+msgstr "سوينبايمنتس إبن سر"
+
+#: src/Template/Admin/Options/payment.ctp:381
+msgid "Coinbase Settings"
+msgstr "Coinbase إعدادات"
+
+#: src/Template/Admin/Options/payment.ctp:387
+msgid "Enable Coinbase"
+msgstr "تمكين Coinbase"
+
+#: src/Template/Admin/Options/payment.ctp:404
+msgid "Coinbase API Key"
+msgstr "Coinbase API Key"
+
+#: src/Template/Admin/Options/payment.ctp:419
+msgid "Coinbase API Secret"
+msgstr "Coinbase API Secret"
+
+#: src/Template/Admin/Options/payment.ctp:434
+msgid "Webmoney Settings"
+msgstr "إعدادات Webmoney"
+
+#: src/Template/Admin/Options/payment.ctp:440
+msgid "Enable Webmoney"
+msgstr "تمكين Webmoney"
+
+#: src/Template/Admin/Options/payment.ctp:457
+msgid "Webmoney Merchant Purse"
+msgstr "محفظة Webmoney"
+
+#: src/Template/Admin/Options/payment.ctp:471
+msgid "Perfect Money Settings"
+msgstr "إعدادات المال الكمال"
+
+#: src/Template/Admin/Options/payment.ctp:477
+msgid "Enable Perfect Money"
+msgstr "تمكين المال الكمال"
+
+#: src/Template/Admin/Options/payment.ctp:494
+msgid "Perfect Money Payee Account"
+msgstr "حساب المال المدفوع الأجر المثالي"
+
+#: src/Template/Admin/Options/payment.ctp:509
+msgid "Perfect Money Alternate Passphrase"
+msgstr "الكمال المال كلمة المرور البديلة"
+
+#: src/Template/Admin/Options/payment.ctp:523
+msgid "Payeer Settings"
+msgstr "إعدادات بيير"
+
+#: src/Template/Admin/Options/payment.ctp:529
+msgid "Enable Payeer"
+msgstr "تمكين بايير"
+
+#: src/Template/Admin/Options/payment.ctp:546
+msgid "Payeer Merchant Id"
+msgstr "معرف التاجر في باير"
+
+#: src/Template/Admin/Options/payment.ctp:561
+msgid "Payeer Secret Key"
+msgstr "مفتاح السر بيير"
+
+#: src/Template/Admin/Options/payment.ctp:576
+msgid "Payeer Encryption Key"
+msgstr "مفتاح تشفير بيير"
+
+#: src/Template/Admin/Options/payment.ctp:590
+msgid "Bank Transfer Settings"
+msgstr "إعدادات التحويل المصرفي"
+
+#: src/Template/Admin/Options/payment.ctp:593
+msgid "Enable Bank Transfer"
+msgstr "تمكين التحويل المصرفي"
+
+#: src/Template/Admin/Options/payment.ctp:610
+msgid "Bank Transfer Instructions"
+msgstr "تعليمات التحويل المصرفي"
+
+#: src/Template/Admin/Options/payment.ctp:620
+msgid ""
+"You can use these placeholders [invoice_id], [invoice_amount], "
+"[invoice_description]"
+msgstr ""
+
+#: src/Template/Admin/Options/popup.ctp:2
+#: src/Template/Admin/Options/popup.ctp:4
+msgid "Popup Advertisement Price"
+msgstr "سعر الإعلان المنبثق Popup"
+
+#: src/Template/Admin/Options/social_login.ctp:2
+#: src/Template/Admin/Options/social_login.ctp:4
+msgid "Social Login Settings"
+msgstr "إعدادات تسجيل الدخول الاجتماعي"
+
+#: src/Template/Admin/Options/social_login.ctp:14
+msgid "Facebook Settings"
+msgstr "إعدادات فيسبوك"
+
+#: src/Template/Admin/Options/social_login.ctp:16
+#: src/Template/Admin/Options/social_login.ctp:66
+#: src/Template/Admin/Options/social_login.ctp:116
+msgid ""
+"You can find the setup instructions <a href=\"{0}\" target=\"_blank\">here</"
+"a>."
+msgstr ""
+"يمكنك العثور على إرشادات الإعداد <a href=\"{0}\" target=\"_blank\"> هنا </a>."
+
+#: src/Template/Admin/Options/social_login.ctp:20
+msgid "Enable Facebook"
+msgstr "تمكين فيسبوك"
+
+#: src/Template/Admin/Options/social_login.ctp:37
+msgid "App Id"
+msgstr "معرف التطبيق"
+
+#: src/Template/Admin/Options/social_login.ctp:51
+msgid "App Secret"
+msgstr "سر التطبيق"
+
+#: src/Template/Admin/Options/social_login.ctp:64
+msgid "Twitter Settings"
+msgstr "إعدادات تويتر"
+
+#: src/Template/Admin/Options/social_login.ctp:70
+msgid "Enable Twitter"
+msgstr "تمكين تويتر"
+
+#: src/Template/Admin/Options/social_login.ctp:87
+msgid "Consumer Key (API Key)"
+msgstr "مفتاح المستهلك (مفتاح واجهة برمجة التطبيقات)"
+
+#: src/Template/Admin/Options/social_login.ctp:101
+msgid "Consumer Secret (API Secret)"
+msgstr "مفتاح الزبون (Consumer secret):"
+
+#: src/Template/Admin/Options/social_login.ctp:114
+msgid "Google Settings"
+msgstr "إعدادات جوجل"
+
+#: src/Template/Admin/Options/social_login.ctp:120
+msgid "Enable Google"
+msgstr "تمكين جوجل"
+
+#: src/Template/Admin/Options/social_login.ctp:137
+msgid "Client ID"
+msgstr "معرف العميل"
+
+#: src/Template/Admin/Options/social_login.ctp:151
+msgid "Client Secret"
+msgstr "سر العميل"
+
+#: src/Template/Admin/Pages/add.ctp:2 src/Template/Admin/Pages/add.ctp:4
+#: src/Template/Admin/Pages/edit.ctp:2 src/Template/Admin/Pages/edit.ctp:4
+msgid "Add Page"
+msgstr "إضافة صفحة"
+
+#: src/Template/Admin/Pages/add.ctp:23 src/Template/Admin/Pages/edit.ctp:25
+#: src/Template/Admin/Pages/index.ctp:14 src/Template/Admin/Posts/add.ctp:23
+#: src/Template/Admin/Posts/edit.ctp:25 src/Template/Admin/Posts/index.ctp:14
+msgid "Slug"
+msgstr "عنوان (رابط) مختصر"
+
+#: src/Template/Admin/Pages/index.ctp:2 src/Template/Admin/Pages/index.ctp:4
+msgid "Manage Pages"
+msgstr "إدارة الصفحات"
+
+#: src/Template/Admin/Plans/add.ctp:2 src/Template/Admin/Plans/add.ctp:4
+msgid "Add Plan"
+msgstr "إضافة خطة"
+
+#: src/Template/Admin/Plans/add.ctp:23 src/Template/Admin/Plans/edit.ctp:25
+msgid "Enable"
+msgstr "تفعيل"
+
+#: src/Template/Admin/Plans/add.ctp:39 src/Template/Admin/Plans/edit.ctp:41
+msgid "Monthly Price"
+msgstr "السعر الشهري"
+
+#: src/Template/Admin/Plans/add.ctp:48 src/Template/Admin/Plans/edit.ctp:50
+msgid "Yearly Price"
+msgstr "السعر السنوي"
+
+#: src/Template/Admin/Plans/add.ctp:67 src/Template/Admin/Plans/edit.ctp:69
+msgid "Edit Link"
+msgstr "تعديل الرابط"
+
+#: src/Template/Admin/Plans/add.ctp:68 src/Template/Admin/Plans/edit.ctp:70
+msgid ""
+"Enabling this feature will allow short link creator to edit his links but "
+"without editing the long URL."
+msgstr ""
+"سيتيح تمكين هذه الميزة لمنشئ الروابط القصيرة تعديل روابطه ولكن بدون تعديل "
+"عنوان URL الطويل."
+
+#: src/Template/Admin/Plans/add.ctp:75 src/Template/Admin/Plans/edit.ctp:77
+msgid "Edit Long URL"
+msgstr "تعديل عنوان URL الطويل"
+
+#: src/Template/Admin/Plans/add.ctp:77 src/Template/Admin/Plans/edit.ctp:79
+msgid ""
+"Enabling this feature will allow short link creator to edit the long URL for "
+"his links. You must enable 'Edit Link' feature to use this feature."
+msgstr ""
+"سيتيح تمكين هذه الميزة لمنشئ الروابط القصيرة تعديل عنوان URL الطويل لروابطه. "
+"يجب تمكين ميزة \"تعديل الرابط\" لاستخدام هذه الميزة."
+
+#: src/Template/Admin/Plans/add.ctp:85 src/Template/Admin/Plans/edit.ctp:87
+msgid "Remove Ads"
+msgstr "ازالة الاعلانات"
+
+#: src/Template/Admin/Plans/add.ctp:86 src/Template/Admin/Plans/edit.ctp:88
+msgid ""
+"Enabling this feature will allow the logged in visitors in who are on this "
+"plan not to show the ads on area 1."
+msgstr ""
+"سيؤدي تمكين هذه الميزة إلى السماح للزائرين الذين سجلوا دخولهم في هذه الخطة "
+"بعدم عرض الإعلانات في المنطقة 1."
+
+#: src/Template/Admin/Plans/add.ctp:93 src/Template/Admin/Plans/edit.ctp:95
+msgid "Remove Captcha"
+msgstr "إزالة كابتشا"
+
+#: src/Template/Admin/Plans/add.ctp:94 src/Template/Admin/Plans/edit.ctp:96
+msgid ""
+"Enabling this feature will allow the logged in visitors to escape the "
+"captcha step and see the short link page directly."
+msgstr ""
+"سيؤدي تمكين هذه الميزة إلى السماح للزوار الذين تم تسجيل دخولهم بالخروج من "
+"خطوة اختبار كابتشا ومشاهدة صفحة الروابط القصيرة مباشرة."
+
+#: src/Template/Admin/Plans/add.ctp:102 src/Template/Admin/Plans/edit.ctp:104
+msgid ""
+"Enabling this feature will allow the logged in visitors to go to directly "
+"the long URL without seeing the short link page."
+msgstr ""
+"سيتيح تمكين هذه الميزة للزائرين الذين سجلوا الدخول الانتقال مباشرة إلى عنوان "
+"URL الطويل دون مشاهدة صفحة الروابط القصيرة."
+
+#: src/Template/Admin/Plans/add.ctp:109 src/Template/Admin/Plans/edit.ctp:111
+msgid "Custom Alias"
+msgstr ""
+"سيتيح تمكين هذه الميزة للزائرين الذين سجلوا الدخول الانتقال مباشرة إلى عنوان "
+"ورل الطويل دون مشاهدة صفحة الروابط القصيرة"
+
+#: src/Template/Admin/Plans/add.ctp:111 src/Template/Admin/Plans/edit.ctp:113
+msgid ""
+"Enabling this feature will allow short link creator to add a custom alias "
+"when shorten a url."
+msgstr ""
+"سيؤدي تمكين هذه الميزة إلى السماح لمنشئ الروابط القصيرة بإضافة اسم مستعار "
+"مخصص عند اختصار رابط."
+
+#: src/Template/Admin/Plans/add.ctp:119 src/Template/Admin/Plans/edit.ctp:121
+#: src/Template/Admin/Users/dashboard.ctp:79
+#: src/Template/Admin/Users/dashboard.ctp:117
+#: src/Template/Admin/Withdraws/index.ctp:30
+#: src/Template/Admin/Withdraws/index.ctp:114
+#: src/Template/Member/Users/dashboard.ctp:79
+#: src/Template/Member/Users/dashboard.ctp:146
+#: src/Template/Member/Withdraws/index.ctp:68
+msgid "Referral Earnings"
+msgstr "أرباح الإحالة الحالية"
+
+#: src/Template/Admin/Plans/add.ctp:121 src/Template/Admin/Plans/edit.ctp:123
+msgid ""
+"Enabling this feature will allow the publisher to earn from his referrals."
+msgstr "سيتيح تمكين هذه الميزة للناشر تحقيق أرباح من إحالاته."
+
+#: src/Template/Admin/Plans/add.ctp:128 src/Template/Admin/Plans/edit.ctp:130
+#: src/Template/Statistics/view_info.ctp:2
+#: src/Template/Statistics/view_info.ctp:4
+#: src/Template/Statistics/view_info.ctp:8
+msgid "Link Statistics"
+msgstr "رابط الإحصاءات"
+
+#: src/Template/Admin/Plans/add.ctp:130 src/Template/Admin/Plans/edit.ctp:132
+msgid ""
+"Enabling this feature will allow short link creator to view short link "
+"Statistics."
+msgstr ""
+"سيؤدي تمكين هذه الميزة إلى السماح لمنشئ الروابط القصيرة بعرض الارتباط القصير "
+"للإحصاءات."
+
+#: src/Template/Admin/Plans/add.ctp:136 src/Template/Admin/Plans/edit.ctp:138
+msgid "Quick Link Tool"
+msgstr "أداة الرابط السريع"
+
+#: src/Template/Admin/Plans/add.ctp:140 src/Template/Admin/Plans/edit.ctp:142
+msgid "Mass Shrinker Tool"
+msgstr "أداة تقصير الروابط المتعددة"
+
+#: src/Template/Admin/Plans/add.ctp:144 src/Template/Admin/Plans/edit.ctp:146
+msgid "Full Page Script Tool"
+msgstr "اختصار المواقع"
+
+#: src/Template/Admin/Plans/add.ctp:148 src/Template/Admin/Plans/edit.ctp:150
+msgid "Bookmarklet Tool"
+msgstr "أداة Bookmarklet"
+
+#: src/Template/Admin/Plans/add.ctp:152 src/Template/Admin/Plans/edit.ctp:154
+msgid "Developers API Tool"
+msgstr "أداة API للمطورين"
+
+#: src/Template/Admin/Plans/add.ctp:163 src/Template/Admin/Plans/edit.ctp:165
+msgid ""
+"This feature requires the visitor to the short link to be logged in then "
+"this feature will take effect."
+msgstr ""
+"تتطلب هذه الميزة دخول الزائر إلى الرابط القصير، ثم تصبح هذه الميزة سارية "
+"المفعول."
+
+#: src/Template/Admin/Plans/delete.ctp:2 src/Template/Admin/Plans/delete.ctp:4
+msgid "Delete Plan"
+msgstr "حذف الخطة"
+
+#: src/Template/Admin/Plans/delete.ctp:16
+msgid "Replace users within this plan with"
+msgstr "استبدال المستخدمين ضمن هذه الخطة مع"
+
+#: src/Template/Admin/Plans/delete.ctp:18
+msgid "Select Plan"
+msgstr "اختر خطة"
+
+#: src/Template/Admin/Plans/edit.ctp:2 src/Template/Admin/Plans/edit.ctp:4
+msgid "Edit Plan"
+msgstr "تعديل الخطة"
+
+#: src/Template/Admin/Plans/index.ctp:2 src/Template/Admin/Plans/index.ctp:4
+msgid "Manage Plans"
+msgstr "إدارة الخطط"
+
+#: src/Template/Admin/Plans/index.ctp:15 src/Template/Admin/Users/view.ctp:60
+msgid "Modified"
+msgstr "تم التعديل"
+
+#: src/Template/Admin/Posts/add.ctp:2 src/Template/Admin/Posts/add.ctp:4
+#: src/Template/Admin/Posts/edit.ctp:2 src/Template/Admin/Posts/edit.ctp:4
+#: src/Template/Layout/admin.ctp:271
+msgid "Add Post"
+msgstr "إضافة مشاركة"
+
+#: src/Template/Admin/Posts/add.ctp:44 src/Template/Admin/Posts/edit.ctp:46
+msgid "Short Description"
+msgstr "وصف قصير"
+
+#: src/Template/Admin/Posts/index.ctp:2 src/Template/Admin/Posts/index.ctp:4
+msgid "Manage Posts"
+msgstr "إدارة المشاركات"
+
+#: src/Template/Admin/Reports/campaigns.ctp:2
+#: src/Template/Admin/Reports/campaigns.ctp:4
+msgid "Campaigns Report"
+msgstr "تقرير الحملات"
+
+#: src/Template/Admin/Reports/campaigns.ctp:26
+msgid "Select User"
+msgstr "اختر المستخدم"
+
+#: src/Template/Admin/Reports/campaigns.ctp:37
+msgid "Select Campaign"
+msgstr "حدد الحملة"
+
+#: src/Template/Admin/Testimonials/add.ctp:2
+#: src/Template/Admin/Testimonials/add.ctp:4
+#: src/Template/Admin/Testimonials/edit.ctp:2
+#: src/Template/Admin/Testimonials/edit.ctp:4
+msgid "Add Testimonial"
+msgstr "إضافة شهادة"
+
+#: src/Template/Admin/Testimonials/add.ctp:23
+#: src/Template/Admin/Testimonials/edit.ctp:25
+msgid "Position"
+msgstr "موضع"
+
+#: src/Template/Admin/Testimonials/add.ctp:32
+#: src/Template/Admin/Testimonials/edit.ctp:34
+msgid "Image"
+msgstr "صورة"
+
+#: src/Template/Admin/Testimonials/index.ctp:2
+#: src/Template/Admin/Testimonials/index.ctp:4
+msgid "Manage Testimonials"
+msgstr "إدارة الشهادات"
+
+#: src/Template/Admin/Upgrade/index.ctp:2
+#: src/Template/Admin/Upgrade/index.ctp:4
+msgid "Upgrade"
+msgstr "ترقية"
+
+#: src/Template/Admin/Upgrade/index.ctp:12
+msgid "Upgrading ..."
+msgstr "جار الترقية ..."
+
+#: src/Template/Admin/Upgrade/index.ctp:14
+msgid "Run Upgrade Process"
+msgstr "تشغيل عملية الترقية"
+
+#: src/Template/Admin/Users/add.ctp:2 src/Template/Admin/Users/add.ctp:4
+msgid "Add User"
+msgstr "إضافة مستخدم"
+
+#: src/Template/Admin/Users/add.ctp:15 src/Template/Admin/Users/edit.ctp:17
+msgid "Role"
+msgstr ""
+
+#: src/Template/Admin/Users/add.ctp:17 src/Template/Admin/Users/edit.ctp:19
+msgid "Member"
+msgstr "عضو"
+
+#: src/Template/Admin/Users/add.ctp:18 src/Template/Admin/Users/edit.ctp:20
+msgid "Admin"
+msgstr "الادمن"
+
+#: src/Template/Admin/Users/add.ctp:30 src/Template/Admin/Users/edit.ctp:31
+#: src/Template/Admin/Users/index.ctp:12 src/Template/Admin/Users/view.ctp:12
+#: src/Template/Admin/Withdraws/edit.ctp:27
+#: src/Template/Admin/Withdraws/index.ctp:10
+#: src/Template/Admin/Withdraws/view.ctp:10
+#: src/Template/Member/Withdraws/index.ctp:10
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#: src/Template/Admin/Users/add.ctp:48 src/Template/Admin/Users/edit.ctp:66
+#: src/Template/Admin/Users/index.ctp:63
+#: src/Template/Admin/Users/index.ctp:123 src/Template/Admin/Users/view.ctp:40
+#: src/Template/Auth/Users/forgot_password.ctp:21
+#: src/Template/Auth/Users/signup.ctp:26 src/Template/Install/adminuser.ctp:19
+#: src/Template/Layout/admin.ctp:331 src/Template/Member/Forms/support.ctp:33
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: src/Template/Admin/Users/add.ctp:58 src/Template/Auth/Users/signin.ctp:27
+#: src/Template/Auth/Users/signup.ctp:35 src/Template/Install/adminuser.ctp:39
+msgid "Password"
+msgstr "كلمة المرور."
+
+#: src/Template/Admin/Users/dashboard.ctp:2
+#: src/Template/Admin/Users/dashboard.ctp:4 src/Template/Layout/admin.ctp:355
+#: src/Template/Layout/member.ctp:323
+#: src/Template/Member/Users/dashboard.ctp:2
+#: src/Template/Member/Users/dashboard.ctp:4
+msgid "Dashboard"
+msgstr "لوحة التحكم الرئيسية"
+
+#: src/Template/Admin/Users/dashboard.ctp:51
+msgid "Owner Earnings"
+msgstr "أرباح المالك"
+
+#: src/Template/Admin/Users/dashboard.ctp:93
+#: src/Template/Member/Users/dashboard.ctp:51
+msgid "Total Views"
+msgstr "إجمالي المشاهدات"
+
+#: src/Template/Admin/Users/dashboard.ctp:105
+#: src/Template/Layout/admin.ctp:143 src/Template/Layout/member.ctp:169
+#: src/Template/Member/Users/dashboard.ctp:134
+msgid "Statistics"
+msgstr "إحصائيات"
+
+#: src/Template/Admin/Users/dashboard.ctp:113
+#: src/Template/Admin/Users/dashboard.ctp:146
+#: src/Template/Admin/Users/referrals.ctp:18
+#: src/Template/Admin/Withdraws/edit.ctp:50
+#: src/Template/Admin/Withdraws/index.ctp:111
+#: src/Template/Member/Users/dashboard.ctp:142
+#: src/Template/Member/Users/dashboard.ctp:175
+#: src/Template/Member/Users/referrals.ctp:31
+#: src/Template/Member/Withdraws/index.ctp:65
+msgid "Date"
+msgstr "التاريخ"
+
+#: src/Template/Admin/Users/dashboard.ctp:114
+#: src/Template/Admin/Users/dashboard.ctp:147
+#: src/Template/Admin/Users/dashboard.ctp:196
+#: src/Template/Member/Users/dashboard.ctp:143
+#: src/Template/Member/Users/dashboard.ctp:176
+#: src/Template/Member/Users/dashboard.ctp:226
+msgid "Views"
+msgstr "عدد المشاهدات"
+
+#: src/Template/Admin/Users/dashboard.ctp:115
+#: src/Template/Admin/Users/dashboard.ctp:148
+#: src/Template/Admin/Withdraws/view.ctp:176
+#: src/Template/Member/Users/dashboard.ctp:144
+#: src/Template/Member/Users/dashboard.ctp:177
+msgid "Link Earnings"
+msgstr "ارباح الروابط"
+
+#: src/Template/Admin/Users/dashboard.ctp:116
+#: src/Template/Member/Users/dashboard.ctp:145
+msgid "Daily CPM"
+msgstr "التكلفة اليومية لكل ألف ظهور"
+
+#: src/Template/Admin/Users/dashboard.ctp:140
+#: src/Template/Member/Users/dashboard.ctp:169
+msgid "Top 10 Links"
+msgstr "أعلى 10 روابط"
+
+#: src/Template/Admin/Users/edit.ctp:2 src/Template/Admin/Users/edit.ctp:4
+msgid "Edit User #{0}"
+msgstr "تعديل العضو"
+
+#: src/Template/Admin/Users/edit.ctp:42
+msgid "Plan"
+msgstr "الخطة."
+
+#: src/Template/Admin/Users/edit.ctp:44
+msgid "Choose Plan"
+msgstr "اختر الخطة"
+
+#: src/Template/Admin/Users/edit.ctp:51
+msgid "Plan Expiration Date"
+msgstr "تاريخ انتهاء صلاحية الخطة"
+
+#: src/Template/Admin/Users/index.ctp:2 src/Template/Admin/Users/index.ctp:4
+msgid "Manage Users"
+msgstr "ادارة المستخدمين"
+
+#: src/Template/Admin/Users/index.ctp:81
+#: src/Template/Admin/Users/index.ctp:124
+msgid "Login IP"
+msgstr "IP تسجيل الدخول"
+
+#: src/Template/Admin/Users/index.ctp:90
+#: src/Template/Admin/Users/index.ctp:125
+msgid "Register IP"
+msgstr "IP التسجيل"
+
+#: src/Template/Admin/Users/index.ctp:99
+msgid "First name, last name, address"
+msgstr "الاسم الأول، الاسم الأخير، العنوان"
+
+#: src/Template/Admin/Users/index.ctp:114
+msgid "All Users"
+msgstr "جميع المستخدمين"
+
+#: src/Template/Admin/Users/index.ctp:149
+#: src/Template/Admin/Users/message.ctp:32
+#: src/Template/Admin/Users/message.ctp:38
+#: src/Template/Email/html/contact.ctp:2
+#: src/Template/Member/Forms/support.ctp:42
+msgid "Message"
+msgstr "رسالة"
+
+#: src/Template/Admin/Users/index.ctp:153
+msgid "Resend Activation Email"
+msgstr "إعادة إرسال البريد الإلكتروني للتفعيل"
+
+#: src/Template/Admin/Users/message.ctp:2
+#: src/Template/Admin/Users/message.ctp:4
+msgid "Message User"
+msgstr "رسالة المستخدم"
+
+#: src/Template/Admin/Users/message.ctp:15
+msgid "User Email"
+msgstr "البريد الإلكتروني للمستخدم"
+
+#: src/Template/Admin/Users/message.ctp:24
+#: src/Template/Member/Forms/support.ctp:24
+msgid "Subject"
+msgstr "الموضوع"
+
+#: src/Template/Admin/Users/referrals.ctp:2
+#: src/Template/Admin/Users/referrals.ctp:4
+#: src/Template/Admin/Users/referrals.ctp:10
+msgid "All Referrals"
+msgstr "جميع الإحالات"
+
+#: src/Template/Admin/Users/referrals.ctp:17
+msgid "Referred By"
+msgstr "تم دعوته من قبل ؟"
+
+#: src/Template/Admin/Users/view.ctp:2 src/Template/Admin/Users/view.ctp:4
+msgid "View User #{0}"
+msgstr "عرض سجلات المستخدم"
+
+#: src/Template/Admin/Users/view.ctp:21
+msgid "Account Info."
+msgstr "معلومات الحساب."
+
+#: src/Template/Admin/Users/view.ctp:36
+msgid "role"
+msgstr ""
+
+#: src/Template/Admin/Users/view.ctp:44
+msgid "Temp Email"
+msgstr "TEMP البريد الإلكتروني"
+
+#: src/Template/Admin/Users/view.ctp:48
+msgid "Api Token"
+msgstr "رمز API الخاص بك:"
+
+#: src/Template/Admin/Users/view.ctp:52
+msgid "Current Publisher Earnings"
+msgstr "أرباح الناشر"
+
+#: src/Template/Admin/Users/view.ctp:56
+msgid "Current Referral Earnings"
+msgstr "أرباح الإحالة"
+
+#: src/Template/Admin/Users/view.ctp:71
+msgid "Withdrawal Info."
+msgstr "معلومات السحب."
+
+#: src/Template/Admin/Users/view.ctp:74
+#: src/Template/Admin/Withdraws/index.ctp:90
+#: src/Template/Admin/Withdraws/index.ctp:116
+#: src/Template/Admin/Withdraws/view.ctp:47
+#: src/Template/Member/Users/profile.ctp:119
+#: src/Template/Member/Withdraws/index.ctp:70
+msgid "Withdrawal Method"
+msgstr "طريقة السحب"
+
+#: src/Template/Admin/Users/view.ctp:78
+msgid "Withdrawal Email"
+msgstr "البريد الإلكتروني للسحب"
+
+#: src/Template/Admin/Users/view.ctp:85
+msgid "Billing Info."
+msgstr "تحديث بيانات الدفع"
+
+#: src/Template/Admin/Users/view.ctp:88
+#: src/Template/Member/Users/profile.ctp:21
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#: src/Template/Admin/Users/view.ctp:92
+#: src/Template/Member/Users/profile.ctp:30
+msgid "Last Name"
+msgstr "الاسم الاخير"
+
+#: src/Template/Admin/Users/view.ctp:96
+#: src/Template/Member/Users/profile.ctp:42
+msgid "Address 1"
+msgstr "العنوان 1"
+
+#: src/Template/Admin/Users/view.ctp:100
+#: src/Template/Member/Users/profile.ctp:51
+msgid "Address 2"
+msgstr "العنوان 2"
+
+#: src/Template/Admin/Users/view.ctp:104
+#: src/Template/Member/Users/profile.ctp:63
+msgid "City"
+msgstr "المدينة"
+
+#: src/Template/Admin/Users/view.ctp:108
+#: src/Template/Member/Users/profile.ctp:72
+msgid "State"
+msgstr "ولاية"
+
+#: src/Template/Admin/Users/view.ctp:112
+#: src/Template/Member/Users/profile.ctp:84
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#: src/Template/Admin/Users/view.ctp:120
+#: src/Template/Member/Users/profile.ctp:107
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: src/Template/Admin/Withdraws/edit.ctp:2
+#: src/Template/Admin/Withdraws/edit.ctp:4
+#: src/Template/Admin/Withdraws/view.ctp:2
+#: src/Template/Admin/Withdraws/view.ctp:4
+msgid "Withdraw #{0}"
+msgstr "طلب السحب"
+
+#: src/Template/Admin/Withdraws/edit.ctp:28
+#: src/Template/Admin/Withdraws/index.ctp:9
+#: src/Template/Admin/Withdraws/view.ctp:9
+#: src/Template/Member/Withdraws/index.ctp:9
+msgid "Approved"
+msgstr "موافق عليه"
+
+#: src/Template/Admin/Withdraws/edit.ctp:29
+#: src/Template/Admin/Withdraws/index.ctp:11
+#: src/Template/Admin/Withdraws/index.ctp:168
+#: src/Template/Admin/Withdraws/view.ctp:11
+#: src/Template/Admin/Withdraws/view.ctp:27
+#: src/Template/Member/Withdraws/index.ctp:11
+msgid "Complete"
+msgstr "مكتمل"
+
+#: src/Template/Admin/Withdraws/edit.ctp:30
+#: src/Template/Admin/Withdraws/index.ctp:12
+#: src/Template/Member/Withdraws/index.ctp:12
+msgid "Cancelled"
+msgstr "تم الالغاء"
+
+#: src/Template/Admin/Withdraws/index.ctp:2
+#: src/Template/Admin/Withdraws/index.ctp:4
+msgid "Manage Withdraws"
+msgstr "إدارة عمليات السحب"
+
+#: src/Template/Admin/Withdraws/index.ctp:21
+msgid "Publishers Available Balance"
+msgstr "الرصيد المتاح للناشرين"
+
+#: src/Template/Admin/Withdraws/index.ctp:39
+#: src/Template/Member/Withdraws/index.ctp:30
+msgid "Pending Withdrawn"
+msgstr "في انتظار سحب الارباح"
+
+#: src/Template/Admin/Withdraws/index.ctp:48
+#: src/Template/Member/Withdraws/index.ctp:39
+msgid "Total Withdraw"
+msgstr "إجمالي المدفوعات"
+
+#: src/Template/Admin/Withdraws/index.ctp:115
+#: src/Template/Member/Withdraws/index.ctp:69
+msgid "Total Amount"
+msgstr "المبلغ الإجمالي"
+
+#: src/Template/Admin/Withdraws/index.ctp:117
+#: src/Template/Member/Users/profile.ctp:129
+msgid "Withdrawal Account"
+msgstr "حساب السحب"
+
+#: src/Template/Admin/Withdraws/index.ctp:118
+msgid "Action"
+msgstr "الإجراء"
+
+#: src/Template/Admin/Withdraws/index.ctp:152
+#: src/Template/Tools/bookmarklet.ctp:123
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: src/Template/Admin/Withdraws/index.ctp:160
+#: src/Template/Admin/Withdraws/view.ctp:19
+msgid "Approve"
+msgstr "الموافقة "
+
+#: src/Template/Admin/Withdraws/index.ctp:180
+#: src/Template/Member/Withdraws/index.ctp:90
+msgid "Pending: The payment is being checked by our team."
+msgstr ""
+"عملية الدفع معلقة لحين مراجعتها من قبل فريق الدفعات  للتأكد من عدم وجود خطر ."
+
+#: src/Template/Admin/Withdraws/index.ctp:181
+#: src/Template/Member/Withdraws/index.ctp:91
+msgid "Approved: The payment has been approved and is waiting to be sent."
+msgstr "تمت الموافقة: تمت الموافقة على الدفع وجارى عملية ارسالة على حسابكم."
+
+#: src/Template/Admin/Withdraws/index.ctp:182
+msgid "Complete: The payment has been successfully sent to your account."
+msgstr "اكتمل: تم إرسال الدفعة بنجاح إلى حساب الدفع."
+
+#: src/Template/Admin/Withdraws/index.ctp:183
+#: src/Template/Member/Withdraws/index.ctp:93
+msgid "Cancelled: The payment has been cancelled."
+msgstr "تم إلغاء عملية الدفع"
+
+#: src/Template/Admin/Withdraws/view.ctp:56
+msgid "Created Date"
+msgstr "تاريخ الإنشاء"
+
+#: src/Template/Admin/Withdraws/view.ctp:70
+msgid "Reasons"
+msgstr "الأسباب"
+
+#: src/Template/Admin/Withdraws/view.ctp:76
+msgid "Reason"
+msgstr "السبب"
+
+#: src/Template/Admin/Withdraws/view.ctp:118
+msgid "IPs"
+msgstr ""
+
+#: src/Template/Admin/Withdraws/view.ctp:124
+msgid "IP"
+msgstr ""
+
+#: src/Template/Admin/Withdraws/view.ctp:143
+#: src/Template/Statistics/view_info.ctp:84
+msgid "Referrers"
+msgstr "الدعوات"
+
+#: src/Template/Admin/Withdraws/view.ctp:149
+#: src/Template/Cell/Link/shorten_member.ctp:70
+#: src/Template/Statistics/view_info.ctp:92
+#: src/Template/Tools/bookmarklet.ctp:111
+msgid "Domain"
+msgstr ""
+
+#: src/Template/Admin/Withdraws/view.ctp:174
+msgid "Link"
+msgstr "الرابط."
+
+#: src/Template/Auth/Users/forgot_password.ctp:2
+msgid "Forgot Password"
+msgstr "هل نسيت كلمة المرور"
+
+#: src/Template/Auth/Users/forgot_password.ctp:16
+msgid "Enter your e-mail address below to reset your password."
+msgstr "أدخل عنوان البريد الإلكتروني أدناه لإعادة تعيين كلمة المرور."
+
+#: src/Template/Auth/Users/forgot_password.ctp:49
+#: src/Template/Member/Users/change_password.ctp:26
+msgid "New Password"
+msgstr "كلمة السر الجديدة"
+
+#: src/Template/Auth/Users/forgot_password.ctp:58
+#: src/Template/Auth/Users/forgot_password.ctp:60
+#: src/Template/Member/Users/change_password.ctp:35
+msgid "Re-enter New Password"
+msgstr "أعد إدخال كلمة المرور الجديدة"
+
+#: src/Template/Auth/Users/signin.ctp:2 src/Template/Auth/Users/signin.ctp:33
+msgid "Sign In"
+msgstr "تسجيل الدخول"
+
+#: src/Template/Auth/Users/signin.ctp:6
+msgid "Sign in to start your session"
+msgstr "تسجيل الدخول"
+
+#: src/Template/Auth/Users/signin.ctp:18
+msgid "Username or email address"
+msgstr "اسم المستخدم أو البريد الالكتروني"
+
+#: src/Template/Auth/Users/signin.ctp:38 src/Template/Auth/Users/signup.ctp:74
+msgid "OR"
+msgstr "أو"
+
+#: src/Template/Auth/Users/signin.ctp:46
+msgid "Sign in with Facebook"
+msgstr "اشترك عبر حساب فايسبوك"
+
+#: src/Template/Auth/Users/signin.ctp:56
+msgid "Sign in with Twitter"
+msgstr "تسجيل الدخول عن طريق تويتر"
+
+#: src/Template/Auth/Users/signin.ctp:66
+msgid "Sign in with Google"
+msgstr "تسجيل الدخول باستخدام + Google"
+
+#: src/Template/Auth/Users/signin.ctp:76
+msgid "I forgot my password"
+msgstr "لقد نسيت كلمة المرور"
+
+#: src/Template/Auth/Users/signin.ctp:80 src/Template/Auth/Users/signup.ctp:6
+msgid "Register a new membership"
+msgstr "تسجيل عضوية جديدة"
+
+#: src/Template/Auth/Users/signup.ctp:2
+msgid "Create an Account"
+msgstr "انشاء حساب جديد"
+
+#: src/Template/Auth/Users/signup.ctp:44
+msgid "Re-enter Password"
+msgstr "إعادة إدخال كلمة المرور"
+
+#: src/Template/Auth/Users/signup.ctp:60
+msgid "Terms of Service"
+msgstr "شروط الخدمة"
+
+#: src/Template/Auth/Users/signup.ctp:58
+msgid "By signing up, you agree to the {0} and {1}."
+msgstr "من خلال الاستمرار، فإنك توافق على الشروط"
+
+#: src/Template/Auth/Users/signup.ctp:82
+msgid "Sign up with Facebook"
+msgstr "اشترك عبر حساب فايسبوك"
+
+#: src/Template/Auth/Users/signup.ctp:92
+msgid "Sign up with Twitter"
+msgstr "الاشتراك عبر تويتر"
+
+#: src/Template/Auth/Users/signup.ctp:102
+msgid "Sign up with Google"
+msgstr "اشترك عبر جوجل"
+
+#: src/Template/Auth/Users/signup.ctp:109
+msgid "I already have a membership"
+msgstr "لدي عضوية بالفعل"
+
+#: src/Template/Cell/Link/shorten_member.ctp:83
+#: src/Template/Member/Tools/mass_shrinker.ctp:73
+#: src/Template/Tools/bookmarklet.ctp:121
+msgid "Shorten"
+msgstr "اختصر"
+
+#: src/Template/Cell/Link/shorten_member.ctp:84
+msgid "Advanced Options"
+msgstr "خيارات متقدمة"
+
+#: src/Template/Element/js_vars.ctp:7
+msgid "Copied!"
+msgstr "تم النسخ"
+
+#: src/Template/Element/js_vars.ctp:21
+msgid "Get Link"
+msgstr "متابعه"
+
+#: src/Template/Element/js_vars.ctp:22
+msgid "Getting link..."
+msgstr "جار الحصول على الرابط ..."
+
+#: src/Template/Element/js_vars.ctp:23
+msgid "Skip Ad"
+msgstr "تخطي الإعلان"
+
+#: src/Template/Element/js_vars.ctp:25
+msgid "Please disable Adblock to proceed to the destination page."
+msgstr "برجاء تعطيل أدبلوك Adblock للانتقال إلى الصفحة المطلوبه."
+
+#: src/Template/Email/html/change_email.ctp:1
+#: src/Template/Email/html/register.ctp:1
+#: src/Template/Email/html/reset_password.ctp:1
+msgid "Hello"
+msgstr "مرحبا"
+
+#: src/Template/Email/html/change_email.ctp:3
+msgid ""
+"To change your email click on the following link or copy-paste it in your "
+"browser:"
+msgstr ""
+"لتغيير بريدك الإلكتروني، انقر على الرابط التالي أو انسخه والصقه في المتصفح:"
+
+#: src/Template/Email/html/change_email.ctp:12
+#: src/Template/Email/html/register.ctp:15
+#: src/Template/Email/html/reset_password.ctp:18
+msgid "Thanks,"
+msgstr "شكرا،"
+
+#: src/Template/Email/html/register.ctp:3
+msgid ""
+"Thank you for registering at {0}. Your account is created and must be "
+"activated before you can use it."
+msgstr ""
+
+#: src/Template/Email/html/register.ctp:6
+msgid ""
+"To activate the account click on the following link or copy-paste it in your "
+"browser:"
+msgstr "لتنشيط الحساب، انقر على الرابط التالي أو انسخه والصقه في المتصفح:"
+
+#: src/Template/Email/html/reset_password.ctp:3
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: src/Template/Email/html/reset_password.ctp:7
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: src/Template/Email/html/reset_password.ctp:9
+msgid ""
+"To reset your password click on the following link or copy-paste it in your "
+"browser:"
+msgstr ""
+
+#: src/Template/Error/error400.ctp:38 src/Template/Error/error500.ctp:43
+msgid "Error"
+msgstr ""
+
+#: src/Template/Error/error400.ctp:40
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: src/Template/Error/error500.ctp:41
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: src/Template/Install/adminuser.ctp:2
+msgid "Step 3: Create Admin User"
+msgstr ""
+
+#: src/Template/Install/adminuser.ctp:49
+msgid "Confirm Password"
+msgstr ""
+
+#: src/Template/Install/data.ctp:2
+msgid "Step 2: Build database"
+msgstr ""
+
+#: src/Template/Install/data.ctp:10
+msgid "Create tables and load initial data"
+msgstr ""
+
+#: src/Template/Install/data.ctp:14
+msgid "Build database"
+msgstr ""
+
+#: src/Template/Install/database.ctp:2
+msgid "Step 1: Database"
+msgstr ""
+
+#: src/Template/Install/database.ctp:21
+msgid "Database Host URL"
+msgstr ""
+
+#: src/Template/Install/database.ctp:32
+msgid "Database Username"
+msgstr ""
+
+#: src/Template/Install/database.ctp:42
+msgid "Database Username Password"
+msgstr ""
+
+#: src/Template/Install/database.ctp:52
+msgid "Database Name"
+msgstr ""
+
+#: src/Template/Install/finish.ctp:2
+msgid "Installation successful"
+msgstr ""
+
+#: src/Template/Install/finish.ctp:9
+msgid "Access Home"
+msgstr ""
+
+#: src/Template/Install/finish.ctp:11
+msgid "Access Dashboard"
+msgstr ""
+
+#: src/Template/Install/index.ctp:2
+msgid "Installation: Welcome"
+msgstr ""
+
+#: src/Template/Install/index.ctp:21
+msgid "Your tmp directory is NOT writable."
+msgstr ""
+
+#: src/Template/Install/index.ctp:29
+msgid "Your logs directory is NOT writable."
+msgstr ""
+
+#: src/Template/Install/index.ctp:37
+msgid "Your config directory is NOT writable."
+msgstr ""
+
+#: src/Template/Install/index.ctp:47
+msgid "PHP version {0} < {1}"
+msgstr ""
+
+#: src/Template/Install/index.ctp:54 src/Template/Install/index.ctp:92
+msgid "Your version of PHP does NOT have the mbstring extension loaded."
+msgstr ""
+
+#: src/Template/Install/index.ctp:63
+msgid ""
+"Your version of PHP does NOT have the openssl or mcrypt extension loaded."
+msgstr ""
+
+#: src/Template/Install/index.ctp:71
+msgid "Your version of PHP does NOT have the intl or mcrypt extension loaded."
+msgstr ""
+
+#: src/Template/Install/index.ctp:78
+msgid "Your version of PHP does NOT have the curl extension loaded."
+msgstr ""
+
+#: src/Template/Install/index.ctp:85
+msgid "Your version of PHP does NOT have the dom extension loaded."
+msgstr ""
+
+#: src/Template/Install/index.ctp:99
+msgid "Installation can continue as minimum requirements are met."
+msgstr "يمكن أن يستمر التثبيت مع تلبية الحد الأدنى من المتطلبات."
+
+#: src/Template/Install/index.ctp:100
+msgid "Install"
+msgstr ""
+
+#: src/Template/Install/index.ctp:102
+msgid "Installation cannot continue as minimum requirements are not met."
+msgstr ""
+
+#: src/Template/Layout/admin.ctp:74
+msgid "Member Area"
+msgstr "منطقة الأعضاء"
+
+#: src/Template/Layout/admin.ctp:96 src/Template/Layout/member.ctp:113
+msgid "Member since"
+msgstr "عضو منذ"
+
+#: src/Template/Layout/admin.ctp:106 src/Template/Layout/member.ctp:123
+#: src/Template/Layout/member.ctp:261 src/Template/Member/Users/profile.ctp:2
+#: src/Template/Member/Users/profile.ctp:4
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: src/Template/Layout/admin.ctp:113 src/Template/Layout/member.ctp:130
+msgid "Log out"
+msgstr "تسجيل الخروج "
+
+#: src/Template/Layout/admin.ctp:136
+msgid "Complete Upgrade Process"
+msgstr "استكمال عملية الترقية"
+
+#: src/Template/Layout/admin.ctp:146
+msgid "Reports"
+msgstr "التقارير"
+
+#: src/Template/Layout/admin.ctp:152 src/Template/Layout/admin.ctp:176
+#: src/Template/Layout/member.ctp:221
+msgid "Campaigns"
+msgstr "الحملات"
+
+#: src/Template/Layout/admin.ctp:163 src/Template/Layout/member.ctp:178
+msgid "All Links"
+msgstr "جميع الروابط"
+
+#: src/Template/Layout/admin.ctp:167 src/Template/Layout/member.ctp:182
+msgid "Hidden Links"
+msgstr "روابط مخفية"
+
+#: src/Template/Layout/admin.ctp:171
+msgid "Inactive Links"
+msgstr "روابط غير نشطة"
+
+#: src/Template/Layout/admin.ctp:182 src/Template/Layout/admin.ctp:230
+#: src/Template/Layout/admin.ctp:249 src/Template/Layout/admin.ctp:282
+#: src/Template/Layout/admin.ctp:297 src/Template/Layout/admin.ctp:312
+#: src/Template/Layout/member.ctp:227
+msgid "List"
+msgstr "قائمة"
+
+#: src/Template/Layout/admin.ctp:199
+msgid "Ads"
+msgstr "إعلانات"
+
+#: src/Template/Layout/admin.ctp:221
+msgid "Withdraws"
+msgstr "عمليات السحب"
+
+#: src/Template/Layout/admin.ctp:234 src/Template/Layout/admin.ctp:253
+#: src/Template/Layout/admin.ctp:286 src/Template/Layout/admin.ctp:301
+#: src/Template/Layout/admin.ctp:316
+msgid "Add"
+msgstr "إضافة"
+
+#: src/Template/Layout/admin.ctp:238 src/Template/Layout/member.ctp:217
+#: src/Template/Member/Users/referrals.ctp:2
+#: src/Template/Member/Users/referrals.ctp:4
+msgid "Referrals"
+msgstr "جميع الإحالات"
+
+#: src/Template/Layout/admin.ctp:243
+msgid "Membership Plans"
+msgstr "العضوية"
+
+#: src/Template/Layout/admin.ctp:258 src/Template/Layout/member.ctp:252
+msgid "Invoices"
+msgstr "الفواتير"
+
+#: src/Template/Layout/admin.ctp:267
+msgid "Posts List"
+msgstr "قائمة المشاركات"
+
+#: src/Template/Layout/admin.ctp:276
+msgid "Pages"
+msgstr "صفحات"
+
+#: src/Template/Layout/admin.ctp:291
+msgid "Testimonials"
+msgstr "التعليقات"
+
+#: src/Template/Layout/admin.ctp:306
+#: src/Template/Member/Users/dashboard.ctp:110
+msgid "Announcements"
+msgstr "الإعلانات"
+
+#: src/Template/Layout/admin.ctp:335
+msgid "Social Login"
+msgstr "تسجيل الدخول عبر المواقع الإجتماعية"
+
+#: src/Template/Layout/admin.ctp:339
+msgid "Payment"
+msgstr "الدفـــع"
+
+#: src/Template/Layout/admin.ctp:364
+msgid ""
+"AdLinkFly will work only on PHP <b>5.6.0</b> or higher starting from the "
+"next updates so please ask your hosting company to upgrade PHP version for "
+"you as soon as possible."
+msgstr ""
+
+#: src/Template/Layout/admin.ctp:379
+msgid "Version"
+msgstr "النسخة"
+
+#: src/Template/Layout/install.ctp:50
+msgid "Developed by"
+msgstr "قام بتطويرها"
+
+#: src/Template/Layout/member.ctp:75
+msgid "Administration Area"
+msgstr "لوحه التحكم للامن"
+
+#: src/Template/Layout/member.ctp:150
+msgid "New Shorten Link"
+msgstr "اختصار رابط جديد"
+
+#: src/Template/Layout/member.ctp:161
+msgid "Money Wallet"
+msgstr "محفظة المال"
+
+#: src/Template/Layout/member.ctp:187
+#: src/Template/Member/Withdraws/index.ctp:49
+msgid "Withdraw"
+msgstr "طلب السحب"
+
+#: src/Template/Layout/member.ctp:190
+msgid "Tools"
+msgstr "أدوات"
+
+#: src/Template/Layout/member.ctp:196 src/Template/Member/Tools/quick.ctp:2
+#: src/Template/Member/Tools/quick.ctp:4
+msgid "Quick Link"
+msgstr "أداة الرابط السريع"
+
+#: src/Template/Layout/member.ctp:200
+#: src/Template/Member/Tools/mass_shrinker.ctp:2
+#: src/Template/Member/Tools/mass_shrinker.ctp:4
+msgid "Mass Shrinker"
+msgstr "أداة تقصير الروابط المتعددة"
+
+#: src/Template/Layout/member.ctp:204 src/Template/Member/Tools/full.ctp:2
+#: src/Template/Member/Tools/full.ctp:4
+msgid "Full Page Script"
+msgstr "أداة سكربت الصفحة الكاملة"
+
+#: src/Template/Layout/member.ctp:208 src/Template/Member/Tools/api.ctp:2
+#: src/Template/Member/Tools/api.ctp:4
+msgid "Developers API"
+msgstr "أداة API للمطورين"
+
+#: src/Template/Layout/member.ctp:212
+#: src/Template/Member/Tools/bookmarklet.ctp:2
+#: src/Template/Member/Tools/bookmarklet.ctp:4
+msgid "Bookmarklet"
+msgstr "إشارة تطبيق مرجعية"
+
+#: src/Template/Layout/member.ctp:265
+#: src/Template/Member/Users/change_password.ctp:2
+#: src/Template/Member/Users/change_password.ctp:4
+msgid "Change Password"
+msgstr "تغيير كلمة السر"
+
+#: src/Template/Layout/member.ctp:269
+#: src/Template/Member/Users/change_email.ctp:2
+#: src/Template/Member/Users/change_email.ctp:4
+msgid "Change Email"
+msgstr "تغيير البريد الإلكتروني"
+
+#: src/Template/Layout/member.ctp:277 src/Template/Member/Users/plans.ctp:2
+#: src/Template/Member/Users/plans.ctp:4 src/Template/Member/Users/plans.ctp:9
+msgid "Change Your Plan"
+msgstr "تغيير خطتك"
+
+#: src/Template/Layout/member.ctp:287
+msgid "Never"
+msgstr "على الإطلاق!"
+
+#: src/Template/Layout/member.ctp:295
+msgid "Current Plan"
+msgstr "الخطه الحاليه"
+
+#: src/Template/Layout/member.ctp:297
+msgid "Expiration Date"
+msgstr "تاريخ إنتهاء الصلاحية"
+
+#: src/Template/Layout/member.ctp:303 src/Template/Member/Users/plans.ctp:100
+msgid "Renew"
+msgstr "تجديد"
+
+#: src/Template/Links/captcha.ctp:68
+msgid ""
+"Signup for an account in just 2 minutes. Once you've completed your "
+"registration'.\n"
+"                    'just start creating short URLs and sharing the links "
+"with your family and friends."
+msgstr ""
+"الاشتراك للحصول على حساب في دقيقتين فقط. بمجرد الانتهاء من تسجيل الحساب "
+"الخاص بك يمكنك البدء فى اختصار الروابط ومشاركتها مع الاصدقاء والعائلة لربح "
+"المال ."
+
+#: src/Template/Member/Campaigns/create_banner.ctp:21
+#: src/Template/Member/Campaigns/create_interstitial.ctp:22
+#: src/Template/Member/Campaigns/create_popup.ctp:22
+msgid ""
+"Please find our advertising rate table below. Each visitor you will purchase "
+"will meet the following criteria:"
+msgstr ""
+"يرجى العثور على جدول أسعار الإعلانات أدناه. سيحترم كل زائر ستشتريه المعايير "
+"التالية:"
+
+#: src/Template/Member/Campaigns/create_banner.ctp:24
+#: src/Template/Member/Campaigns/create_interstitial.ctp:25
+#: src/Template/Member/Campaigns/create_popup.ctp:25
+msgid "Unique within a 24 hour time frame"
+msgstr "يجب أن يكون الزائر فريدا خلال 24 ساعة."
+
+#: src/Template/Member/Campaigns/create_banner.ctp:25
+#: src/Template/Member/Campaigns/create_interstitial.ctp:26
+#: src/Template/Member/Campaigns/create_popup.ctp:26
+msgid "They will have JavaScript enabled"
+msgstr "سيتم تمكين ملفات تعريف الارتباط"
+
+#: src/Template/Member/Campaigns/create_banner.ctp:26
+#: src/Template/Member/Campaigns/create_interstitial.ctp:27
+#: src/Template/Member/Campaigns/create_popup.ctp:27
+msgid "They will have Cookies enabled"
+msgstr "سيتم تمكين ملفات تعريف الارتباط"
+
+#: src/Template/Member/Campaigns/create_banner.ctp:30
+#: src/Template/Member/Campaigns/create_interstitial.ctp:31
+#: src/Template/Member/Campaigns/create_popup.ctp:31
+msgid ""
+"You may receive traffic that does not meet this criteria, but you will never "
+"be charged for it."
+msgstr ""
+"قد تتلقى حركة مرور لا تتوافق مع هذه المعايير، ولكن لن يتم تحصيل رسوم منك "
+"أبدا."
+
+#: src/Template/Member/Campaigns/create_banner.ctp:126
+#: src/Template/Member/Campaigns/create_interstitial.ctp:107
+#: src/Template/Member/Campaigns/create_popup.ctp:111
+msgid ""
+"I agree to the <a href=\"{0}\" target=\"_blank\">terms and conditions</a>"
+msgstr "أوافق على الشروط."
+
+#: src/Template/Member/Campaigns/index.ctp:139
+msgid "Pay"
+msgstr "دفع"
+
+#: src/Template/Member/Invoices/view.ctp:24
+msgid "Invoice Details"
+msgstr "تفاصيل الفاتورة"
+
+#: src/Template/Member/Invoices/view.ctp:76
+msgid "Please Select"
+msgstr "الرجاء الإختيار"
+
+#: src/Template/Member/Invoices/view.ctp:89
+msgid "Credit Card"
+msgstr "بطاقة ائتمان"
+
+#: src/Template/Member/Invoices/view.ctp:99
+msgid "Expiration Month"
+msgstr "انتهاء الصلاحية شهر"
+
+#: src/Template/Member/Invoices/view.ctp:109
+msgid "Expiration Year"
+msgstr "انتهاء الصلاحية سنة"
+
+#: src/Template/Member/Invoices/view.ctp:119
+msgid "CVC"
+msgstr "CVV /CVC"
+
+#: src/Template/Member/Invoices/view.ctp:150
+msgid "Pay Invoice"
+msgstr "دفع الفاتورة"
+
+#: src/Template/Member/Tools/api.ctp:15 src/Template/Member/Tools/quick.ctp:16
+msgid "Your API token:"
+msgstr "رمز API الخاص بك:"
+
+#: src/Template/Member/Tools/api.ctp:22
+msgid ""
+"For developers {0} prepared <b>API</b> which returns responses in <b>JSON</"
+"b> or <b>TEXT</b> formats. "
+msgstr ""
+
+#: src/Template/Member/Tools/api.ctp:27
+msgid ""
+"Currently there is one method which can be used to shorten links on behalf "
+"of your account."
+msgstr "هناك حاليا طريقة واحدة يمكن استخدامها لتقصير الروابط نيابة عن حسابك."
+
+#: src/Template/Member/Tools/api.ctp:29
+msgid ""
+"All you have to do is to send a <b>GET</b> request with your API token and "
+"URL Like the following:"
+msgstr "كلّ ما عليك فعله هو نشر تدوينة في مدونتك، متضمنة النصّ التالي:"
+
+#: src/Template/Member/Tools/api.ctp:36
+msgid "You will get a JSON response like the following"
+msgstr "سوف تحصل على استجابة  كما يلي"
+
+#: src/Template/Member/Tools/api.ctp:42
+msgid ""
+"If you want a TEXT response just add <b>&format=text</b> at the end of your "
+"request as the below example. This will return just the short link. Note "
+"that if an error occurs, it will not output anything."
+msgstr ""
+"إذا كنت ترغب في استخدام المطورين API دون الإعلان بإضافة التعليمة البرمجية "
+"أدناه إلى نهاية الرابط"
+
+#: src/Template/Member/Tools/api.ctp:56
+msgid ""
+"If you want to use developers API with the interstitial advertising add the "
+"below code to the end of the URL"
+msgstr ""
+"إذا كنت تريد استخدام مطوري واجهة برمجة التطبيقات API مع الإعلان البيني "
+"interstitial، يمكنك إضافة الشفرة أدناه إلى نهاية URL"
+
+#: src/Template/Member/Tools/api.ctp:62
+msgid ""
+"If you want to use developers API with the banner advertising add the below "
+"code to the end of the URL"
+msgstr ""
+"إذا كنت ترغب في استخدام واجهة المطورين API مع لافتة الإعلان banner كل ما "
+"عليك هو إضافة الرمز أدناه إلى نهاية عنوان URL الخاص بك"
+
+#: src/Template/Member/Tools/api.ctp:68
+msgid ""
+"If you want to use developers API without advertising add the below code to "
+"the end of the URL"
+msgstr ""
+"إذا كنت ترغب في استخدام المطورين API دون اعلانات قم بإضافة التعليمة البرمجية "
+"أدناه إلى نهاية URL"
+
+#: src/Template/Member/Tools/api.ctp:74
+msgid "Note"
+msgstr "ملحوظة"
+
+#: src/Template/Member/Tools/api.ctp:75
+msgid ""
+"api & url are required fields and the other fields like alias, format & type "
+"are optional."
+msgstr ""
+"api ورابط الحقول المطلوبة والحقول الأخرى مثل الاسم المستعار، الشكل والنوع "
+"اختيارية."
+
+#: src/Template/Member/Tools/api.ctp:78
+msgid "That's it :)"
+msgstr "هذا هو كل شئ :)"
+
+#: src/Template/Member/Tools/api.ctp:80
+msgid "Using the API in PHP"
+msgstr "استخدام واجهة برمجة التطبيقات API في PHP"
+
+#: src/Template/Member/Tools/api.ctp:82
+msgid ""
+"To use the API in your PHP application, you need to send a GET request via "
+"file_get_contents or cURL. Please check the below sample examples using "
+"file_get_contents"
+msgstr ""
+"لاستخدام API في تطبيق PHP الخاص بك، فإنك تحتاج لتقوم بإرسال طلب GET عبر "
+"file_get_contents أو cURL. يرجى التحقق من أمثلة العينة أدناه باستخدام "
+"file_get_contents"
+
+#: src/Template/Member/Tools/api.ctp:85
+msgid "Using JSON Response"
+msgstr "عن طريق الاستجابة JSON"
+
+#: src/Template/Member/Tools/api.ctp:99
+msgid "Using Plain Text Response"
+msgstr "نص عادي"
+
+#: src/Template/Member/Tools/bookmarklet.ctp:15
+msgid ""
+"Short links more easily. Click and drag the following link to your links "
+"toolbar."
+msgstr ""
+"روابط قصيرة أكثر سهولة. انقر واسحب الرابط التالي إلى شريط أدوات الروابط."
+
+#: src/Template/Member/Tools/bookmarklet.ctp:21
+msgid "Shorten!"
+msgstr "اختصر"
+
+#: src/Template/Member/Tools/bookmarklet.ctp:26
+msgid ""
+"Once this is on your toolbar, you'll be able to make a short link at the "
+"click of a button."
+msgstr ""
+"بمجرد أن يكون هذا على شريط الأدوات الخاص بك، سوف تكون قادرا على اخصار اى "
+"رابط عند النقر على زر."
+
+#: src/Template/Member/Tools/bookmarklet.ctp:30
+msgid ""
+"This is compatible with most web browsers and platforms as long as your "
+"bookmarks or favorites allow javascript. The links toolbar may not be "
+"visible in all setups and in most browsers, you can enable it in the View-"
+">Toolbars menu of your web browser. You can also put it in your bookmarks "
+"instead of the links toolbar."
+msgstr ""
+"هذا متوافق مع معظم متصفحات الويب ومنصات طالما المفضلة لديك أو المفضلة تسمح "
+"جافا سكريبت. قد لا يكون شريط أدوات الروابط مرئيا في جميع الإعدادات وفي معظم "
+"المتصفحات، يمكنك تمكينه من القائمة عرض- أشرطة الأدوات في متصفح الويب. يمكنك "
+"أيضا وضعه في الإشارات المرجعية بدلا من شريط أدوات الروابط."
+
+#: src/Template/Member/Tools/full.ctp:15
+msgid ""
+"If you have a website with 100's or 1000's of links you want to change over "
+"to {0} then please use the script below."
+msgstr ""
+"إذا كان لديك موقع على شبكة الانترنت مع 100 أو 1000 من الروابط التي تريد "
+"تغييرها إلى {0} يمكنك فى هذه الحاله استخدام البرنامج النصي أدناه."
+
+#: src/Template/Member/Tools/full.ctp:20
+msgid ""
+"Simply copy-and-paste the code below on to your webpage or blog and the "
+"links will be updated automatically!"
+msgstr ""
+"ببساطة قم بنسخ ولصق الرمز أدناه إلى صفحة الويب الخاصة بك أو سواء موقع "
+"الكترونى او مدونه وسيتم تحديث الروابط تلقائيا!"
+
+#: src/Template/Member/Tools/full.ctp:23
+msgid ""
+"You can add or remove any domains for the code that you use on your website."
+msgstr "يمكنك إضافة أو إزالة أي نطاقات للرمز الذي تستخدمه على موقعك على الويب."
+
+#: src/Template/Member/Tools/full.ctp:47
+msgid ""
+"Or if you wish to change every link to {0} on your website (without stating "
+"exactly which domains) please use the following code."
+msgstr ""
+"أو إذا كنت ترغب في تغيير كل وصلة إلى {0} على موقع الويب الخاص بك (دون تحديد "
+"النطاقات) يرجى استخدام التعليمات البرمجية التالية."
+
+#: src/Template/Member/Tools/full.ctp:77
+msgid ""
+"If you want to use Full Page Script with the interstitial advertising "
+"replace this code"
+msgstr ""
+"إذا كنت تريد استخدام النص الكامل للصفحة مع الإعلانات البينية interstitial، "
+"فاستبدل هذه الشفرة"
+
+#: src/Template/Member/Tools/full.ctp:79 src/Template/Member/Tools/full.ctp:86
+#: src/Template/Member/Tools/full.ctp:93
+msgid "With"
+msgstr "مع"
+
+#: src/Template/Member/Tools/full.ctp:84
+msgid ""
+"If you want to use Full Page Script with the banner advertising replace this "
+"code"
+msgstr ""
+"إذا كنت ترغب في استخدام النص الكامل الصفحة مع لافتة الإعلان استبدال هذا الرمز"
+
+#: src/Template/Member/Tools/full.ctp:91
+msgid ""
+"If you want to use Full Page Script without advertising replace this code"
+msgstr ""
+"إذا كنت ترغب في استخدام النص الكامل الصفحة دون الإعلان استبدال هذا الرمز"
+
+#: src/Template/Member/Tools/mass_shrinker.ctp:14
+msgid ""
+"Enter up to {0} URLs (one per line) to be shrunk and added to your account"
+msgstr ""
+"أدخل ما يصل إلى {0} من الروابط  (عنوان واحد لكل سطر) ليتم تقليصه وإضافته إلى "
+"حسابك"
+
+#: src/Template/Member/Tools/mass_shrinker.ctp:17
+msgid ""
+"Note: The 'Mass Shrinker' can be disabled to your account if abused. Only "
+"create links that you will actually use."
+msgstr ""
+"ملاحظة: \"أداة الروابط المتعددة\" يمكن تعطيلها بحسابك في حالة سوء المعاملة. "
+"لا تنشئ سوى الروابط التي ستستخدمها فعليا."
+
+#: src/Template/Member/Tools/mass_shrinker.ctp:28
+msgid "It is not a valid URL."
+msgstr "هذا عنوان رابط غير صالح."
+
+#: src/Template/Member/Tools/mass_shrinker.ctp:32
+msgid "All Short Links"
+msgstr "جميع الروابط القصيرة"
+
+#: src/Template/Member/Tools/mass_shrinker.ctp:43
+msgid "Shorten More Links"
+msgstr "اختصار المزيد من الروابط"
+
+#: src/Template/Member/Tools/quick.ctp:22
+msgid "Everyone can use the shortest way to shorten links with {0}."
+msgstr "يمكن للجميع استخدام أقصر الطرق لاختصار الروابط "
+
+#: src/Template/Member/Tools/quick.ctp:25
+msgid ""
+"Just copy the link below to address bar into your web browser, change last "
+"part to destination link and press ENTER. {0} will redirect you to your "
+"shortened link. Copy it wherever you want and get paid."
+msgstr ""
+"مجرد نسخ الرابط أدناه إلى شريط العناوين في متصفح الويب الخاص بك، تغيير الجزء "
+"الأخير إلى وصلة الوجهة واضغط إنتر. {0} سيعيد توجيهك إلى الرابط المختصر. "
+"انسخه أينما تريد واحصل على أموال."
+
+#: src/Template/Member/Tools/quick.ctp:39
+msgid ""
+"If you want to use Quick Link with the interstitial advertising add the "
+"below code to the end of the URL"
+msgstr ""
+"إذا كنت تريد استخدام مطوري واجهة برمجة التطبيقات API مع الإعلان البيني "
+"interstitial، يمكنك إضافة الشفرة أدناه إلى نهاية URL"
+
+#: src/Template/Member/Tools/quick.ctp:45
+msgid ""
+"If you want to use Quick Link with the banner advertising add the below code "
+"to the end of the URL"
+msgstr ""
+"إذا كنت ترغب في استخدام الارتباط السريع مع لافتة الإعلان إضافة رمز أدناه إلى "
+"نهاية الرابط"
+
+#: src/Template/Member/Tools/quick.ctp:51
+msgid ""
+"If you want to use Quick Link without advertising add the below code to the "
+"end of the URL"
+msgstr ""
+"إذا كنت ترغب في استخدام الارتباط السريع دون الإعلان إضافة رمز أدناه إلى "
+"نهاية عنوان الرابط"
+
+#: src/Template/Member/Users/change_email.ctp:17
+msgid "Current Email"
+msgstr "البريد الإلكتروني الحالي"
+
+#: src/Template/Member/Users/change_email.ctp:26
+msgid "New Email"
+msgstr "بريد إلكتروني جديد"
+
+#: src/Template/Member/Users/change_email.ctp:35
+msgid "Re-enter New Email"
+msgstr "أعد إدخال البريد الإلكتروني الجديد"
+
+#: src/Template/Member/Users/change_password.ctp:17
+msgid "Current Password"
+msgstr "كلمة السر الحالية"
+
+#: src/Template/Member/Users/dashboard.ctp:65
+msgid "Total Earnings"
+msgstr "إجمالي أرباح الإعلانات"
+
+#: src/Template/Member/Users/dashboard.ctp:96
+msgid "Average CPM"
+msgstr "متوسط التكلفة لكل ألف ظهور"
+
+#: src/Template/Member/Users/plans.ctp:70
+msgid "Free"
+msgstr "مجاني"
+
+#: src/Template/Member/Users/plans.ctp:73
+msgid "/ Month"
+msgstr "الشهر"
+
+#: src/Template/Member/Users/plans.ctp:76
+msgid "-"
+msgstr "-"
+
+#: src/Template/Member/Users/plans.ctp:79
+msgid "/ Year"
+msgstr "/ سنة"
+
+#: src/Template/Member/Users/plans.ctp:93
+msgid "Free Plan"
+msgstr "خطة مجانية"
+
+#: src/Template/Member/Users/plans.ctp:102
+msgid "Buy Now"
+msgstr "اشترى الآن!"
+
+#: src/Template/Member/Users/profile.ctp:15
+msgid "Billing Address"
+msgstr "عنوان الدفع"
+
+#: src/Template/Member/Users/profile.ctp:115
+msgid "Withdrawal Info"
+msgstr "معلومات السحب"
+
+#: src/Template/Member/Users/profile.ctp:137
+msgid "- For PayPal, Payza, Skrill and Perfect Money add your email."
+msgstr "- لباي بال،ويسترن يونيون  وسكريل إضافة البيانات كامله وصحيحه"
+
+#: src/Template/Member/Users/profile.ctp:138
+msgid "- For Bitcoin add your wallet address."
+msgstr "- لـ Bitcoin يرجى إضافة عنوان المحفظة الخاصة بك."
+
+#: src/Template/Member/Users/profile.ctp:139
+msgid "- For Web Money add your purse."
+msgstr "- لـWebMoney ، يرجى إضافة محفظتك."
+
+#: src/Template/Member/Users/profile.ctp:140
+msgid "- For Payeer add account, e-mail or phone number."
+msgstr "لحساب البايير يرجي و رقم حسابك"
+
+#: src/Template/Member/Users/profile.ctp:141
+msgid ""
+"- For bank transfer add your account holder name, Bank Name, City/Town, "
+"Country, Account number, SWIFT, IBAN and Account currency"
+msgstr ""
+"- للتحويل المصرفي يرجى إضافة اسم صاحب الحساب الخاص بك، اسم البنك، مدينة / "
+"بلدة، المدينة، رقم الحساب، سويفت، الإيبان  وعملة الحساب"
+
+#: src/Template/Member/Users/referrals.ctp:24
+msgid "My Referrals"
+msgstr "إحالاتي"
+
+#: src/Template/Member/Withdraws/index.ctp:2
+#: src/Template/Member/Withdraws/index.ctp:4
+msgid "Withdraw Funds"
+msgstr "سحب الأموال"
+
+#: src/Template/Member/Withdraws/index.ctp:21
+msgid "Available Balance"
+msgstr "الرصيد المتوفر"
+
+#: src/Template/Member/Withdraws/index.ctp:53
+msgid ""
+"When your account reaches the minimum amount of {0} or more, you may request "
+"your earnings by clicking the above button. The payment is then sent to your "
+"PayPal account during business days no longer than 4 days after requesting. "
+"Please do not contact us regarding payments before due dates."
+msgstr ""
+"عندما يصل حسابك إلى الحد الأدنى البالغ {0} أو أكثر، يمكنك طلب أرباحك بالنقر "
+"على الزر أعلاه. سيتم إرسال ارباحك إلى حسابك باي بال خلال مدة لا تتجاوز أيام "
+"عمل 4 أيام بعد الطلب. يرجى عدم الاتصال بنا بخصوص الدفعات قبل تواريخ "
+"الاستحقاق."
+
+#: src/Template/Member/Withdraws/index.ctp:56
+msgid ""
+"In order to receive your payments you need to fill your payment method and "
+"payment ID <a href=\"{0}\">here</a> if you haven't done so. You are also "
+"requested to fill all the required fields in the Account Details section "
+"with accurate data."
+msgstr ""
+
+#: src/Template/Member/Withdraws/index.ctp:92
+msgid ""
+"Complete: The payment has been successfully sent to your payment account."
+msgstr "اكتمل: تم إرسال الدفعة بنجاح إلى حساب الدفع."
+
+#: src/Template/Pages/home.ctp:30
+msgid "WHY JOIN US?"
+msgstr "لماذا لا تنضم لنا ؟"
+
+#: src/Template/Pages/home.ctp:31
+msgid "We have defined earning extra money from the comfort of your home."
+msgstr "للحصول على الراحة و السلامة في منزلك"
+
+#: src/Template/Pages/home.ctp:51
+msgid ""
+"How can you start making money in {0}? It's just 3 steps: create an account, "
+"create a link and post it - for every visit, you earn money. It's just that "
+"easy!"
+msgstr "كيف وكم يمكنني أن أ كسب ؟الكثير من الاموال"
+
+#: src/Template/Pages/home.ctp:155
+msgid "Get in touch"
+msgstr "كن على إتصال"
+
+#: src/Template/Posts/index.ctp:41 src/Template/Posts/view.ctp:36
+msgid "Published on"
+msgstr "نشرت في"
+
+#: src/Template/Statistics/view_info.ctp:39
+msgid "Clicks on last 30 days"
+msgstr "النقرات في آخر 30 يوما"
+
+#: src/Template/Statistics/view_info.ctp:62
+#: src/Template/Statistics/view_info.ctp:93
+msgid "Clicks"
+msgstr "النقرات"
+
+#: src/Template/Tools/bookmarklet.ctp:57
+msgid "Close"
+msgstr "إغلاق"
